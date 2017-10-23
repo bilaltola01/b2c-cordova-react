@@ -1,4 +1,4 @@
-const merge = require('webpack-merge');
+/*const merge = require('webpack-merge');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -60,3 +60,6 @@ if (ENV === 'development') {
 	// config can be added here for minifying / etc
 	module.exports = merge(common, {});
 }
+*/
+
+module.exports = require('./config/webpack.dev.js');
