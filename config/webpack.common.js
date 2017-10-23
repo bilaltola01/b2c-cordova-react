@@ -39,12 +39,12 @@ module.exports = {
             },*/
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-                loader: 'file?name=/public/fonts/[name].[hash].[ext]'
+                loader: 'file-loader?name=/public/fonts/[name].[hash].[ext]'
             },
             {
                 test: /\.css$/,
                 exclude: helpers.root('public', 'app'),
-                loader: ExtractTextPlugin.extract({ fallback: 'style', use: 'css?sourceMap' })
+                loader: ExtractTextPlugin.extract({ fallback: 'style', use: 'css-loader?sourceMap' })
             },
             {
                 test: /\.css$/,
