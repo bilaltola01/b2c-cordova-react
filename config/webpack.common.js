@@ -42,7 +42,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: helpers.root('public', 'app'),
+                exclude: helpers.root('www', 'app'),
                 //loader: ExtractTextPlugin.extract({ fallback: 'style', use: 'css-loader?sourceMap' })
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
@@ -51,8 +51,8 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                include: helpers.root('public', 'app'),
-                loader: 'raw'
+                include: helpers.root('www', 'app'),
+                loader: 'raw-loader'
             },
             {
                 test: /\.scss$/,
