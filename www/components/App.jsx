@@ -9,7 +9,9 @@ import {
 
 import * as actionCreators from '../action-creators';
 
-import Restaurants from './Restaurants';
+import RestaurantPage from './RestaurantPage';
+import MenusPage from './MenusPage';
+import MenuPage from './MenuPage';
 import Map from './Map';
 import Home from './Home';
 
@@ -112,10 +114,10 @@ class App extends Component {
           <Route path="/map" render={MapRenderer} />
           <Page>
             <Route path="/" render={HomeRenderer} />
-            <Route path="/restaurants" component={RestaurantsPage} />
-            <Route path="/restaurant/:id" component={RestaurantPage} />
-            <Route path="/restaurant/:id/menus" component={MenusPage} />
-            <Route path="/menu/:id" component={MenuPage} />
+            //<Route path="/restaurants" component={RestaurantsPage} />
+            //<Route path="/restaurant/:id" component={RestaurantPage} />
+            //<Route path="/restaurant/:id/menus" component={MenusPage} />
+            //<Route path="/menu/:id" component={MenuPage} />
           </Page>
         </div>
       </Router>

@@ -3,11 +3,10 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
 
-import Splashscreen from './Splashscreen';
 import PageContent from './PageContent';
 
 
-class Home extends Component {
+class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,21 +22,20 @@ class Home extends Component {
     const location = (this.props.location) ? this.props.location : {};
 
     const sections = [{
-      type: 'restaurants',
+      type: 'map',
       title: '',
       component: profile
     }];
 
     return (
       <div id="container" className="container">
-        <Splashscreen />
         <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvas={offCanvas} />
       </div>
     )
   }
 };
 
-Home.propTypes = {
+Map.propTypes = {
   dispatch: PropTypes.func.isRequired,
   navigation: PropTypes.object,
   title: PropTypes.string,
@@ -52,4 +50,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(Map);

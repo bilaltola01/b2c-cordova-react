@@ -19,7 +19,7 @@ export function getProfile (location) {
 }
 
 export function getProfileWithGeo (profile, location) {
-    return profile && profile.branches && profile.branches.length > 0) ?
+    return (profile && profile.branches && profile.branches.length > 0) ?
         (!location) ?
             profile : profile.map(company => {
                 let obj = company;
