@@ -1,1 +1,3 @@
-exports.TOTAL_STEPS = 4;
+// Move this out and put in ENV vars
+exports.HOST = process.env.HOST;
+exports.APP_PORT = process.env.PORT || 8080;
