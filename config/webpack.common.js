@@ -20,7 +20,7 @@ module.exports = {
                 //exclude: helpers.root('v1', 'node_modules'),
                 exclude: ['/node_modules/'],
                 loaders: [
-                    'react-hot-loader',
+                    'react-hot-loader/webpack',
                     'babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-2'
                 ]
             },
