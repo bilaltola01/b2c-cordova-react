@@ -2,10 +2,10 @@
 
 import 'whatwg-fetch';
 
-const BASE_URL = 'http://localhost:8080/api';
+const BASE_URL = 'http://localhost:8080';
 
 export let Ajax = (url) => {
-    let baseUrl = url || window.location.origin + '/api';
+    let baseUrl = url || BASE_URL + '/api';
 
     //
     /** Generic method for AJAX calls */

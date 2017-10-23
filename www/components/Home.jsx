@@ -18,7 +18,7 @@ class Home extends Component {
   render () {
     const { dispatch, navigation, title, footer, offCanvas } = this.props;
 
-    const profile = (this.props.profile ) ? this.props.profile : {};
+    const profile = (this.props.profile ) ? this.props.profile : [];
     const geolocation = (this.props.geolocation) ? this.props.geolocation : {};
 
     console.log(geolocation);

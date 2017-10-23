@@ -12,21 +12,25 @@ export function getProfile (location) {
             return Promise.reject(res);
         }
 
-        let profile = res.obj;
+        let profiles = res.obj;
 
-        return getProfileWithGeo(profile, location);
+        return getProfilesWithGeo(profiles, location);
     });
 }
 
-export function getProfileWithGeo (profile, location) {
-    return (profile && profile.branches && profile.branches.length > 0) ?
+export function getProfilesWithGeo (profiles, location) {
+    return (profiles && profiles.length > 0) ?
         (!location) ?
-            profile : profile.map(company => {
+            profiles : profiles.map(company => {
+                if (!company.branches || company.branches <= 0) {
+                    return company;
+                }
+
                 let obj = company;
 
                 let branchesWithDistance = obj.branches.map(branch => {
                     let newBranch = branch;
-                    newbranch.Distance = GeoUtils.calculateDistance({
+                    newBranch.Distance = GeoUtils.calculateDistance({
                         latitude: location.coords.latitude,
                         longitude: location.coords.longitude
                     }, {
@@ -39,7 +43,7 @@ export function getProfileWithGeo (profile, location) {
 
                 return obj;
             })
-        : [];
+    : [];
 }
 
 export function getGeoLocation (location) {

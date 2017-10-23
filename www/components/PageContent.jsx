@@ -18,8 +18,6 @@ class PageContent extends Component {
         };
     }
 
-    component
-
   	render () {
   		const { sections, navigation, footer, title, offCanvas } = this.props;
   		const offCanvasOpened = (this.state.offCanvasOpened) ? this.state.offCanvasOpened : false;

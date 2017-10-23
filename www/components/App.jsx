@@ -65,11 +65,13 @@ let Pages = new Map([
 
 let createHandlers = (ctx) => {
   let getGeoLocation = (location) => {
-    ctx.props.dispatch(actionCreators.getGeoLocation(location));
+    ctx.props.dispatch(actionCreators.getGeoLocation(location, (res) => {
+      getProfile(res);
+    }));
   };
 
-  let getProfile = () => {
-    ctx.props.dispatch(actionCreators.getProfile());
+  let getProfile = (location) => {
+    ctx.props.dispatch(actionCreators.getProfile(location));
   };
 
   return {
@@ -84,11 +86,9 @@ class App extends Component {
     this.handlers = createHandlers(this);
   }
 
-  componentDidLoad() {
-    this.handlers.getGeoLocation(navigator.location, (location) => {
-      console.log(location);
-      this.handlers.getProfile(location);
-    });
+  componentDidMount() {
+    console.log(window.navigator.geolocation);
+    this.handlers.getGeoLocation(window.navigator.geolocation);
   }
 
   getPageAttribute(page, attr) {

@@ -4,7 +4,7 @@ const geocoder = require('node-geocoder')({
 	provider: 'google'
 });
 
-let GeoUtils = {
+export let GeoUtils = {
 	/**
  	* Returns the full geo data associated to an address using a geocoder
 	* @function
@@ -47,20 +47,18 @@ let GeoUtils = {
 		const earthRadius = 6378137;
 
 		// Haversine formula
-		const dLat = this.toRadians(coord1.latitude - coord1.latitude);
-  		const dLong = this.toRadians(coord2.longitude - coord2.longitude);
+		const dLat = this.toRadians(coord2.latitude - coord1.latitude);
+  		const dLong = this.toRadians(coord2.longitude - coord1.longitude);
 
   		const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     		Math.cos(this.toRadians(coord1.latitude)) * Math.cos(this.toRadians(coord2.latitude)) *
     		Math.sin(dLong / 2) * Math.sin(dLong / 2);
     	const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
-		return (earthRadius * c) / 1000;
+		return Math.floor((earthRadius * c) / 1000);
 	},
 
 	toRadians: function (x) {
 		return x * Math.PI / 180;
 	}
 };
-
-module.exports = GeoUtils;

@@ -51,7 +51,7 @@ class PageSection extends Component {
 PageSection.propTypes = {
 	type: PropTypes.string,
 	title: PropTypes.string,
-    component: PropTypes.object
+    component: PropTypes.array
 };
 
 export default PageSection;

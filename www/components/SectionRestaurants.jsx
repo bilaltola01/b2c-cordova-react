@@ -37,7 +37,7 @@ class SectionRestaurants extends Component {
 };
 
 SectionRestaurants.propTypes = {
-    component: PropTypes.object
+    component: PropTypes.array
 };
 
 export default SectionRestaurants;
