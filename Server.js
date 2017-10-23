@@ -35,7 +35,7 @@ let Server = class {
         this.app.use(bodyParser.urlencoded({ limit: '50mb', extended: false }));
         this.app.use(logger('dev'));
         this.app.use(cookieParser());
-        this.app.use(this.middleware.static(path.join(__dirname, 'public')));
+        this.app.use(this.middleware.static(path.join(__dirname, 'www')));
     }
 
     initHeaders() {

@@ -76,4 +76,4 @@ const mapStateToProps = (state) => {
 };
 */
 
-export default connect(mapStateToProps)(PageContent);
+export default PageContent;

@@ -11,7 +11,7 @@ module.exports = webpackMerge(commonConfig, {
     devtool: 'cheap-module-eval-source-map',
 
     output: {
-        path: helpers.root('www'),//helpers.root('dist'),
+        path: path.join(__dirname, 'www'),//helpers.root('dist'),
         publicPath: //'https://one-menu-b2b.herokuapp.com:' + PORT + '/',
         '/',
         filename: '[name]-bundle.js',//[name].js',
