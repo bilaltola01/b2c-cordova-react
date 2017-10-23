@@ -6,13 +6,12 @@ import * as actionCreators from '../action-creators';
 import PageContent from './PageContent';
 
 
-class Map extends Component {
+class PageMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
       removed: false
     };
-    this.handlers = createHandlers(this);
   }
 
   render () {
@@ -35,7 +34,7 @@ class Map extends Component {
   }
 };
 
-Map.propTypes = {
+PageMap.propTypes = {
   dispatch: PropTypes.func.isRequired,
   navigation: PropTypes.object,
   title: PropTypes.string,
@@ -50,4 +49,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Map);
+export default connect(mapStateToProps)(PageMap);

@@ -14,9 +14,11 @@ class PageFooter extends Component {
   			}
   		})(action) : null;
 
-  		<footer className="popup--footer sticky">
-    		{footerComponent}
-		</footer>
+  		return (
+        <footer className="popup--footer sticky">
+    		  {footerComponent}
+		    </footer>
+      )
 	}
 };
 

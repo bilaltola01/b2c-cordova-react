@@ -16,8 +16,6 @@ class PageContent extends Component {
             offCanvas: (this.props.offCanvas) ? this.props.offCanvas : false,
             footer: (this.props.footer) ? this.props.footer : null
         };
-
-        this.handlers = createHandlers(this);
     }
 
     component

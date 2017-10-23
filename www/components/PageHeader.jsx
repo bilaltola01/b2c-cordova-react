@@ -31,9 +31,9 @@ class PageHeader extends Component {
 
 PageHeader.propTypes = {
 	title: PropTypes.string,
-	leftButtons: PropTypes.Array,
-	rightButtons: PropTypes.Array
-}
+	leftButtons: PropTypes.array,
+	rightButtons: PropTypes.array
+};
 
 export default PageHeader;
 

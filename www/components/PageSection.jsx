@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const classNames = require('classnames');
 
-import ArticleRestaurant from './ArticleRestaurant';
+import SectionRestaurants from './SectionRestaurants';
 
 class PageSection extends Component {
 	render() {
@@ -51,7 +51,7 @@ class PageSection extends Component {
 PageSection.propTypes = {
 	type: PropTypes.string,
 	title: PropTypes.string,
-    component: PropTypes.array
+    component: PropTypes.object
 };
 
 export default PageSection;

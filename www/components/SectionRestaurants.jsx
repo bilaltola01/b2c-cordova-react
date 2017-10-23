@@ -7,8 +7,8 @@ class SectionRestaurants extends Component {
 	render() {
 		const { component } = this.props;
 
-		const restaurants = (component && component.length > 0) ? (
-			return component.reduce((acc, current) => {
+		const restaurants = (component && component.length > 0) ?
+			component.reduce((acc, current) => {
 				return acc.concat(current.branches.map(branch => {
 					let obj = branch;
 
@@ -19,8 +19,8 @@ class SectionRestaurants extends Component {
 
 					return obj;
 				}));
-			}, []);
-		) : [];
+			}, [])
+		: [];
 
 		console.log(restaurants);
 

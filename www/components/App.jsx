@@ -14,12 +14,12 @@ import RestaurantPage from './RestaurantPage';
 import MenusPage from './MenusPage';
 import MenuPage from './MenuPage';
 */
-import Map from './Map';
+import PageMap from './PageMap';
 import Home from './Home';
 
 import Page from './Page';
 
-const Pages = new Map([
+let Pages = new Map([
   ['Home', {
     title: 'Restaurants',
     navigation: {
@@ -106,7 +106,7 @@ class App extends Component {
 
     const MapRenderer = () => {
       return (
-        <Map dispatch={dispatch} title={this.getPageAttribute('Map', 'title')} navigation={this.getPageAttribute('Map', 'navigation')} footer={this.getPageAttribute('Map', 'footer')} offCanvas={this.getPageAttribute('Map', 'offCanvas')} />
+        <PageMap dispatch={dispatch} title={this.getPageAttribute('Map', 'title')} navigation={this.getPageAttribute('Map', 'navigation')} footer={this.getPageAttribute('Map', 'footer')} offCanvas={this.getPageAttribute('Map', 'offCanvas')} />
       );
     };
 
@@ -116,10 +116,12 @@ class App extends Component {
           <Route path="/map" render={MapRenderer} />
           <Page>
             <Route path="/" render={HomeRenderer} />
-            //<Route path="/restaurants" component={RestaurantsPage} />
-            //<Route path="/restaurant/:id" component={RestaurantPage} />
-            //<Route path="/restaurant/:id/menus" component={MenusPage} />
-            //<Route path="/menu/:id" component={MenuPage} />
+            {/*
+            <Route path="/restaurants" component={RestaurantsPage} />
+            <Route path="/restaurant/:id" component={RestaurantPage} />
+            <Route path="/restaurant/:id/menus" component={MenusPage} />
+            <Route path="/menu/:id" component={MenuPage} />
+            */}
           </Page>
         </div>
       </Router>

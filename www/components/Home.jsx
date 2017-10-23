@@ -13,14 +13,15 @@ class Home extends Component {
     this.state = {
       removed: false
     };
-    this.handlers = createHandlers(this);
   }
 
   render () {
     const { dispatch, navigation, title, footer, offCanvas } = this.props;
 
     const profile = (this.props.profile ) ? this.props.profile : {};
-    const location = (this.props.location) ? this.props.location : {};
+    const geolocation = (this.props.geolocation) ? this.props.geolocation : {};
+
+    console.log(geolocation);
 
     const sections = [{
       type: 'restaurants',
@@ -47,7 +48,7 @@ Home.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    location: state._location.location,
+    geolocation: state._geolocation.geolocation,
     profile: state._profile.profile
   };
 };
