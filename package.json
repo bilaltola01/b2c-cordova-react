@@ -1,9 +1,8 @@
 {
-  "name": "picture-tour",
-  "version": "1.0.0",
-  "description": "Picture Tour Example React.js PhoneGap App",
+  "name": "one-menu-b2c",
+  "version": "0.2.60",
+  "description": "ONE MENU b2c hybrid mobile app",
   "main": "main.js",
-  "repository": "https://github.com/JedWatson/picture-tour-app.git",
   "dependencies": {
     "body-parser": "1.18.2",
     "classnames": "^2.2.3",
