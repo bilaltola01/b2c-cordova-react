@@ -1,0 +1,80 @@
+.scene {
+  position: relative;
+  z-index: 85;
+}
+.diagonal {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-name: diagonal;
+  animation-direction: alternate-reverse;
+}
+.scene .scene_element {
+  position: relative;
+  z-index: 80;
+  animation-duration: 0.75s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.scene .scene_element.delay {
+  -webkit-animation-delay: 0.4s; /* Safari 4.0 - 8.0 */
+  animation-delay: 0.4s;
+}
+/** An element that fades in */
+.scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
+
+/** An element that fades in and slides up */
+.scene .scene_element--fadeinup {
+  animation-name: fadeInUp;
+}
+
+.scene .scene_element--fadeindown {
+  animation-name: fadeInDown;
+}
+
+.scene .scene_element--fadeinright {
+  animation-name: fadeInRight;
+}
+
+/** Reverse "exit" animations */
+.scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+/*
+.is-exiting .diagonal {
+  animation-direction: alternate;
+}
+*/
+
+
+.anim-typewriter {
+  animation: typewriter 1.2s steps(12) 1s 1 normal both;
+}
+
+.anim-typewriter + .cursor {
+  animation: blinkTextCursor 1200ms steps(12) 3 normal;
+}
+
+
+.curtain {
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.curtain.curtain-up {
+  animation-name: curtainUp;
+  animation-play-state: paused;
+}
+.curtain.curtain-down {
+  animation-name: curtainDown;
+  animation-play-state: paused;
+}
+.test-block.image:hover .curtain.curtain-up {
+  animation-play-state: running;
+}
+
+.test-block.image:hover .curtain.curtain-down {
+ animation-play-state: running;
+}
