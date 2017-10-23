@@ -1,5 +1,5 @@
-import { Ajax } from '../../../shared/ajax.utils';
-import { GeoUtils } from '../../../shared/geo-utils.js';
+import { Ajax } from '../../shared/ajax.utils';
+import { GeoUtils } from '../../shared/geo-utils.js';
 
 export function getProfile (location) {
     return Ajax().get('/profile', {

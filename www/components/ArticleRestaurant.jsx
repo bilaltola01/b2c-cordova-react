@@ -6,12 +6,12 @@ class ArticleRestaurant extends Component {
   render() {
 		const { restaurant } = this.props;
 
-		const menuComponent = (action) ? (
-			switch (action.type) {
+		const menuComponent = (action) ? ((a) => {
+			switch (a.type) {
 				case 'link':
 					return <Link to={action.path}>{title}</Link>
 			}
-		) : null;
+		})(action) : null;
 
     const firstImage = (restaurant.images && restaurant.images.length > 0) ? (
       <img src={restaurant.images[0].Path} alt={restaurant.images[0].AltDesc} />
@@ -34,7 +34,7 @@ class ArticleRestaurant extends Component {
               </p>
             </div>
           </footer>
-        </a>
+        </Link>
       </article>
     )
 	}

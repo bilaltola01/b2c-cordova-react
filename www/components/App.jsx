@@ -9,9 +9,11 @@ import {
 
 import * as actionCreators from '../action-creators';
 
+/*
 import RestaurantPage from './RestaurantPage';
 import MenusPage from './MenusPage';
 import MenuPage from './MenuPage';
+*/
 import Map from './Map';
 import Home from './Home';
 

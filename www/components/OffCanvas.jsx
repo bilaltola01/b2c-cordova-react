@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
 
 import PageHeader from './PageHeader';
-import MapDetail from './MapDetail';
+//import MapDetail from './MapDetail';
 
 const classNames = require('classnames');
 
@@ -63,19 +63,19 @@ class OffCanvas extends Component {
   		) : null;
 		*/
 
-  		const headerComponent = (component) ? (
-  			switch (component.type) {
-  				case: 'MapDetail':
+  		const headerComponent = (component) ? ((comp) => {
+  			switch (comp.type) {
+  				case 'MapDetail':
   					return null;
   			}
-	    ) : null;
+	    })(component) : null;
 
-  		const sectionsComponent = (component) ? (
-  			switch (component.type) {
-  				case: 'MapDetail':
-  					return <MapDetail />;
+  		const sectionsComponent = (component) ? ((comp) => {
+  			switch (comp.type) {
+  				case 'MapDetail':
+  					//return <MapDetail />;
   			}
-  		) : null;
+  		})(component) : null;
 
 		return (
 			<div id="popup" className="popup off-canvas">

@@ -1,7 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router-dom';
 
+/*
 import ChooseLanguage from './ChooseLanguage';
+*/
 
 class NavButton extends Component {
 	render() {
@@ -13,10 +15,9 @@ class NavButton extends Component {
 					return <Link to={action.path} >{title}</Link>
 				case 'link-offcanvas':
 					return
-						<div onClick={(e) => this.handlers.onCategoryAdd()} className="choose-lang">
-							<img src={action.component.flag.url} alt="">
+						<div className="choose-lang">
+							<img src={action.component.flag.url} alt="" />
 						</div>
-						<Link to={action.path} >{title}</Link>
 
 			}
 		} : null;

@@ -7,12 +7,12 @@ class PageFooter extends Component {
   	render() {
   		const { title, action } = this.props;
 
-  		const footerComponent = (action) ? (
-  			switch (action.type) {
+  		const footerComponent = (action) ? ((a) => {
+  			switch (a.type) {
   				case 'link':
   					return <Link to={action.path}>{title}</Link>
   			}
-  		) : null;
+  		})(action) : null;
 
   		<footer className="popup--footer sticky">
     		{footerComponent}
