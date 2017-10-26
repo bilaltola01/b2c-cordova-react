@@ -22,7 +22,7 @@ class ArticleRestaurant extends Component {
 		return (
       <article className="article--restaurant">
 
-        <Link to={"/restaurant/:" + restaurant.BranchID + "/menus"}>
+        <Link to={"/restaurant/" + restaurant.BranchID + "/menus"}>
           {firstImage}
 
           <footer className="restaurant--footer grid">

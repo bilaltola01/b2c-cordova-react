@@ -7,11 +7,11 @@ class PageHeader extends Component {
   		const { title, leftButtons, rightButtons } = this.props;
 
   		const leftButtonsComponent = (leftButtons && leftButtons.length > 0) ? leftButtons.map((button, index) => {
-  			<NavButton position={'left'} action={button.action} key={index} />
+  			return <NavButton position={button.position} action={button.action} title={button.title} key={index} />;
   		}) : null;
 
   		const rightButtonsComponent = (rightButtons && rightButtons.length > 0) ? rightButtons.map((button, index) => {
-  			<NavButton position={'right'} action={button.action} key={index} />
+  			return <NavButton position={button.position} action={button.action} title={button.title} key={index} />;
   		}) : null;
 
 		return (

@@ -5,6 +5,7 @@ import * as actionCreators from '../action-creators';
 
 import PageContent from './PageContent';
 
+import { Pages } from './Pages';
 
 class PageMap extends Component {
   constructor(props) {
@@ -15,10 +16,16 @@ class PageMap extends Component {
   }
 
   render () {
-    const { dispatch, navigation, title, footer, offCanvas } = this.props;
+    const title = Pages.getPageAttribute('Map', 'title');
+    const navigation = Pages.getPageAttribute('Map', 'navigation');
+    const footer = Pages.getPageAttribute('Map', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Map', 'offCanvas');
 
-    const profile = (this.props.profile ) ? this.props.profile : {};
-    const location = (this.props.location) ? this.props.location : {};
+    const profile = (this.props.profile ) ? this.props.profile : [];
+
+    const offCanvas = this.props.offCanvas;
+
+    console.log(offCanvas);
 
     const sections = [{
       type: 'map',
@@ -27,24 +34,14 @@ class PageMap extends Component {
     }];
 
     return (
-      <div id="container" className="container">
-        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvas={offCanvas} />
-      </div>
+      <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
     )
   }
 };
 
-PageMap.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  navigation: PropTypes.object,
-  title: PropTypes.string,
-  footer: PropTypes.object,
-  offCanvas: PropTypes.object
-};
-
 const mapStateToProps = (state) => {
   return {
-    location: state._location.location,
+    offCanvas: state._offCanvas.offCanvas,
     profile: state._profile.profile
   };
 };

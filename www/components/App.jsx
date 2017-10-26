@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
+import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
 
 import {
@@ -15,53 +16,9 @@ import MenusPage from './MenusPage';
 import MenuPage from './MenuPage';
 */
 import PageMap from './PageMap';
-import Home from './Home';
+import PageRestaurants from './PageRestaurants';
 
 import Page from './Page';
-
-let Pages = new Map([
-  ['Home', {
-    title: 'Restaurants',
-    navigation: {
-      leftButtons: [
-        {
-          title: 'location',
-          position: 'left',
-          action: {
-            type: 'link',
-            path: '/map'
-          }
-        }
-      ],
-      rightButtons: []
-    },
-    footer: {},
-    offCanvas: {}
-  }],
-  ['Map', {
-    title: 'Map',
-    navigation: {
-      leftButtons: [
-        {
-          title: 'Back',
-          position: 'left',
-          action: {
-            type: 'link',
-            path: '/'
-          }
-        }
-      ],
-      rightButtons: []
-    },
-    footer: {},
-    offCanvas: {
-      isOpened: false,
-      component: {
-        type: 'MapDetail'
-      }
-    }
-  }]
-]);
 
 let createHandlers = (ctx) => {
   let getGeoLocation = (location) => {
@@ -91,31 +48,25 @@ class App extends Component {
     this.handlers.getGeoLocation(window.navigator.geolocation);
   }
 
-  getPageAttribute(page, attr) {
-    return Pages.get(page)[attr];
-  }
-
   render () {
     const { dispatch } = this.props;
 
     const HomeRenderer = () => {
       return (
-        <Home dispatch={dispatch} title={this.getPageAttribute('Home', 'title')} navigation={this.getPageAttribute('Home', 'navigation')} footer={this.getPageAttribute('Home', 'footer')} offCanvas={this.getPageAttribute('Home', 'offCanvas')} />
-      );
-    };
-
-    const MapRenderer = () => {
-      return (
-        <PageMap dispatch={dispatch} title={this.getPageAttribute('Map', 'title')} navigation={this.getPageAttribute('Map', 'navigation')} footer={this.getPageAttribute('Map', 'footer')} offCanvas={this.getPageAttribute('Map', 'offCanvas')} />
+        <Redirect to={{
+          pathname: '/home',
+          state: { from: this.props.location }
+        }} />
       );
     };
 
     return (
       <Router>
         <div>
-          <Route path="/map" render={MapRenderer} />
+          <Route path="/" render={HomeRenderer} />
           <Page>
-            <Route path="/" render={HomeRenderer} />
+            <Route path="/home" component={PageRestaurants} />
+            <Route path="/map" component={PageMap} />
             {/*
             <Route path="/restaurants" component={RestaurantsPage} />
             <Route path="/restaurant/:id" component={RestaurantPage} />

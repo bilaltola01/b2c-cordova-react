@@ -6,14 +6,14 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
 
 import PageHeader from './PageHeader';
-//import MapDetail from './MapDetail';
+import ArticleRestaurantMapDetail from './ArticleRestaurantMapDetail';
 
 const classNames = require('classnames');
 
 let createHandlers = (ctx) => {
     let openOffCanvas = () => {
         ctx.setState({
-            opened: true
+            isOpened: true
         });
     };
 
@@ -30,7 +30,7 @@ let createHandlers = (ctx) => {
 
         ctx.props.dispatch(actionCreators.setOffCanvas(newPopup, () => {
             ctx.setState({
-                opened: false
+                isOpened: false
             });
         }));
     };
@@ -47,58 +47,63 @@ let createHandlers = (ctx) => {
 
 class OffCanvas extends Component {
 	constructor(props) {
-        super(props);
-        this.state = {
-            opened: props.isOpened || false
-        };
-        this.handlers = createHandlers(this);
-    }
+    super(props);
+    this.state = {
+        isOpened: props.isOpened || false
+    };
+    this.handlers = createHandlers(this);
+  }
 
-  	render () {
-  		const { isOpened, component } = this.props;
+	render () {
+		const { isOpened, type, transition, component } = this.props;
 
-  		/*
-  		const profile = (this.props.profile && this.props.profile.length > 0 ) ? (
+    console.log(this.props);
 
-  		) : null;
-		*/
 
-  		const headerComponent = (component) ? ((comp) => {
-  			switch (comp.type) {
-  				case 'MapDetail':
-  					return null;
-  			}
-	    })(component) : null;
+    const offCanvasClasses = classNames(
+      'popup',
+      'off-canvas',
+      (this.props.offCanvas.isOpened) ? 'opened' : ''
+    );
 
-  		const sectionsComponent = (component) ? ((comp) => {
-  			switch (comp.type) {
-  				case 'MapDetail':
-  					//return <MapDetail />;
-  			}
-  		})(component) : null;
+		const headerComponent = (type) ? ((t) => {
+			switch (t) {
+				case 'MapDetail':
+					return null;
+			}
+    })(type) : null;
 
-		return (
-			<div id="popup" className="popup off-canvas">
+		const sectionsComponent = (type) ? ((t) => {
+			switch (t) {
+				case 'MapDetail':
+					return <ArticleRestaurantMapDetail component={component} />;
+			}
+		})(type) : null;
+
+	  return (
+			<div id="popup" className={offCanvasClasses}>
 				{headerComponent}
 
-	            <main id="main" className="main">
-	            	{sectionsComponent}
-	            </main>
+        <div>
+        	{sectionsComponent}
+        </div>
 			</div>
-		)
-	}
+	  )
+  }
 };
 
 
 OffCanvas.propTypes = {
     isOpened: PropTypes.bool,
+    type: PropTypes.string,
+    transition: PropTypes.object,
     component: PropTypes.object
 };
 
 const mapStateToProps = (state) => {
     console.log(state);
     return {
-        profile: state._profile.profile
+        offCanvas: state._offCanvas.offCanvas
     };
 };
 

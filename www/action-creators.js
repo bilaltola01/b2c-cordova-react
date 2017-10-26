@@ -171,3 +171,20 @@ export function getGeoLocation (location, cb) {
   }
 };
 
+export function setOffCanvas (data, cb) {
+  return {
+    types: ['SET_OFFCANVAS_REQUEST', 'SET_OFFCANVAS_SUCCESS', 'SET_OFFCANVAS_FAILURE'],
+    promise: () => {
+      return new Promise((resolve, reject) => {
+        console.log(data);
+
+        if (typeof cb === 'function') {
+          cb(data);
+        }
+
+        resolve(data);
+      });
+    }
+  }
+};
+

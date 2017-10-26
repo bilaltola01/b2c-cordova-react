@@ -6,8 +6,9 @@ import * as actionCreators from '../action-creators';
 import Splashscreen from './Splashscreen';
 import PageContent from './PageContent';
 
+import { Pages } from './Pages';
 
-class Home extends Component {
+class PageRestaurants extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,12 +17,16 @@ class Home extends Component {
   }
 
   render () {
-    const { dispatch, navigation, title, footer, offCanvas } = this.props;
+    const title = Pages.getPageAttribute('Home', 'title');
+    const navigation = Pages.getPageAttribute('Home', 'navigation');
+    const footer = Pages.getPageAttribute('Home', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Home', 'offCanvas');
 
     const profile = (this.props.profile ) ? this.props.profile : [];
-    const geolocation = (this.props.geolocation) ? this.props.geolocation : {};
 
-    console.log(geolocation);
+    const offCanvas = this.props.offCanvas;
+
+    console.log(offCanvas);
 
     const sections = [{
       type: 'restaurants',
@@ -30,27 +35,19 @@ class Home extends Component {
     }];
 
     return (
-      <div id="container" className="container">
+      <div>
         <Splashscreen />
-        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvas={offCanvas} />
+        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
       </div>
     )
   }
 };
 
-Home.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  navigation: PropTypes.object,
-  title: PropTypes.string,
-  footer: PropTypes.object,
-  offCanvas: PropTypes.object
-};
-
 const mapStateToProps = (state) => {
   return {
-    geolocation: state._geolocation.geolocation,
+    offCanvas: state._offCanvas.offCanvas,
     profile: state._profile.profile
   };
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(PageRestaurants);

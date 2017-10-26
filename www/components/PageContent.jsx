@@ -13,18 +13,20 @@ class PageContent extends Component {
 	constructor(props) {
         super(props);
         this.state = {
-            offCanvas: (this.props.offCanvas) ? this.props.offCanvas : false,
+            offCanvasOpened: (this.props.offCanvas) ? this.props.offCanvas.isOpened : false,
             footer: (this.props.footer) ? this.props.footer : null
         };
     }
 
   	render () {
-  		const { sections, navigation, footer, title, offCanvas } = this.props;
-  		const offCanvasOpened = (this.state.offCanvasOpened) ? this.state.offCanvasOpened : false;
+  		const { sections, navigation, footer, title, offCanvasSettings } = this.props;
 
-    	const OffCanvasComponent = (offCanvas) ? (
-        	<OffCanvas isOpened={offCanvas.isOpened} transition={offCanvas.transition} component={offCanvas.component} />
-    	) : null;
+    	const offCanvasComponent = (offCanvasSettings && offCanvasSettings.isVisible && this.props.offCanvas) ? (
+            <OffCanvas isOpened={this.props.offCanvas.isOpened} type={this.props.offCanvas.type || offCanvasSettings.type} offCanvasSettingstransition={this.props.offCanvas.transition || offCanvasSettings.transition || null} component={this.props.offCanvas.component} />
+        ) : null;
+
+        console.log(this.props.offCanvas);
+        console.log(offCanvasSettings);
 
     	const headerComponent = (navigation) ? (
     		<PageHeader title={title} leftButtons={navigation.leftButtons} rightButtons={navigation.rightButtons} />
@@ -40,7 +42,7 @@ class PageContent extends Component {
 
 	    return (
 	        <div>
-	            {OffCanvasComponent}
+	            {offCanvasComponent}
 
 	            {headerComponent}
 
@@ -59,17 +61,14 @@ PageContent.propTypes = {
     navigation: PropTypes.object,
     footer: PropTypes.object,
     title: PropTypes.string,
-    offCanvas: PropTypes.object
+    offCanvasSettings: PropTypes.object
 };
 
-/*
 const mapStateToProps = (state) => {
     console.log(state);
     return {
-        offCanvas: state._offCanvas.offCanvas,
-        footer: state._footer.footer
+        offCanvas: state._offCanvas.offCanvas
     };
 };
-*/
 
-export default PageContent;
+export default connect(mapStateToProps)(PageContent);
