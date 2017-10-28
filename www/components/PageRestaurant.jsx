@@ -3,11 +3,12 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
 
+import Splashscreen from './Splashscreen';
 import PageContent from './PageContent';
 
 import { Pages } from './Pages';
 
-class PageMap extends Component {
+class PageRestaurant extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,10 +17,12 @@ class PageMap extends Component {
   }
 
   render () {
-    const title = Pages.getPageAttribute('Map', 'title');
-    const navigation = Pages.getPageAttribute('Map', 'navigation');
-    const footer = Pages.getPageAttribute('Map', 'footer');
-    const offCanvasSettings = Pages.getPageAttribute('Map', 'offCanvas');
+    const title = Pages.getPageAttribute('Restaurant', 'title');
+    const navigation = Pages.getPageAttribute('Restaurant', 'navigation');
+    const footer = Pages.getPageAttribute('Restaurant', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Restaurant', 'offCanvas');
+
+    const { id } = this.props.match.params;
 
     const profile = (this.props.profile ) ? this.props.profile : [];
 
@@ -28,6 +31,8 @@ class PageMap extends Component {
         return acc.concat(current.branches.map(branch => {
           let obj = branch;
 
+          obj.CompanyLogoPath = current.LogoPath;
+          obj.CompanyLogoAltDesc = current.LogoAltDesc;
           obj.CompanyName = current.Name;
           obj.CompanyWebsite = current.Website;
           obj.CompanyEmail = current.Email;
@@ -38,14 +43,22 @@ class PageMap extends Component {
       }, [])
     : [];
 
+    const restaurant = (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
+      return parseInt(r.BranchID, 10) === parseInt(id, 10);
+    }) : null;
+
+    console.log(restaurant);
+
     const sections = [{
-      type: 'map',
+      type: 'restaurant-menus',
       title: '',
-      component: restaurants
+      component: restaurant
     }];
 
     return (
-      <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
+      <div>
+        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
+      </div>
     )
   }
 };
@@ -57,4 +70,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(PageMap);
+export default connect(mapStateToProps)(PageRestaurant);

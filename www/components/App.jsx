@@ -10,13 +10,12 @@ import {
 
 import * as actionCreators from '../action-creators';
 
-/*
-import RestaurantPage from './RestaurantPage';
-import MenusPage from './MenusPage';
-import MenuPage from './MenuPage';
-*/
 import PageMap from './PageMap';
 import PageRestaurants from './PageRestaurants';
+import PageRestaurant from './PageRestaurant';
+/*
+import PageMenu from './PageMenu';
+*/
 
 import Page from './Page';
 
@@ -67,11 +66,9 @@ class App extends Component {
           <Page>
             <Route path="/home" component={PageRestaurants} />
             <Route path="/map" component={PageMap} />
+            <Route path="/restaurant/:id" component={PageRestaurant} />
             {/*
-            <Route path="/restaurants" component={RestaurantsPage} />
-            <Route path="/restaurant/:id" component={RestaurantPage} />
-            <Route path="/restaurant/:id/menus" component={MenusPage} />
-            <Route path="/menu/:id" component={MenuPage} />
+            <Route path="/restaurant/:id/menu/:menuId" component={PageMenu} />
             */}
           </Page>
         </div>

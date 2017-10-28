@@ -24,14 +24,25 @@ class PageRestaurants extends Component {
 
     const profile = (this.props.profile ) ? this.props.profile : [];
 
-    const offCanvas = this.props.offCanvas;
+    const restaurants = (profile && profile.length > 0) ?
+      profile.reduce((acc, current) => {
+        return acc.concat(current.branches.map(branch => {
+          let obj = branch;
 
-    console.log(offCanvas);
+          obj.CompanyName = current.Name;
+          obj.CompanyWebsite = current.Website;
+          obj.CompanyEmail = current.Email;
+          obj.CompanyTel = current.Tel;
+
+          return obj;
+        }));
+      }, [])
+    : [];
 
     const sections = [{
       type: 'restaurants',
       title: '',
-      component: profile
+      component: restaurants
     }];
 
     return (

@@ -38,6 +38,24 @@ export let Pages = {
         isVisible: true,
         type: 'MapDetail'
       }
+    }],
+    ['Restaurant', {
+      title: 'Restaurant',
+      navigation: {
+        leftButtons: [
+          {
+            title: 'Back to Map',
+            position: 'left',
+            action: {
+              type: 'link',
+              path: '/map'
+            }
+          }
+        ],
+        rightButtons: []
+      },
+      footer: {},
+      offCanvas: {}
     }]
   ]),
 };

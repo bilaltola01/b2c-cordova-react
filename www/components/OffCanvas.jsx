@@ -17,21 +17,20 @@ let createHandlers = (ctx) => {
         });
     };
 
-    let closeOffCanvas = () => {
+    let onCloseOffCanvas = () => {
         console.log('popup is about to close!!!');
 
         let newPopup = {
             isOpened: false,
             type: ctx.props.type,
             component: ctx.props.component,
-            text: ctx.props.text,
-            actions: ctx.props.actions
+            transition: ctx.props.transition
         };
 
         ctx.props.dispatch(actionCreators.setOffCanvas(newPopup, () => {
-            ctx.setState({
-                isOpened: false
-            });
+          ctx.setState({
+            isOpened: false
+          });
         }));
     };
 
@@ -41,7 +40,8 @@ let createHandlers = (ctx) => {
     };
 
     return {
-        onButtonClick
+        onButtonClick,
+        onCloseOffCanvas
     };
 };
 
@@ -59,7 +59,6 @@ class OffCanvas extends Component {
 
     console.log(this.props);
 
-
     const offCanvasClasses = classNames(
       'popup',
       'off-canvas',
@@ -76,7 +75,7 @@ class OffCanvas extends Component {
 		const sectionsComponent = (type) ? ((t) => {
 			switch (t) {
 				case 'MapDetail':
-					return <ArticleRestaurantMapDetail component={component} />;
+					return <ArticleRestaurantMapDetail component={component} onClose={this.handlers.onCloseOffCanvas} />;
 			}
 		})(type) : null;
 

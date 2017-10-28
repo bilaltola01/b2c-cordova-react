@@ -12,21 +12,19 @@ import OffCanvas from './OffCanvas';
 class PageContent extends Component {
 	constructor(props) {
         super(props);
-        this.state = {
-            offCanvasOpened: (this.props.offCanvas) ? this.props.offCanvas.isOpened : false,
-            footer: (this.props.footer) ? this.props.footer : null
-        };
     }
 
   	render () {
   		const { sections, navigation, footer, title, offCanvasSettings } = this.props;
 
-    	const offCanvasComponent = (offCanvasSettings && offCanvasSettings.isVisible && this.props.offCanvas) ? (
-            <OffCanvas isOpened={this.props.offCanvas.isOpened} type={this.props.offCanvas.type || offCanvasSettings.type} offCanvasSettingstransition={this.props.offCanvas.transition || offCanvasSettings.transition || null} component={this.props.offCanvas.component} />
-        ) : null;
-
         console.log(this.props.offCanvas);
         console.log(offCanvasSettings);
+
+        const isOpened = (this.props.offCanvas) ? this.props.offCanvas.isOpened : false;
+
+    	const offCanvasComponent = (offCanvasSettings && offCanvasSettings.isVisible && this.props.offCanvas) ? (
+            <OffCanvas isOpened={isOpened} type={this.props.offCanvas.type || offCanvasSettings.type} transition={this.props.offCanvas.transition || offCanvasSettings.transition || null} component={this.props.offCanvas.component} />
+        ) : null;
 
     	const headerComponent = (navigation) ? (
     		<PageHeader title={title} leftButtons={navigation.leftButtons} rightButtons={navigation.rightButtons} />

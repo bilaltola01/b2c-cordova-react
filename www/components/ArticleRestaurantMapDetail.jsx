@@ -2,9 +2,31 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
 
+import { connect } from 'react-redux';
+import * as actionCreators from '../action-creators';
+
+let createHandlers = (ctx) => {
+  let onClosePopup = () => {
+    if (ctx.props.onClose) {
+      ctx.props.onClose();
+    }
+  };
+
+
+  return {
+    onClosePopup
+  };
+};
+
 class ArticleRestaurant extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handlers = createHandlers(this);
+  }
+
   render() {
-    const { component } = this.props;
+    const { component, onClose } = this.props;
 
     console.log(component);
 
@@ -22,7 +44,7 @@ class ArticleRestaurant extends Component {
       <div>
         <article className="restaurant--detail">
           <header>
-            <div className="cross close-popup"></div>
+            <div className="cross close-popup" onClick={this.handlers.onClosePopup}></div>
             <h2>{restaurant.CompanyName}</h2>
             <h3 className="small-text">{restaurant.City}</h3>
           </header>
@@ -45,7 +67,7 @@ class ArticleRestaurant extends Component {
           </div>
         </article>
         <footer className="popup--footer">
-          <Link to={"/restaurant/" + restaurant.BranchID + "/menus"}>Menu</Link>
+          <Link to={"/restaurant/" + restaurant.BranchID}>Menus</Link>
         </footer>
       </div>
     )
@@ -53,7 +75,15 @@ class ArticleRestaurant extends Component {
 };
 
 ArticleRestaurant.propTypes = {
-  component: PropTypes.object
+  component: PropTypes.object,
+  onClose: PropTypes.func
 };
 
-export default ArticleRestaurant;
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        offCanvas: state._offCanvas.offCanvas
+    };
+};
+
+export default connect(mapStateToProps)(ArticleRestaurant);
