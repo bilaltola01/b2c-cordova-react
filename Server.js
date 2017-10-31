@@ -51,6 +51,10 @@ let Server = class {
             res.header('X-Frame-Options', 'deny');
             res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');
 
+            if (req.is('*/json')) {
+                res.header('Content-Type', 'application/json');
+            }
+
             if (req.method === 'OPTIONS') {
                 res.status(200).end();
             } else {
