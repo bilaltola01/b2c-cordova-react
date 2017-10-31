@@ -15,19 +15,15 @@ class PageMap extends Component {
     };
   }
 
-  render () {
-    const title = Pages.getPageAttribute('Map', 'title');
-    const navigation = Pages.getPageAttribute('Map', 'navigation');
-    const footer = Pages.getPageAttribute('Map', 'footer');
-    const offCanvasSettings = Pages.getPageAttribute('Map', 'offCanvas');
-
-    const profile = (this.props.profile ) ? this.props.profile : [];
-
-    const restaurants = (profile && profile.length > 0) ?
+  getRestaurants(propsProfile) {
+    const profile = (propsProfile) ? propsProfile : [];
+    return (profile && profile.length > 0) ?
       profile.reduce((acc, current) => {
         return acc.concat(current.branches.map(branch => {
           let obj = branch;
 
+          obj.CompanyLogoPath = current.LogoPath;
+          obj.CompanyLogoAltDesc = current.LogoAltDesc;
           obj.CompanyName = current.Name;
           obj.CompanyWebsite = current.Website;
           obj.CompanyEmail = current.Email;
@@ -37,11 +33,22 @@ class PageMap extends Component {
         }));
       }, [])
     : [];
+  }
+
+  render () {
+    const title = Pages.getPageAttribute('Map', 'title');
+    const navigation = Pages.getPageAttribute('Map', 'navigation');
+    const footer = Pages.getPageAttribute('Map', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Map', 'offCanvas');
+
+    const restaurants = this.getRestaurants(this.props.profile);
 
     const sections = [{
       type: 'map',
       title: '',
-      component: restaurants
+      component: {
+        restaurants
+      }
     }];
 
     return (

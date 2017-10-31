@@ -5,6 +5,7 @@ const classNames = require('classnames');
 
 import SectionRestaurants from './SectionRestaurants';
 import SectionMenus from './SectionMenus';
+import SectionMenu from './SectionMenu';
 import SectionMap from './SectionMap';
 
 class PageSection extends Component {
@@ -16,11 +17,13 @@ class PageSection extends Component {
 		return (type) ? ((articleType) => {
 			switch (articleType) {
 				case 'restaurants':
-					return <SectionRestaurants restaurants={component} />;
+					return <SectionRestaurants component={component} />;
 				case 'restaurant-menus':
-					return <SectionMenus restaurants={component} />;
+					return <SectionMenus component={component} />;
+				case 'restaurant-menu':
+					return <SectionMenu component={component} />;
 				case 'map':
-					return <SectionMap restaurants={component} />
+					return <SectionMap component={component} />
 			}
 		})(type) : null;
 	}
@@ -29,7 +32,7 @@ class PageSection extends Component {
 PageSection.propTypes = {
 	type: PropTypes.string,
 	title: PropTypes.string,
-    component: PropTypes.array
+    component: PropTypes.object
 };
 
 export default PageSection;

@@ -9,7 +9,8 @@ export let Pages = {
             position: 'left',
             action: {
               type: 'link',
-              path: '/map'
+              path: '/map',
+              component: {}
             }
           }
         ],
@@ -27,7 +28,8 @@ export let Pages = {
             position: 'left',
             action: {
               type: 'link',
-              path: '/'
+              path: '/',
+              component: {}
             }
           }
         ],
@@ -48,7 +50,8 @@ export let Pages = {
             position: 'left',
             action: {
               type: 'link',
-              path: '/map'
+              path: '/map',
+              component: {}
             }
           }
         ],
@@ -56,6 +59,37 @@ export let Pages = {
       },
       footer: {},
       offCanvas: {}
+    }],
+    ['Menu', {
+      title: 'Menu',
+      navigation: {
+        leftButtons: [
+          {
+            title: 'Back to Restaurant',
+            position: 'left',
+            action: {
+              type: 'link',
+              path: '/restaurants',
+              component: {}
+            }
+          }
+        ],
+        rightButtons: [
+          {
+            title: 'Choose your Language',
+            position: 'right',
+            action: {
+              type: 'pick-language',
+              component: {}
+            }
+          }
+        ]
+      },
+      footer: {},
+      offCanvas: {
+        isVisible: true,
+        type: 'PickLanguage'
+      }
     }]
   ]),
 };

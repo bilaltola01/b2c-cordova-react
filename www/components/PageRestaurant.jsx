@@ -8,25 +8,28 @@ import PageContent from './PageContent';
 
 import { Pages } from './Pages';
 
+let createHandlers = (ctx) => {
+  let setBranchLanguages = (restaurant) => {
+    ctx.props.dispatch(actionCreators.setBranchLanguages(restaurant));
+  };
+
+  return {
+    setBranchLanguages
+  };
+};
+
 class PageRestaurant extends Component {
   constructor(props) {
     super(props);
     this.state = {
       removed: false
     };
+    this.handlers = createHandlers(this);
   }
 
-  render () {
-    const title = Pages.getPageAttribute('Restaurant', 'title');
-    const navigation = Pages.getPageAttribute('Restaurant', 'navigation');
-    const footer = Pages.getPageAttribute('Restaurant', 'footer');
-    const offCanvasSettings = Pages.getPageAttribute('Restaurant', 'offCanvas');
-
-    const { id } = this.props.match.params;
-
-    const profile = (this.props.profile ) ? this.props.profile : [];
-
-    const restaurants = (profile && profile.length > 0) ?
+  getRestaurants(propsProfile) {
+    const profile = (propsProfile) ? propsProfile : [];
+    return (profile && profile.length > 0) ?
       profile.reduce((acc, current) => {
         return acc.concat(current.branches.map(branch => {
           let obj = branch;
@@ -42,17 +45,42 @@ class PageRestaurant extends Component {
         }));
       }, [])
     : [];
+  }
 
-    const restaurant = (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
+  getCurrentRestaurant(restaurants, id) {
+    return (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
       return parseInt(r.BranchID, 10) === parseInt(id, 10);
     }) : null;
+  }
+
+  componentDidMount() {
+    this.handlers.setBranchLanguages(this.getCurrentRestaurant(this.getRestaurants(this.props.profile), this.props.match.params.id));
+  }
+
+  render () {
+    const title = Pages.getPageAttribute('Restaurant', 'title');
+    const navigation = Pages.getPageAttribute('Restaurant', 'navigation');
+    const footer = Pages.getPageAttribute('Restaurant', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Restaurant', 'offCanvas');
+
+    const { id } = this.props.match.params;
+
+    console.log(this.props.match.params);
+
+    const restaurants = this.getRestaurants(this.props.profile);
+    const restaurant = this.getCurrentRestaurant(restaurants, parseInt(id, 10));
+
+    const currency = (restaurant && restaurant[0] && restaurant[0].currency && restaurant[0].currency.length > 0) ? restaurant[0].currency[0] : null;
 
     console.log(restaurant);
 
     const sections = [{
       type: 'restaurant-menus',
       title: '',
-      component: restaurant
+      component: {
+        restaurants: restaurant,
+        currency
+      }
     }];
 
     return (

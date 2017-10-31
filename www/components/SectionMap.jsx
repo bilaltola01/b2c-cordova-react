@@ -7,25 +7,30 @@ import * as actionCreators from '../action-creators';
 import ArticleMap from './ArticleMap';
 
 class SectionMap extends Component {
+	getRestaurants(propsProfile) {
+	    const profile = (propsProfile) ? propsProfile : [];
+	    return (profile && profile.length > 0) ?
+	      	profile.reduce((acc, current) => {
+	        	return acc.concat(current.branches.map(branch => {
+	          		let obj = branch;
+
+			        obj.CompanyLogoPath = current.LogoPath;
+			        obj.CompanyLogoAltDesc = current.LogoAltDesc;
+			        obj.CompanyName = current.Name;
+			        obj.CompanyWebsite = current.Website;
+			        obj.CompanyEmail = current.Email;
+			        obj.CompanyTel = current.Tel;
+
+			        return obj;
+	        	}));
+	      	}, [])
+	    : [];
+	 }
+
 	render() {
-		const { restaurants } = this.props;
+		const { restaurants } = this.props.component;
 
-		const profile = (this.props.profile ) ? this.props.profile : [];
-
-		const mapRestaurants = (profile && profile.length > 0) ?
-			profile.reduce((acc, current) => {
-				return acc.concat(current.branches.map(branch => {
-					let obj = branch;
-
-					obj.CompanyName = current.Name;
-					obj.CompanyWebsite = current.Website;
-					obj.CompanyEmail = current.Email;
-					obj.CompanyTel = current.Tel;
-
-					return obj;
-				}));
-			}, [])
-		: [];
+		const mapRestaurants = this.getRestaurants(this.props.profile);
 
 		console.log(mapRestaurants);
 
@@ -42,7 +47,7 @@ class SectionMap extends Component {
 };
 
 SectionMap.propTypes = {
-    restaurants: PropTypes.array
+    component: PropTypes.object
 };
 
 const mapStateToProps = (state) => {

@@ -8,7 +8,7 @@ import PageContent from './PageContent';
 
 import { Pages } from './Pages';
 
-class PageRestaurants extends Component {
+class PageMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,24 +37,40 @@ class PageRestaurants extends Component {
   }
 
   render () {
-    const title = Pages.getPageAttribute('Home', 'title');
-    const navigation = Pages.getPageAttribute('Home', 'navigation');
-    const footer = Pages.getPageAttribute('Home', 'footer');
-    const offCanvasSettings = Pages.getPageAttribute('Home', 'offCanvas');
+    const title = Pages.getPageAttribute('Menu', 'title');
+    const footer = Pages.getPageAttribute('Menu', 'footer');
+    const offCanvasSettings = Pages.getPageAttribute('Menu', 'offCanvas');
+
+    const { id, menuId } = this.props.match.params;
+
+    let navigation = Pages.getPageAttribute('Menu', 'navigation');
+    navigation.leftButtons[0].action.path += ('/' + id);
 
     const restaurants = this.getRestaurants(this.props.profile);
 
+    const restaurant = (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
+      return parseInt(r.BranchID, 10) === parseInt(id, 10);
+    }) : null;
+
+    const currency = (restaurant && restaurant[0] && restaurant[0].currency && restaurant[0].currency.length > 0) ? restaurant[0].currency[0] : null;
+
+    const menu = (restaurant && restaurant[0].menus && restaurant[0].menus.length > 0) ? restaurant[0].menus.find(menu => {
+      return parseInt(menu.MenuID, 10) === parseInt(menuId, 10);
+    }) : null;
+
+    console.log(menu);
+
     const sections = [{
-      type: 'restaurants',
+      type: 'restaurant-menu',
       title: '',
       component: {
-        restaurants
+        menu,
+        currency
       }
     }];
 
     return (
       <div>
-        <Splashscreen />
         <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
       </div>
     )
@@ -68,4 +84,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(PageRestaurants);
+export default connect(mapStateToProps)(PageMenu);

@@ -7,6 +7,7 @@ import * as actionCreators from '../action-creators';
 
 import PageHeader from './PageHeader';
 import ArticleRestaurantMapDetail from './ArticleRestaurantMapDetail';
+import ArticlePickLanguage from './ArticlePickLanguage';
 
 const classNames = require('classnames');
 
@@ -59,9 +60,23 @@ class OffCanvas extends Component {
 
     console.log(this.props);
 
+    const finalComponent = (type) ? ((t, c) => {
+      switch (t) {
+        case 'PickLanguage':
+          // Retrieve dynamically component from store
+          let languages = (this.props.branchLanguages && this.props.branchLanguages.length > 0) ? this.props.branchLanguages : null;
+          return {
+            languages
+          };
+        default:
+          return c;
+      }
+    })(type, component) : component;
+
     const offCanvasClasses = classNames(
       'popup',
       'off-canvas',
+      (this.props.type) ? 'popup--' + this.props.type : '',
       (this.props.offCanvas.isOpened) ? 'opened' : ''
     );
 
@@ -69,13 +84,29 @@ class OffCanvas extends Component {
 			switch (t) {
 				case 'MapDetail':
 					return null;
+        case 'PickLanguage':
+          let leftButtons = [
+            {
+              title: 'Back',
+              position: 'left',
+              action: {
+                type: 'click',
+                component: {
+                  fn: this.handlers.onCloseOffCanvas
+                }
+              }
+            }
+          ];
+          return <PageHeader title="Pick a Language" leftButtons={leftButtons} rightButtons={[]} />;
 			}
     })(type) : null;
 
 		const sectionsComponent = (type) ? ((t) => {
 			switch (t) {
 				case 'MapDetail':
-					return <ArticleRestaurantMapDetail component={component} onClose={this.handlers.onCloseOffCanvas} />;
+					return <ArticleRestaurantMapDetail component={finalComponent} onClose={this.handlers.onCloseOffCanvas} />;
+        case 'PickLanguage':
+          return <ArticlePickLanguage component={finalComponent} onClose={this.handlers.onCloseOffCanvas} />;
 			}
 		})(type) : null;
 
@@ -102,7 +133,8 @@ OffCanvas.propTypes = {
 const mapStateToProps = (state) => {
     console.log(state);
     return {
-        offCanvas: state._offCanvas.offCanvas
+        offCanvas: state._offCanvas.offCanvas,
+        branchLanguages: state._branchLanguages.branchLanguages
     };
 };
 

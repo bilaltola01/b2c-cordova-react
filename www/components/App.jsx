@@ -13,17 +13,20 @@ import * as actionCreators from '../action-creators';
 import PageMap from './PageMap';
 import PageRestaurants from './PageRestaurants';
 import PageRestaurant from './PageRestaurant';
-/*
 import PageMenu from './PageMenu';
-*/
 
 import Page from './Page';
 
 let createHandlers = (ctx) => {
-  let getGeoLocation = (location) => {
-    ctx.props.dispatch(actionCreators.getGeoLocation(location, (res) => {
+  let getGeoLocation = (nav) => {
+    ctx.props.dispatch(actionCreators.getGeoLocation(nav.geolocation, (res) => {
+      getCurrentLanguage(nav, res);
       getProfile(res);
     }));
+  };
+
+  let getCurrentLanguage = (nav, location) => {
+    ctx.props.dispatch(actionCreators.getCurrentLanguage(nav, location));
   };
 
   let getProfile = (location) => {
@@ -43,8 +46,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log(window.navigator.geolocation);
-    this.handlers.getGeoLocation(window.navigator.geolocation);
+    this.handlers.getGeoLocation(window.navigator);
   }
 
   render () {
@@ -66,10 +68,8 @@ class App extends Component {
           <Page>
             <Route path="/home" component={PageRestaurants} />
             <Route path="/map" component={PageMap} />
-            <Route path="/restaurant/:id" component={PageRestaurant} />
-            {/*
+            <Route path="/restaurants/:id" component={PageRestaurant} />
             <Route path="/restaurant/:id/menu/:menuId" component={PageMenu} />
-            */}
           </Page>
         </div>
       </Router>

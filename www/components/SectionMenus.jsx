@@ -6,13 +6,11 @@ import ArticleRestaurantDetail from './ArticleRestaurantDetail';
 
 class SectionMenus extends Component {
 	render() {
-		const { restaurants } = this.props;
+		const { restaurants, currency } = this.props.component;
 
 		const restaurant = (restaurants && restaurants.length > 0) ? restaurants[0] : {};
 
 		console.log(restaurant);
-
-		const currency = (restaurant.currency && restaurant.currency.length > 0) ? restaurant.currency[0] : null;
 
 		const articles = (restaurant && restaurant.menus && restaurant.menus.length > 0) ? restaurant.menus.map((menu, index) => {
 			return <ArticleMenu menu={menu} currency={currency} key={index} />;
@@ -37,7 +35,7 @@ class SectionMenus extends Component {
 };
 
 SectionMenus.propTypes = {
-    restaurants: PropTypes.array
+    component: PropTypes.object
 };
 
 export default SectionMenus;

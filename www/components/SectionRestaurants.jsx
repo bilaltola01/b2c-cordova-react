@@ -5,7 +5,7 @@ import ArticleRestaurant from './ArticleRestaurant';
 
 class SectionRestaurants extends Component {
 	render() {
-		const { restaurants } = this.props;
+		const { restaurants } = this.props.component;
 
 		console.log(restaurants);
 
@@ -22,7 +22,7 @@ class SectionRestaurants extends Component {
 };
 
 SectionRestaurants.propTypes = {
-    restaurants: PropTypes.array
+    component: PropTypes.object
 };
 
 export default SectionRestaurants;

@@ -108,7 +108,7 @@ class ArticleRestaurantDetail extends Component {
 							<div className="contact-block contact-block--website">
 								<p>
 									Website: <br />
-									<a href={firstContact.website}><span>{firstContact.website}</span></a>
+									<a href={firstContact.website} target="_blank"><span>{firstContact.website}</span></a>
 								</p>
 							</div>
 		                }
@@ -132,7 +132,7 @@ class ArticleRestaurantDetail extends Component {
 	    }) : null;
 
 	    const languagesComponent = (restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages.map((lang, index) => {
-	    	return (lang.Language.Flag.Path)
+	    	return (lang.Language.Flag && lang.Language.Flag.Path)
 	    		? (
 	    			<span className="restaurant-details--language" key={index}>
 						<img src={lang.Language.Flag.Path} alt={lang.Language.Flag.AltDescription} />

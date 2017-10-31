@@ -6,14 +6,7 @@ class ArticleRestaurant extends Component {
   render() {
 		const { restaurant } = this.props;
 
-    /*
-		const menuComponent = (action) ? ((a) => {
-			switch (a.type) {
-				case 'link':
-					return <Link to={action.path}>{title}</Link>
-			}
-		})(action) : null;
-  */
+    console.log(restaurant);
 
     const firstImage = (restaurant.images && restaurant.images.length > 0) ? (
       <img src={restaurant.images[0].Path} alt={restaurant.images[0].AltDesc} />
@@ -22,7 +15,7 @@ class ArticleRestaurant extends Component {
 		return (
       <article className="article--restaurant">
 
-        <Link to={"/restaurant/" + restaurant.BranchID + "/menus"}>
+        <Link to={"/restaurants/" + restaurant.BranchID + "/menus"}>
           {firstImage}
 
           <footer className="restaurant--footer grid">

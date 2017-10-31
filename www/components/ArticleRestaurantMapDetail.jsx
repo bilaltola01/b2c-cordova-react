@@ -18,7 +18,7 @@ let createHandlers = (ctx) => {
   };
 };
 
-class ArticleRestaurant extends Component {
+class ArticleRestaurantMapDetail extends Component {
   constructor(props) {
     super(props);
 
@@ -67,14 +67,14 @@ class ArticleRestaurant extends Component {
           </div>
         </article>
         <footer className="popup--footer">
-          <Link to={"/restaurant/" + restaurant.BranchID}>Menus</Link>
+          <Link to={"/restaurants/" + restaurant.BranchID + "/menus"} onClick={this.handlers.onClosePopup}>Menus</Link>
         </footer>
       </div>
     )
   }
 };
 
-ArticleRestaurant.propTypes = {
+ArticleRestaurantMapDetail.propTypes = {
   component: PropTypes.object,
   onClose: PropTypes.func
 };
@@ -86,4 +86,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(ArticleRestaurant);
+export default connect(mapStateToProps)(ArticleRestaurantMapDetail);

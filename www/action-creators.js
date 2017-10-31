@@ -8,6 +8,7 @@ import * as MenuCategoryService from './components/Menu/menu-category.service';
 */
 
 import * as ProfileService from './components/Profile/profile.service';
+import * as LanguageService from './components/Language/language.service';
 
 import { StorageManagerInstance } from './shared/storage.utils';
 
@@ -166,6 +167,65 @@ export function getGeoLocation (location, cb) {
 
           resolve(res);
         });
+      });
+    }
+  }
+};
+
+export function setBranchLanguages (branches, cb) {
+  return {
+    types: ['SET_BRANCH_LANGUAGES_REQUEST', 'SET_BRANCH_LANGUAGES_SUCCESS', 'SET_BRANCH_LANGUAGES_FAILURE'],
+    promise: () => {
+      return new Promise((resolve, reject) => {
+        let branch = branches[0];
+        if (!branch || !branch.languages || branch.languages.length <= 0) {
+          reject('Branch or branch languages while setting branch languages!');
+        }
+
+        const languages = branch.languages;
+        console.log(languages);
+
+        if (typeof cb === 'function') {
+          cb(languages);
+        }
+
+        resolve(languages);
+      });
+    }
+  }
+};
+
+export function getCurrentLanguage (nav, location, cb) {
+  return {
+    types: ['GET_CURRENT_LANGUAGE_REQUEST', 'GET_CURRENT_LANGUAGE_SUCCESS', 'GET_CURRENT_LANGUAGE_FAILURE'],
+    promise: () => {
+      return new Promise((resolve, reject) => {
+        LanguageService.getCurrentLanguage(nav, location).then((res) => {
+          console.log('Language successfully retrieved', res);
+
+          if (res && typeof cb === 'function') {
+            cb(res);
+          }
+
+          resolve(res);
+        });
+      });
+    }
+  }
+};
+
+export function setCurrentLanguage (lang, cb) {
+  return {
+    types: ['SET_CURRENT_LANGUAGE_REQUEST', 'SET_CURRENT_LANGUAGE_SUCCESS', 'SET_CURRENT_LANGUAGE_FAILURE'],
+    promise: () => {
+      return new Promise((resolve, reject) => {
+        console.log(lang);
+
+        if (typeof cb === 'function') {
+          cb(lang);
+        }
+
+        resolve(lang);
       });
     }
   }

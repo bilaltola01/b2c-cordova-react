@@ -16,6 +16,16 @@ export let GeoUtils = {
 	},
 
 	/**
+ 	* Returns the full geo data associated to a specific latitude & longitude using a geocoder
+	* @function
+	* @param {float, float} - latitude and longitude.
+	* @returns Promise containing the full geo data
+	*/
+	convertLatLong: function (lat, lng) {
+		return geocoder.reverse({lat: lat, lon: lng});
+	},
+
+	/**
  	* Converts an address to {lat, long} using a geocoder
 	* @function
 	* @param {string} address - plain text address.
