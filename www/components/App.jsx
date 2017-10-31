@@ -19,7 +19,7 @@ import Page from './Page';
 
 let createHandlers = (ctx) => {
   let getGeoLocation = (nav) => {
-    ctx.props.dispatch(actionCreators.getGeoLocation(nav.geolocation, (res) => {
+    ctx.props.dispatch(actionCreators.getGeoLocationUnwrapped(nav.geolocation, (res) => {
       getCurrentLanguage(nav, res);
       getProfile(res);
     }));
