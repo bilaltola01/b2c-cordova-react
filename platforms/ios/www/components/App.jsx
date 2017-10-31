@@ -25,6 +25,11 @@ let createHandlers = (ctx) => {
     }));
   };
 
+  let onDeviceReady = () => {
+    console.log('device is ready!');
+    getGeoLocation(window.navigator);
+  };
+
   let getCurrentLanguage = (nav, location) => {
     ctx.props.dispatch(actionCreators.getCurrentLanguage(nav, location));
   };
@@ -35,7 +40,8 @@ let createHandlers = (ctx) => {
 
   return {
     getGeoLocation,
-    getProfile
+    getProfile,
+    onDeviceReady
   };
 };
 
@@ -46,7 +52,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.handlers.getGeoLocation(window.navigator);
+    document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
   }
 
   render () {
