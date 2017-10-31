@@ -3,7 +3,6 @@
 import 'whatwg-fetch';
 const constants = require('../../constants');
 
-console.log(constants);
 const BASE_URL = constants.SERVER_URL || 'http://localhost:8080';
 
 export let Ajax = (url) => {

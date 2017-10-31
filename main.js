@@ -7,5 +7,3 @@ const Server = require('./Server');
 
 // Launch server
 let server = new Server(express, new RouterWrapper(express.Router()), null);
-
-
