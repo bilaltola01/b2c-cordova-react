@@ -55,10 +55,6 @@ let Server = class {
                 res.header('Content-Type', 'application/json');
             }
 
-            if (req.is('text/*')) {
-                res.header('Content-Type', 'text/css');
-            }
-
             if (req.method === 'OPTIONS') {
                 res.status(200).end();
             } else {
