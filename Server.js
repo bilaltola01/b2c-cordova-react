@@ -66,7 +66,7 @@ let Server = class {
     initRoutes() {
         // Setup index
         this.router.get('/', (req, res, next) => {
-            res.send('Invalid path');
+            //res.send('Invalid path');
         });
 
         // Setup Routes
