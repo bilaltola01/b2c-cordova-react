@@ -47,9 +47,13 @@ let Server = class {
 
             // Custom Headers
             res.header('X-XSS-Protection', '1; mode=block');
-            res.header('X-Content-Type-Options', 'nosniff');
+            //res.header('X-Content-Type-Options', 'nosniff');
             res.header('X-Frame-Options', 'deny');
             res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');
+
+            if (req.is('*/json')) {
+                res.header('Content-Type', 'application/json');
+            }
 
             if (req.method === 'OPTIONS') {
                 res.status(200).end();

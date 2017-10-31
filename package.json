@@ -66,7 +66,9 @@
     "prepare": "node config && webpack && cordova prepare",
     "compile": "node config && webpack && cordova build",
     "server": "node server",
-    "start": "node config && webpack-dev-server",
+    //"start": "node config && webpack-dev-server",
+    "start": "npm run start:server",
+    "start:local": "SERVER_URL=https://one-menu-b2b.herokuapp.com node main.js",
     "start:server": "node main.js",
     "test": "echo \"No tests (yet!) -- submit a PR?\" && exit 0"
   },

@@ -30,7 +30,7 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
 		PhoneGap Team
 	</author>
-    <content src="http://localhost:8080/index.html" />
+    <content src="http://localhost:8081/index.html" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
