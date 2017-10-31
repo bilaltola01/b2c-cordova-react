@@ -47,13 +47,9 @@ let Server = class {
 
             // Custom Headers
             res.header('X-XSS-Protection', '1; mode=block');
-            //res.header('X-Content-Type-Options', 'nosniff');
+            res.header('X-Content-Type-Options', 'nosniff');
             res.header('X-Frame-Options', 'deny');
             res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');
-
-            if (req.is('*/json')) {
-                res.header('Content-Type', 'application/json');
-            }
 
             if (req.method === 'OPTIONS') {
                 res.status(200).end();
@@ -66,7 +62,7 @@ let Server = class {
     initRoutes() {
         // Setup index
         this.router.get('/', (req, res, next) => {
-            //res.send('Invalid path');
+            res.send('Invalid path');
         });
 
         // Setup Routes

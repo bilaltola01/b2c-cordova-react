@@ -3,7 +3,7 @@
 import 'whatwg-fetch';
 const constants = require('../../constants');
 
-const BASE_URL = constants.SERVER_URL || 'http://localhost:8080';
+const BASE_URL = constants.SERVER_URL || 'https://one-menu-b2b.herokuapp.com';
 
 export let Ajax = (url) => {
     let baseUrl = url || BASE_URL + '/api';
