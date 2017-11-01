@@ -153,20 +153,6 @@ export function getProfile (location, cb) {
   }
 };
 
-export function getGeoLocationUnwrapped (location, cb) {
-  return new Promise((resolve, reject) => {
-    ProfileService.getGeoLocation(location).then((res) => {
-      console.log('request succeeded with JSON response', res);
-
-      if (res && typeof cb === 'function') {
-        cb(res);
-      }
-
-      resolve(res);
-    });
-  });
-};
-
 export function getGeoLocation (location, cb) {
   return {
     types: ['GET_GEOLOCATION_REQUEST', 'GET_GEOLOCATION_SUCCESS', 'GET_GEOLOCATION_FAILURE'],

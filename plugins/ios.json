@@ -12,15 +12,7 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.jedwatson.picturetour"
-    },
-    "cordova-plugin-geolocation": {
-      "GEOLOCATION_USAGE_DESCRIPTION": " ",
-      "PACKAGE_NAME": "com.jedwatson.picturetour"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.jedwatson.picturetour"
-    }
-  }
+  "dependent_plugins": {}
 }

@@ -56,9 +56,7 @@ export function getGeoLocation (location) {
             resolve(location);
         };
 
-        let onError = (err) => {
-            console.log('code: '+ err.code + '\n' +
-              'message: ' + err.message + '\n');
+        let onError = () => {
             reject('Unable to get location!!!');
         };
 
