@@ -859,6 +859,7 @@ main {
     height: 72px;
     margin-left: -30px;
     clip-path: circle(36px at center);
+    -webkit-clip-path: circle(36px at center);
 
     background-color: #000;
 }
@@ -896,6 +897,7 @@ main {
     width: auto;
     height: 64px;
     clip-path: circle(32px at center);
+    -webkit-clip-path: circle(32px at center);
 
     border: 1px solid #eaebec;
     background-color: #fff;
