@@ -51,7 +51,7 @@ class ArticlePickLanguage extends Component {
           FlagID: 23,
           AltDescription: "English",
           Title: "English",
-          Path: "http://res.cloudinary.com/one-menu/image/upload/v1509377412/United_Kingdom_vix6gw.svg",
+          Path: "https://res.cloudinary.com/one-menu/image/upload/v1509377412/United_Kingdom_vix6gw.svg",
           Date: "2017-10-30T00:00:00.000Z",
           DateUpdated: "2017-07-17T23:00:00.000Z"
         },
