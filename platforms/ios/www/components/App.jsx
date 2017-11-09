@@ -27,8 +27,8 @@ let createHandlers = (ctx) => {
 
   let onDeviceReady = () => {
     console.log('device is ready!');
-    console.log(navigator);
-    getGeoLocation(navigator);
+    console.log(window.navigator);
+    getGeoLocation(window.navigator);
   };
 
   let getCurrentLanguage = (nav, location) => {

@@ -15,7 +15,7 @@ class ArticleMenuDetail extends Component {
     console.log(language);
 
     const mealsComponent = (category && category.meals && category.meals.length > 0) ? category.meals.map((meal, index) => {
-      return <ArticleMeal meal={meal} currrency={currency} currentLanguage={language} key={index} />
+      return <ArticleMeal meal={meal} currrency={currency} currentLanguage={language} index={index} key={index} />
     }) : null;
 
 		return (
