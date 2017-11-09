@@ -34,13 +34,13 @@ class ArticleMeal extends Component {
   	}
 
 	render() {
-		const { meal, currency, currentLanguage } = this.props;
+		const { meal, currency, index, currentLanguage } = this.props;
 
 		const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
 
 		const translatedMeal = this.getTranslatedMeal(currentLanguage, meal.translations);
 
-		let titleComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
+		const titleComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
         	<h2>{translatedMeal.title}<br />
           		<em>({meal.Title})</em>
         	</h2>
@@ -48,7 +48,7 @@ class ArticleMeal extends Component {
         	<h2>{meal.Title}</h2>
     	);
 
-    	let descriptionComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
+    	const descriptionComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
     		<p className="meal--desc">
     			{translatedMeal.description}
     		</p>
@@ -57,6 +57,24 @@ class ArticleMeal extends Component {
     			{meal.Description}
     		</p>
     	);
+
+    	const reviewComponent = (index === 0) ? (
+    		<div className="reviews">
+    			<header>
+    				<h3>How was your meal?</h3>
+    				<p>
+    					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nisl ac justo dapibus molestie at ac nibh.
+    				</p>
+    			</header>
+	    		<ul className="reviews-menu">
+	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+	    		</ul>
+    		</div>
+    	) : null;
 
       	return (
         	<section className="meal">
@@ -71,6 +89,13 @@ class ArticleMeal extends Component {
           		<div className="meal--content">
           			{descriptionComponent}
           		</div>
+
+              {/*
+            		<div className="meal--review">
+            			{reviewComponent}
+            		</div>
+                */
+              }
         	</section>
       	);
 	}

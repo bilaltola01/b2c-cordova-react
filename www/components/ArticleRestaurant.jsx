@@ -18,8 +18,8 @@ class ArticleRestaurant extends Component {
 
 		return (
       <article className="article--restaurant">
-
         <Link to={"/restaurants/" + restaurant.BranchID + "/menus"}>
+          <div className="overlay overlay--black"></div>
           {lastImage}
 
           <footer className="restaurant--footer grid">

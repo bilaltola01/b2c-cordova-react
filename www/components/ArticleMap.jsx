@@ -117,27 +117,8 @@ class ArticleMap extends Component {
         center: defaultCenterPosition
       });
 
-      let fakeRestaurants = [
-        {
-          Latitude: 14.553300,
-          Longitude: 121.020095
-        },
-        {
-          Latitude: 14.562958,
-          Longitude: 121.036434
-        },
-        {
-          Latitude: 14.575447,
-          Longitude: 121.063505
-        }
-      ];
-
       let restaurants = this.props.restaurants.map((restaurant, index) => {
         let obj = restaurant;
-        if (fakeRestaurants[index]) {
-          obj.Latitude = fakeRestaurants[index].Latitude;
-          obj.Longitude = fakeRestaurants[index].Longitude;
-        }
 
         return obj;
       });

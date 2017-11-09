@@ -28,7 +28,7 @@ export let Pages = {
             position: 'left',
             action: {
               type: 'link',
-              path: '/',
+              path: '/home',
               component: {}
             }
           }
