@@ -12,6 +12,15 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.app.onemenu"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
     }
   },
   "dependent_plugins": {}
