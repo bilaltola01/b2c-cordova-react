@@ -1,0 +1,115 @@
+import React, { Component, PropTypes } from 'react';
+
+import { Link } from 'react-router-dom';
+
+import { connect } from 'react-redux';
+import * as actionCreators from '../action-creators';
+
+let createHandlers = (ctx) => {
+  let onClosePopup = () => {
+    if (ctx.props.onClose) {
+      ctx.props.onClose();
+    }
+  };
+
+  let onLanguageClick = (e, lang) => {
+    ctx.props.dispatch(actionCreators.setCurrentLanguage(lang, (res) => {
+      console.log('changed current language!');
+      console.log(res);
+      console.log('now close popup');
+      onClosePopup();
+    }));
+  };
+
+  return {
+    onClosePopup,
+    onLanguageClick
+  };
+};
+
+class ArticlePickLanguage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handlers = createHandlers(this);
+  }
+
+  render() {
+    const { component, onClose } = this.props;
+
+    console.log(component);
+
+    //
+    // replace concat currentlanguage by english for now ( will be default)
+    //
+    const defaultLanguage = {
+      LanguageID: 23,
+      Language: {
+        Code: "en",
+        CodeFull: "en-GB",
+        Flag: {
+          FlagID: 23,
+          AltDescription: "English",
+          Title: "English",
+          Path: "https://res.cloudinary.com/one-menu/image/upload/v1509377412/United_Kingdom_vix6gw.svg",
+          Date: "2017-10-30T00:00:00.000Z",
+          DateUpdated: "2017-07-17T23:00:00.000Z"
+        },
+        FlagID: 23,
+        LanguageID: 23,
+        Name: "English",
+        Title: "English"
+      }
+    };
+
+    const finalLanguages = (this.props.currentLanguage && component && component.languages && component.languages.length > 0) ?
+      ((component.languages.find(lang => lang.LanguageID === defaultLanguage.LanguageID)) ?
+        component.languages : component.languages.concat([
+          {
+            LanguageID: defaultLanguage.LanguageID,
+            Language: defaultLanguage.Language
+          }
+        ])
+      ) : component.languages;
+
+      console.log(finalLanguages);
+
+    const languagesComponent = (finalLanguages && finalLanguages.length > 0) ? finalLanguages.map((language, index) => {
+      let lang = language.Language;
+      return <article className="language clearfix" key={index}>
+          <div className="language--item" onClick={(e) => this.handlers.onLanguageClick(e, lang)}>
+            {lang && lang.Flag && lang.Flag.Path &&
+              <img src={lang.Flag.Path} alt={lang.Flag.AltDescription} />
+            }
+
+            {lang && lang.Name &&
+              <p>
+              {lang.Name}
+             </p>
+            }
+          </div>
+        </article>;
+    }) : null;
+
+    return (
+      <section className="section section--languages">
+        {languagesComponent}
+      </section>
+    )
+  }
+};
+
+ArticlePickLanguage.propTypes = {
+  component: PropTypes.object,
+  onClose: PropTypes.func
+};
+
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        offCanvas: state._offCanvas.offCanvas,
+        currentLanguage: state._currentLanguage.currentLanguage
+    };
+};
+
+export default connect(mapStateToProps)(ArticlePickLanguage);
