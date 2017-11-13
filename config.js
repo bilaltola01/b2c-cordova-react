@@ -7,7 +7,6 @@ const ENV = require('./env');
 const src = 'https://app.one-menu.com';
 const config = path.resolve('./config.xml');
 
-/*
 try {
 	replace({
 		regex: /<content +src="[^"]+\" *\/>/,
@@ -19,4 +18,3 @@ try {
 	console.error('ERROR: Could not replace content src in: ' + config, err);
 	process.exit(1);
 }
-*/
