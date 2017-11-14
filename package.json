@@ -1,7 +1,7 @@
 {
   "name": "com.partnersuperconnect5media.onemenu",
   "displayName": "OneMenu",
-  "version": "0.9.0",
+  "version": "1.1.27",
   "description": "ONE MENU - The world on your plate.",
   "main": "main.js",
   "scripts": {
