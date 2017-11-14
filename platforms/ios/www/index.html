@@ -50,5 +50,29 @@
         <div id="app-wrapper"></div>
         <script type="text/javascript" src="/cordova.js"></script>
         <script type="text/javascript" src="/main-bundle.js"></script>
+
+        <script>
+            function getGeo() {
+                var onSuccess = function(position) {
+                    console.log('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: ' + position.coords.longitude+ '\n');
+                };
+
+                var onError = function onError(error) {
+                    console.log('code: '    + error.code    + '\n' +
+                          'message: ' + error.message + '\n');
+                };
+
+                navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            }
+
+            function onDeviceReady() {
+                if (navigator.connection.type == Connection.NONE) {
+                    navigator.notification.alert('An internet connection is required to continue');
+                } else {
+                    getGeo();
+                }
+            }
+            document.addEventListener("deviceready", onDeviceReady, false);
+        </script>
     </body>
 </html>
