@@ -21,6 +21,9 @@
     },
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
     }
   },
   "dependent_plugins": {}
