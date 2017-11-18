@@ -1,6 +1,11 @@
 import { Ajax } from '../../shared/ajax.utils';
 import { GeoUtils } from '../../shared/geo-utils.js';
 
+const GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDktvh7iDvypfc2EcpYmzDvWFyxbHxUWII';
+const GOOGLE_GEOLOCATION_OPTIONS = {
+    considerIp: true
+};
+
 export function getProfile (location) {
     return Ajax().get('/profile', {
         headers: {
@@ -46,6 +51,32 @@ export function getProfilesWithGeo (profiles, location) {
     : [];
 }
 
+function getExternalGeoLocation (options, key) {
+    return Ajax().post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + key, {
+        body: JSON.stringify(options),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(res => {
+        if (res.error) {
+            return Promise.reject(res.error);
+        }
+
+        let parsed;
+
+        try {
+            parsed = JSON.parse(res);
+
+            return Promise.resolve({
+                latitude: (parsed.location && parsed.location.lat) ? parsed.location.lat : null,
+                longitude: (parsed.location && parsed.location.lng) ? parsed.location.lng : null
+            });
+        } catch (e) {
+            return Promise.reject(e);
+        }
+    });
+}
+
 export function getGeoLocation (location) {
     if (!location) {
         return Promise.reject('ERROR! Geolocation is not available!');
@@ -56,10 +87,20 @@ export function getGeoLocation (location) {
             resolve(location);
         };
 
-        let onError = () => {
-            reject('Unable to get location!!!');
+        let onError = (err) => {
+            if (err) {
+                getExternalGeoLocation(GOOGLE_GEOLOCATION_OPTIONS, GOOGLE_GEOLOCATION_API_KEY).then(res => {
+                    resolve(res);
+                }).catch(err => {
+                    reject(err);
+                });
+            }
         };
 
-        location.getCurrentPosition(onSuccess, onError);
+        location.getCurrentPosition(onSuccess, onError, {
+            maximumAge: 3000,
+            timeout: 1000,
+            enableHighAccuracy: true
+        });
     });
 }
