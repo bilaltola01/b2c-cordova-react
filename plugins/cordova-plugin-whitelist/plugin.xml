@@ -20,11 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="cordova-plugin-whitelist"
-<<<<<<< HEAD
       version="1.3.3">
-=======
-      version="1.3.2">
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
     <name>Whitelist</name>
     <description>Cordova Network Whitelist Plugin</description>
     <license>Apache 2.0</license>

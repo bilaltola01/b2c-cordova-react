@@ -49,7 +49,7 @@ class NavMenu extends Component {
             <ul className="menu--simple">
               <li><Link to="/home">Restaurants</Link></li>
               <li><Link to="/map">Map</Link></li>
-              <li><Link to="/restaurant/3/menus">Menus</Link></li>
+              <li><Link to="/restaurants/3/menus">Menus</Link></li>
             </ul>
 
             <div className="link--bottom">

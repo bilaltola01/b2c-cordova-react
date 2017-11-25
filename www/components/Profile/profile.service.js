@@ -52,7 +52,7 @@ export function getProfilesWithGeo (profiles, location) {
 }
 
 function getExternalGeoLocation (options, key) {
-    return Ajax().post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + key, {
+    return Ajax('https://www.googleapis.com/geolocation/v1').post('/geolocate?key=' + key, {
         body: JSON.stringify(options),
         headers: {
             "Content-Type": "application/json"
@@ -65,11 +65,13 @@ function getExternalGeoLocation (options, key) {
         let parsed;
 
         try {
-            parsed = JSON.parse(res);
+            parsed = JSON.parse(JSON.stringify(res));
 
             return Promise.resolve({
-                latitude: (parsed.location && parsed.location.lat) ? parsed.location.lat : null,
-                longitude: (parsed.location && parsed.location.lng) ? parsed.location.lng : null
+                coords: {
+                    latitude: (parsed.location && parsed.location.lat) ? parsed.location.lat : null,
+                    longitude: (parsed.location && parsed.location.lng) ? parsed.location.lng : null
+                }
             });
         } catch (e) {
             return Promise.reject(e);
