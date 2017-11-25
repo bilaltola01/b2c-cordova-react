@@ -19,11 +19,7 @@
  under the License.
 */
 ;(function() {
-<<<<<<< HEAD
 var PLATFORM_VERSION_BUILD_LABEL = '4.5.3';
-=======
-var PLATFORM_VERSION_BUILD_LABEL = '4.5.2';
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 // file: src/scripts/require.js
 
 /* jshint -W079 */

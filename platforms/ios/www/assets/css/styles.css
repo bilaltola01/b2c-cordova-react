@@ -434,11 +434,7 @@ main {
 
 .article--restaurant {
     position: relative;
-<<<<<<< HEAD
     max-height: 260px;
-=======
-    height: 250px;
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
     overflow: hidden;
 }
 .article--restaurant img {
@@ -825,12 +821,9 @@ main {
     font-size: 0.8em;
     font-weight: 700;
 }
-<<<<<<< HEAD
 .meal .restaurant-details--item h3 {
     text-align: left;
 }
-=======
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 
 .restaurant-details--item h3 span {
     font-weight: 500;
@@ -1120,7 +1113,6 @@ main {
     width: 1px;
 }
 
-<<<<<<< HEAD
 .vertically-centered {
     display: table;
     width: 100%;
@@ -1133,8 +1125,6 @@ main {
     vertical-align: middle;
 }
 
-=======
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;

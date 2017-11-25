@@ -54,7 +54,6 @@ class PageRestaurants extends Component {
 
     return (
       <div>
-        <Splashscreen />
         <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
       </div>
     )

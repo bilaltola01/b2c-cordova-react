@@ -1,14 +1,11 @@
 import { Ajax } from '../../shared/ajax.utils';
 import { GeoUtils } from '../../shared/geo-utils.js';
 
-<<<<<<< HEAD
 const GOOGLE_GEOLOCATION_API_KEY = 'AIzaSyDktvh7iDvypfc2EcpYmzDvWFyxbHxUWII';
 const GOOGLE_GEOLOCATION_OPTIONS = {
     considerIp: true
 };
 
-=======
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 export function getProfile (location) {
     return Ajax().get('/profile', {
         headers: {
@@ -54,9 +51,8 @@ export function getProfilesWithGeo (profiles, location) {
     : [];
 }
 
-<<<<<<< HEAD
 function getExternalGeoLocation (options, key) {
-    return Ajax().post('https://www.googleapis.com/geolocation/v1/geolocate?key=' + key, {
+    return Ajax('https://www.googleapis.com/geolocation/v1').post('/geolocate?key=' + key, {
         body: JSON.stringify(options),
         headers: {
             "Content-Type": "application/json"
@@ -69,11 +65,13 @@ function getExternalGeoLocation (options, key) {
         let parsed;
 
         try {
-            parsed = JSON.parse(res);
+            parsed = JSON.parse(JSON.stringify(res));
 
             return Promise.resolve({
-                latitude: (parsed.location && parsed.location.lat) ? parsed.location.lat : null,
-                longitude: (parsed.location && parsed.location.lng) ? parsed.location.lng : null
+                coords: {
+                    latitude: (parsed.location && parsed.location.lat) ? parsed.location.lat : null,
+                    longitude: (parsed.location && parsed.location.lng) ? parsed.location.lng : null
+                }
             });
         } catch (e) {
             return Promise.reject(e);
@@ -81,8 +79,6 @@ function getExternalGeoLocation (options, key) {
     });
 }
 
-=======
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 export function getGeoLocation (location) {
     if (!location) {
         return Promise.reject('ERROR! Geolocation is not available!');
@@ -93,7 +89,6 @@ export function getGeoLocation (location) {
             resolve(location);
         };
 
-<<<<<<< HEAD
         let onError = (err) => {
             if (err) {
                 getExternalGeoLocation(GOOGLE_GEOLOCATION_OPTIONS, GOOGLE_GEOLOCATION_API_KEY).then(res => {
@@ -109,12 +104,5 @@ export function getGeoLocation (location) {
             timeout: 1000,
             enableHighAccuracy: true
         });
-=======
-        let onError = () => {
-            reject('Unable to get location!!!');
-        };
-
-        location.getCurrentPosition(onSuccess, onError);
->>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
     });
 }

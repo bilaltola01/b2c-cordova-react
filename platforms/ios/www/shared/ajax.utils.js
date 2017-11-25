@@ -6,7 +6,7 @@ const constants = require('../../constants');
 const BASE_URL = constants.SERVER_URL || 'https://one-menu-b2b.herokuapp.com';
 
 export let Ajax = (url) => {
-    let baseUrl = url || BASE_URL + '/api';
+    let baseUrl = url || (BASE_URL + '/api');
 
     //
     /** Generic method for AJAX calls */
