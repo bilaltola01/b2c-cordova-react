@@ -6,6 +6,8 @@ import * as actionCreators from '../action-creators';
 
 const classNames = require('classnames');
 
+import NavMenu from './NavMenu';
+
 let createHandlers = (ctx) => {
 	let onPickLanguageClick = () => {
 		ctx.props.dispatch(actionCreators.setOffCanvas({
@@ -58,10 +60,14 @@ class NavButton extends Component {
 			)
 		: null;
 
+		const menuComponent = (<NavMenu isOpenedDefault={false} />);
+
 		const actionComponent = (action && action.type) ? ((a) => {
 			switch (a.type) {
 				case 'link':
 					return <Link to={a.path}>{title}</Link>
+				case 'menu':
+					return menuComponent
 				case 'click':
 					return <span onClick={a.component.fn}>{title}</span>
 				case 'pick-language':

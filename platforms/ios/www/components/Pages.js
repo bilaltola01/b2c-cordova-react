@@ -8,8 +8,7 @@ export let Pages = {
             title: 'Location',
             position: 'left',
             action: {
-              type: 'link',
-              path: '/map',
+              type: 'menu',
               component: {}
             }
           }
@@ -27,8 +26,7 @@ export let Pages = {
             title: 'Back',
             position: 'left',
             action: {
-              type: 'link',
-              path: '/home',
+              type: 'menu',
               component: {}
             }
           }
@@ -49,8 +47,7 @@ export let Pages = {
             title: 'Back to Map',
             position: 'left',
             action: {
-              type: 'link',
-              path: '/map',
+              type: 'menu',
               component: {}
             }
           }
@@ -68,8 +65,7 @@ export let Pages = {
             title: 'Back to Restaurant',
             position: 'left',
             action: {
-              type: 'link',
-              path: '/restaurants',
+              type: 'menu',
               component: {}
             }
           }

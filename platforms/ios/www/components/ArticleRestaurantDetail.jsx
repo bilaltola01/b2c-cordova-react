@@ -131,25 +131,6 @@ class ArticleRestaurantDetail extends Component {
 				)
 	    }) : null;
 
-	    const languagesComponent = (restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages.map((lang, index) => {
-	    	return (lang.Language.Flag && lang.Language.Flag.Path)
-	    		? (
-	    			<span className="restaurant-details--language" key={index}>
-						<img src={lang.Language.Flag.Path} alt={lang.Language.Flag.AltDescription} />
-					</span>
-				) : (index < restaurant.languages.length - 1)
-	    			? (
-						<span className="restaurant-details--language" key={index}>
-							{lang.Language.Name}
-							,&nbsp;
-						</span>
-					) : (
-						<span className="restaurant-details--language" key={index}>
-							{lang.Language.Name}
-						</span>
-					)
-	    }) : null;
-
 		return (
 			<article id="section-restaurant-details" className="section-restaurant-details">
 				<div className="restaurant-details--image">
@@ -173,12 +154,6 @@ class ArticleRestaurantDetail extends Component {
 								<h3>
 									Cuisines: <br />
 									{cuisinesComponent}
-								</h3>
-							</div>
-							<div className="restaurant-details--item">
-								<h3>
-									Languages: <br />
-									{languagesComponent}
 								</h3>
 							</div>
 						</div>

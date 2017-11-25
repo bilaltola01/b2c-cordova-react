@@ -434,7 +434,7 @@ main {
 
 .article--restaurant {
     position: relative;
-    height: 250px;
+    max-height: 260px;
     overflow: hidden;
 }
 .article--restaurant img {
@@ -821,6 +821,9 @@ main {
     font-size: 0.8em;
     font-weight: 700;
 }
+.meal .restaurant-details--item h3 {
+    text-align: left;
+}
 
 .restaurant-details--item h3 span {
     font-weight: 500;
@@ -1108,6 +1111,18 @@ main {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.vertically-centered {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.vertical-container {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .visuallyhidden.focusable:active,
