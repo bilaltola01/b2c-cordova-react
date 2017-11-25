@@ -128,58 +128,61 @@
 	margin-left: 2px;
 }
 
+/*
+//////////
+Can be wrapped in a media query if needed
+//////////
+*/
 
-@media all and (max-width: 767px) {
-	.menu-btn {
-		display: block;
-	}
+.menu-btn {
+	display: block;
+}
 
-	.main-nav {
-        position: fixed;
-        top: 48px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 48px);
-        float: none;
-        z-index: 99;
-        background-color: transparent;
+.main-nav {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 48px);
+    float: none;
+    z-index: 99;
+    background-color: transparent;
 
-        transform: translate(-100%, 0);
-        -webkit-transform: translate(-100%, 0);
-        -moz-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
 
-        transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
-        -webkit-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
-        -moz-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
-    }
+    transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+}
 
-    .main-nav .menu--simple {
-    	text-align: left;
-    }
+.main-nav .menu--simple {
+	text-align: left;
+}
 
-    .main-nav .menu--simple li {
-    	display: block;
-        border-bottom: 1px solid #565656;
-    }
+.main-nav .menu--simple li {
+	display: block;
+    border-bottom: 1px solid #565656;
+}
 
-    .main-nav .menu--simple li:last-child {
-		margin-bottom: 0;
-	}
+.main-nav .menu--simple li:last-child {
+	margin-bottom: 0;
+}
 
-    .main-nav .menu--simple a {
-    	display: block;
-    	padding: 12px 20px;
-		font-weight: normal;
-		letter-spacing: 0.01em;
-		color: #fcd230;
-	    font-size: 0.9em;
-	    line-height: 1.8em;
-	    text-decoration: none;
-	}
+.main-nav .menu--simple a {
+	display: block;
+	padding: 12px 20px;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	color: #fcd230;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    text-decoration: none;
+}
 
-	.main-nav .menu--simple a:hover,
-	.main-nav .menu--simple a:active {
-		text-decoration: none;
-		color: #fcd230;
-	}
+.main-nav .menu--simple a:hover,
+.main-nav .menu--simple a:active {
+	text-decoration: none;
+	color: #fcd230;
 }
