@@ -8,7 +8,12 @@ export let Pages = {
             title: 'Location',
             position: 'left',
             action: {
+<<<<<<< HEAD
               type: 'menu',
+=======
+              type: 'link',
+              path: '/map',
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
               component: {}
             }
           }
@@ -26,7 +31,12 @@ export let Pages = {
             title: 'Back',
             position: 'left',
             action: {
+<<<<<<< HEAD
               type: 'menu',
+=======
+              type: 'link',
+              path: '/home',
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
               component: {}
             }
           }
@@ -47,7 +57,12 @@ export let Pages = {
             title: 'Back to Map',
             position: 'left',
             action: {
+<<<<<<< HEAD
               type: 'menu',
+=======
+              type: 'link',
+              path: '/map',
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
               component: {}
             }
           }
@@ -65,7 +80,12 @@ export let Pages = {
             title: 'Back to Restaurant',
             position: 'left',
             action: {
+<<<<<<< HEAD
               type: 'menu',
+=======
+              type: 'link',
+              path: '/restaurants',
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
               component: {}
             }
           }

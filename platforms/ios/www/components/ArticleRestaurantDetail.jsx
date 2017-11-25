@@ -131,6 +131,28 @@ class ArticleRestaurantDetail extends Component {
 				)
 	    }) : null;
 
+<<<<<<< HEAD
+=======
+	    const languagesComponent = (restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages.map((lang, index) => {
+	    	return (lang.Language.Flag && lang.Language.Flag.Path)
+	    		? (
+	    			<span className="restaurant-details--language" key={index}>
+						<img src={lang.Language.Flag.Path} alt={lang.Language.Flag.AltDescription} />
+					</span>
+				) : (index < restaurant.languages.length - 1)
+	    			? (
+						<span className="restaurant-details--language" key={index}>
+							{lang.Language.Name}
+							,&nbsp;
+						</span>
+					) : (
+						<span className="restaurant-details--language" key={index}>
+							{lang.Language.Name}
+						</span>
+					)
+	    }) : null;
+
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 		return (
 			<article id="section-restaurant-details" className="section-restaurant-details">
 				<div className="restaurant-details--image">
@@ -156,6 +178,15 @@ class ArticleRestaurantDetail extends Component {
 									{cuisinesComponent}
 								</h3>
 							</div>
+<<<<<<< HEAD
+=======
+							<div className="restaurant-details--item">
+								<h3>
+									Languages: <br />
+									{languagesComponent}
+								</h3>
+							</div>
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 						</div>
 
 						{contactComponent}

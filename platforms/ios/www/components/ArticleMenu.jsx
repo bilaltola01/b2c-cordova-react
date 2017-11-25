@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 class ArticleMenu extends Component {
   render() {
+<<<<<<< HEAD
 		const { menu, currency, languages } = this.props;
 
     const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
@@ -27,6 +28,12 @@ class ArticleMenu extends Component {
           )
       }) : null;
 
+=======
+		const { menu, currency } = this.props;
+
+    const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
+
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
     const menuComponent = (menu.categories && menu.categories.length > 0) ? (
       <section className="meal">
 
@@ -44,11 +51,14 @@ class ArticleMenu extends Component {
               {menu.Description}
             </p>
           </div>
+<<<<<<< HEAD
           <div className="restaurant-details--item">
             <h3>
               {languagesComponent}
             </h3>
           </div>
+=======
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
         </Link>
       </section>
     ) : null;
@@ -59,8 +69,12 @@ class ArticleMenu extends Component {
 
 ArticleMenu.propTypes = {
 	menu: PropTypes.object,
+<<<<<<< HEAD
   currency: PropTypes.object,
   languages: PropTypes.array
+=======
+  currency: PropTypes.object
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 };
 
 export default ArticleMenu;

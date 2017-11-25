@@ -9,23 +9,23 @@ class ArticleMenu extends Component {
     const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
 
     const languagesComponent = (languages && languages.length > 0) ? languages.map((lang, index) => {
-        return (lang.Language.Flag && lang.Language.Flag.Path)
+      return (lang.Language.Flag && lang.Language.Flag.Path)
+        ? (
+          <span className="restaurant-details--language" key={index}>
+          <img src={lang.Language.Flag.Path} alt={lang.Language.Flag.AltDescription} />
+        </span>
+      ) : (index < languages.length - 1)
           ? (
-            <span className="restaurant-details--language" key={index}>
-            <img src={lang.Language.Flag.Path} alt={lang.Language.Flag.AltDescription} />
+          <span className="restaurant-details--language" key={index}>
+            {lang.Language.Name}
+            ,&nbsp;
           </span>
-        ) : (index < languages.length - 1)
-            ? (
-            <span className="restaurant-details--language" key={index}>
-              {lang.Language.Name}
-              ,&nbsp;
-            </span>
-          ) : (
-            <span className="restaurant-details--language" key={index}>
-              {lang.Language.Name}
-            </span>
-          )
-      }) : null;
+        ) : (
+          <span className="restaurant-details--language" key={index}>
+            {lang.Language.Name}
+          </span>
+        )
+    }) : null;
 
     const menuComponent = (menu.categories && menu.categories.length > 0) ? (
       <section className="meal">

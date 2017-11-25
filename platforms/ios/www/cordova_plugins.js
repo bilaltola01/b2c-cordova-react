@@ -7,6 +7,7 @@ module.exports = [
     "clobbers": [
       "window.StatusBar"
     ]
+<<<<<<< HEAD
   },
   {
     "id": "cordova-plugin-dialogs.notification",
@@ -72,17 +73,24 @@ module.exports = [
     "clobbers": [
       "navigator.splashscreen"
     ]
+=======
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
+<<<<<<< HEAD
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-statusbar": "2.1.3",
   "cordova-plugin-dialogs": "1.3.4",
   "cordova-plugin-network-information": "1.3.4",
   "cordova-plugin-geolocation": "3.0.0",
   "cordova-plugin-splashscreen": "4.1.0"
+=======
+  "cordova-plugin-whitelist": "1.3.2",
+  "cordova-plugin-statusbar": "2.1.3"
+>>>>>>> 527bce22db10fb800e6664a521e2dcd562506bd8
 };
 // BOTTOM OF METADATA
 });

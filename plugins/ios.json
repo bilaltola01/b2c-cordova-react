@@ -8,10 +8,10 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.app.onemenu"
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.app.onemenu"
+      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
