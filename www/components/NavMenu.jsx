@@ -13,8 +13,20 @@ let createHandlers = (ctx) => {
     });
   };
 
+  let closeMenu = () => {
+    ctx.setState({
+      isOpened: false
+    });
+  };
+
+  let goToExternalLink = (link) => {
+    window.open(link, '_blank', 'location=no');
+  };
+
   return {
-    toggleMenu
+    toggleMenu,
+    closeMenu,
+    goToExternalLink
   };
 };
 
@@ -42,18 +54,20 @@ class NavMenu extends Component {
         </span>
         <nav className="main-nav">
           <div className="main-nav--container">
+            {/*
             <div className="link--top">
               <img src="assets/images/logo-one-menu-white.svg" alt="ONE-MENU - The World on your Plate" />
             </div>
+            */}
 
             <ul className="menu--simple">
-              <li><Link to="/home">Restaurants</Link></li>
-              <li><Link to="/map">Map</Link></li>
-              <li><Link to="/restaurants/3/menus">Menus</Link></li>
+              <li><Link to="/home" onClick={this.handlers.closeMenu}>Restaurants</Link></li>
+              <li><Link to="/map" onClick={this.handlers.closeMenu}>Map</Link></li>
+              <li><Link to="/restaurants/3/menus" onClick={this.handlers.closeMenu}>Menus</Link></li>
             </ul>
 
             <div className="link--bottom">
-              <a href="http://one-menu.com/uploads/ONE-MENU_Terms_Of_Use.pdf" target="_blank">Terms of Use</a>
+              <a onClick={() => {this.handlers.goToExternalLink('http://one-menu.com/uploads/ONE-MENU_Terms_Of_Use.pdf')}}>Terms of Use</a>
             </div>
           </div>
         </nav>

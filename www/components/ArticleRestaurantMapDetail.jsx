@@ -12,9 +12,24 @@ let createHandlers = (ctx) => {
     }
   };
 
+  let goToExternalLink = (link) => {
+    window.open(link, '_blank', 'location=no');
+  };
+
+  let goToEmailLink = (email, body, subject) => {
+    window.open('mailto:' + email, '_system');
+  };
+
+  let goToTelLink = (tel) => {
+    window.open('tel:' + tel, '_system');
+  };
+
 
   return {
-    onClosePopup
+    onClosePopup,
+    goToExternalLink,
+    goToEmailLink,
+    goToTelLink
   };
 };
 
@@ -64,9 +79,9 @@ class ArticleRestaurantMapDetail extends Component {
           <div className="restaurant--content">
             <h4>{restaurant.Address}</h4>
             <p className="restaurant--desc">
-              Email: {contactEmail} <br />
-              Tel: {contactTel} <br />
-              Website: {contactWebsite} <br />
+              Email: <a onClick={() => {this.handlers.goToEmailLink(contactEmail)}}>{contactEmail}</a><br />
+              Tel: <a onClick={() => {this.handlers.goToTelLink(contactTel)}}>{contactTel}</a><br />
+              Website: <a onClick={() => {this.handlers.goToExternalLink(contactWebsite)}}>{contactWebsite}</a><br />
             </p>
           </div>
         </article>
