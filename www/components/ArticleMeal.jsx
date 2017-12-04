@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
+import { MAP_CONSTANTS } from  '../shared/mapping.utils';
 
 class ArticleMeal extends Component {
  	constructor(props) {
@@ -36,7 +37,7 @@ class ArticleMeal extends Component {
 	render() {
 		const { meal, currency, index, currentLanguage } = this.props;
 
-		const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
+		const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : MAP_CONSTANTS.DEFAULT_LANGUAGE_SYMBOL;
 
 		const translatedMeal = this.getTranslatedMeal(currentLanguage, meal.translations);
 

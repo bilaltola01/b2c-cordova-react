@@ -1,12 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
+import { MAP_CONSTANTS } from  '../shared/mapping.utils';
 
 class ArticleMenu extends Component {
   render() {
 		const { menu, currency, languages } = this.props;
 
-    const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : '£';
+    const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : MAP_CONSTANTS.DEFAULT_LANGUAGE_SYMBOL;
 
     const languagesComponent = (languages && languages.length > 0) ? languages.map((lang, index) => {
       return (lang.Language.Flag && lang.Language.Flag.Path)
