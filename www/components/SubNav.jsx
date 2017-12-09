@@ -55,8 +55,6 @@ class SubNav extends Component {
 	render() {
 		const { categories, currentItem, onNavItemClick } = this.props;
 
-		console.log(categories);
-
 		const categoriesComponent = (categories && categories.length > 0) ? categories.map((category, index) => {
 			return (currentItem === index) ? (
 				<li key={index}><div className="subnav--item active">{category.Category.Title}</div></li>

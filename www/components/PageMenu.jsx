@@ -58,8 +58,6 @@ class PageMenu extends Component {
       return parseInt(menu.MenuID, 10) === parseInt(menuId, 10);
     }) : null;
 
-    console.log(menu);
-
     const sections = [{
       type: 'restaurant-menu',
       title: '',

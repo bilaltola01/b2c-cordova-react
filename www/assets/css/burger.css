@@ -111,6 +111,7 @@
 
 .main-nav .link--bottom a {
 	color: #fcd230;
+    cursor: pointer;
 	font-size: 0.8em;
 }
 

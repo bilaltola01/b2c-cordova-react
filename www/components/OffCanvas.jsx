@@ -19,8 +19,6 @@ let createHandlers = (ctx) => {
     };
 
     let onCloseOffCanvas = () => {
-        console.log('popup is about to close!!!');
-
         let newPopup = {
             isOpened: false,
             type: ctx.props.type,
@@ -57,8 +55,6 @@ class OffCanvas extends Component {
 
 	render () {
 		const { isOpened, type, transition, component } = this.props;
-
-    console.log(this.props);
 
     const finalComponent = (type) ? ((t, c) => {
       switch (t) {
@@ -131,7 +127,6 @@ OffCanvas.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         offCanvas: state._offCanvas.offCanvas,
         branchLanguages: state._branchLanguages.branchLanguages

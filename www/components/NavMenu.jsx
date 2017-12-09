@@ -20,7 +20,7 @@ let createHandlers = (ctx) => {
   };
 
   let goToExternalLink = (link) => {
-    window.open(link, '_blank', 'location=no');
+    cordova.InAppBrowser.open(link, '_blank', 'location=yes');
   };
 
   return {

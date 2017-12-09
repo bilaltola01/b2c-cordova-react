@@ -27,7 +27,11 @@ let createHandlers = (ctx) => {
 
   let onDeviceReady = () => {
     console.log('device is ready!');
-    console.log(window.navigator);
+    console.log(cordova);
+    if (cordova.InAppBrowser) {
+      window.open = cordova.InAppBrowser.open;
+    }
+
     getGeoLocation(window.navigator);
   };
 

@@ -25,6 +25,7 @@
 		D950AB95E5C9418A8665BC1D /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FA639687254C9FBF08F9E1 /* CDVStatusBar.m */; };
 		E2869D85788448589BF2F108 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5B90E403A3489892B2AF88 /* CoreTelephony.framework */; };
 		FF7400A194B1482598EA932C /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CF8A04D9E400ABC9EB945 /* CDVReachability.m */; };
+		6334C481631047898DEE146B /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C04A083202843809F11DDB7 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F2649240B25E41CD90033F03 /* CDVConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = OneMenu/config.xml; sourceTree = "<group>"; };
+		4C04A083202843809F11DDB7 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7049243EF4914535B6019550 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,8 @@
 				1407D770D7954490B069C955 /* CDVViewController+SplashScreen.m */,
 				994A89CC99D8400787650D3C /* CDVSplashScreen.h */,
 				761B3337775F47EFB4D375D1 /* CDVViewController+SplashScreen.h */,
+				4C04A083202843809F11DDB7 /* CDVInAppBrowser.m */,
+				7049243EF4914535B6019550 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = OneMenu/Plugins;
@@ -354,6 +359,7 @@
 				0CA06539DA794103B6E5A584 /* CDVLocation.m in Sources */,
 				7270FDF9C1DE42DEAFDABB32 /* CDVSplashScreen.m in Sources */,
 				65B8C82CC72F46778B9E1820 /* CDVViewController+SplashScreen.m in Sources */,
+				6334C481631047898DEE146B /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

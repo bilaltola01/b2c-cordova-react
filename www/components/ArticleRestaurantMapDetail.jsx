@@ -43,8 +43,6 @@ class ArticleRestaurantMapDetail extends Component {
   render() {
     const { component, onClose } = this.props;
 
-    console.log(component);
-
     const restaurant = component.restaurant;
 
     const firstImage = (restaurant.images && restaurant.images.length > 0) ? (
@@ -99,7 +97,6 @@ ArticleRestaurantMapDetail.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         offCanvas: state._offCanvas.offCanvas
     };

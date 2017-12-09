@@ -110,7 +110,8 @@
 }
 
 .main-nav .link--bottom a {
-	color: #949494;
+	color: #fcd230;
+    cursor: pointer;
 	font-size: 0.8em;
 }
 

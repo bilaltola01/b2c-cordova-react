@@ -12,8 +12,13 @@ let createHandlers = (ctx) => {
 		});
 	};
 
+	let goToExternalLink = (link) => {
+		window.open(link, '_blank', 'location=no');
+	};
+
 	return {
-		onContactButtonToggled
+		onContactButtonToggled,
+		goToExternalLink
 	};
 };
 
@@ -131,6 +136,22 @@ class ArticleRestaurantDetail extends Component {
 				)
 	    }) : null;
 
+	    const googleMapsUrl = encodeURI(restaurant.Address + ' ' + restaurant.City + ' ' + restaurant.Country);
+
+	    const subTitleComponent = (googleMapsUrl && googleMapsUrl.length > 0) ? (
+	    	<h2 className="main-subtitle">
+		    	<a onClick={() => {this.handlers.goToExternalLink('https://www.google.com/maps/search/'+ googleMapsUrl)}}>
+					{restaurant.Address} <br />
+					{restaurant.City}, {restaurant.Country}
+				</a>
+			</h2>
+	    ): (
+	    	<h2 className="main-subtitle">
+		    	{restaurant.Address} <br />
+				{restaurant.City}, {restaurant.Country}
+			</h2>
+	    );
+
 		return (
 			<article id="section-restaurant-details" className="section-restaurant-details">
 				<div className="restaurant-details--image">
@@ -142,10 +163,8 @@ class ArticleRestaurantDetail extends Component {
 				<section className="restaurant-details--contacts">
 					<header>
 						<h1 className="main-title">{restaurant.CompanyName}</h1>
-						<h2 className="main-subtitle">
-							{restaurant.Address} <br />
-							{restaurant.City}, {restaurant.Country}
-						</h2>
+
+						{subTitleComponent}
 					</header>
 
 					<div className="">

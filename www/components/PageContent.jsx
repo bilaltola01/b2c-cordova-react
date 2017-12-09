@@ -17,9 +17,6 @@ class PageContent extends Component {
   	render () {
   		const { sections, navigation, footer, title, offCanvasSettings } = this.props;
 
-        console.log(this.props.offCanvas);
-        console.log(offCanvasSettings);
-
         const isOpened = (this.props.offCanvas) ? this.props.offCanvas.isOpened : false;
 
     	const offCanvasComponent = (offCanvasSettings && offCanvasSettings.isVisible && this.props.offCanvas) ? (
@@ -63,7 +60,6 @@ PageContent.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         offCanvas: state._offCanvas.offCanvas
     };

@@ -92,7 +92,6 @@ NavButton.propTypes = {
 
 
 const mapStateToProps = (state) => {
-	console.log(state);
   	return {
     	currentLanguage: state._currentLanguage.currentLanguage
   	};
