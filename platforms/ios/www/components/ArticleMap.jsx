@@ -17,14 +17,11 @@ let createHandlers = (ctx) => {
         resolve(res);
       });
     }).catch((err) => {
-      console.log(err);
+      console.error(err);
     });
   };
 
   let onMarkerClick = (marker, restaurant, index) => {
-    console.log('marker clicked!');
-    console.log(marker);
-
     setOffCanvas({
       isOpened: true,
       type: 'MapDetail',
@@ -41,7 +38,7 @@ let createHandlers = (ctx) => {
   };
 
   let onOffCanvasSet = (obj) => {
-    console.log('offcanvas saved and opened!');
+
   };
 
   return {
@@ -136,8 +133,6 @@ class ArticleMap extends Component {
   render() {
 		const { restaurants } = this.props;
 
-    console.log(restaurants);
-
 		return (
       <div id="map-canvas" className="map-canvas">
 
@@ -151,7 +146,6 @@ ArticleMap.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         offCanvas: state._offCanvas.offCanvas
     };

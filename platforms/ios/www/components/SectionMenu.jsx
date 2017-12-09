@@ -40,8 +40,6 @@ class SectionMenu extends Component {
 	render() {
 		const { menu, currency } = this.props.component;
 
-		console.log(menu);
-
 		//
 		// get currentlanguage from store, not like this
 		//
@@ -51,8 +49,6 @@ class SectionMenu extends Component {
 		const categoriesComponent = (menu && menu.categories && menu.categories.length > 0) ? menu.categories.map((category, index) => {
 			return <ArticleMenuDetail currentItem={currentItem} category={category} currency={currency} language={finalLanguage} key={index} />;
 		}) : null;
-
-		console.log(categoriesComponent);
 
 		const currentItem = this.state.currentSubNavItem || 0;
 
@@ -87,7 +83,6 @@ SectionMenu.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-	console.log(state);
   	return {
     	currentLanguage: state._currentLanguage.currentLanguage
   	};

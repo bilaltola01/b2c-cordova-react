@@ -35,8 +35,6 @@ class ArticleRestaurantDetail extends Component {
 	render() {
 		const { restaurant } = this.props;
 
-		console.log(restaurant);
-
 		const lastImage = (restaurant.images && restaurant.images.length > 0) ? (
 	      <img src={restaurant.images[restaurant.images.length - 1].Path} alt={restaurant.images[restaurant.images.length - 1].AltDesc} />
 	    ) : null;

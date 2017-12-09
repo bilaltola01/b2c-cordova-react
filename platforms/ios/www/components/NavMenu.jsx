@@ -20,7 +20,7 @@ let createHandlers = (ctx) => {
   };
 
   let goToExternalLink = (link) => {
-    window.open(link, '_blank', 'location=yes');
+    cordova.InAppBrowser.open(link, '_blank', 'location=yes');
   };
 
   return {
@@ -45,7 +45,7 @@ class NavMenu extends Component {
     const classes = classNames(
       'menu-btn',
       (this.state.isOpened) ? 'active' : ''
-    ); 
+    );
 
 		return (
       <div className="nav-menu">

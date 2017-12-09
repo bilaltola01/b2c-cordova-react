@@ -32,8 +32,6 @@ class SectionMap extends Component {
 
 		const mapRestaurants = this.getRestaurants(this.props.profile);
 
-		console.log(mapRestaurants);
-
 		const map = (mapRestaurants && mapRestaurants.length > 0) ? (
 			<ArticleMap restaurants={mapRestaurants} />
 		) : null;

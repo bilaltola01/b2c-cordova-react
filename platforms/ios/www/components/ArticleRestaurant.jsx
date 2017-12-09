@@ -6,8 +6,6 @@ class ArticleRestaurant extends Component {
   render() {
 		const { restaurant } = this.props;
 
-    console.log(restaurant);
-
     const firstImage = (restaurant.images && restaurant.images.length > 0) ? (
       <img src={restaurant.images[0].Path} alt={restaurant.images[0].AltDesc} />
     ) : null;

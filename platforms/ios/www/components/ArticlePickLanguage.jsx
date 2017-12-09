@@ -14,9 +14,6 @@ let createHandlers = (ctx) => {
 
   let onLanguageClick = (e, lang) => {
     ctx.props.dispatch(actionCreators.setCurrentLanguage(lang, (res) => {
-      console.log('changed current language!');
-      console.log(res);
-      console.log('now close popup');
       onClosePopup();
     }));
   };
@@ -36,8 +33,6 @@ class ArticlePickLanguage extends Component {
 
   render() {
     const { component, onClose } = this.props;
-
-    console.log(component);
 
     //
     // replace concat currentlanguage by english for now ( will be default)
@@ -72,8 +67,6 @@ class ArticlePickLanguage extends Component {
         ])
       ) : component.languages;
 
-      console.log(finalLanguages);
-
     const languagesComponent = (finalLanguages && finalLanguages.length > 0) ? finalLanguages.map((language, index) => {
       let lang = language.Language;
       return <article className="language clearfix" key={index}>
@@ -105,11 +98,10 @@ ArticlePickLanguage.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
-    return {
-        offCanvas: state._offCanvas.offCanvas,
-        currentLanguage: state._currentLanguage.currentLanguage
-    };
+  return {
+    offCanvas: state._offCanvas.offCanvas,
+    currentLanguage: state._currentLanguage.currentLanguage
+  };
 };
 
 export default connect(mapStateToProps)(ArticlePickLanguage);

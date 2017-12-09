@@ -12,8 +12,6 @@ class PageSection extends Component {
 	render() {
 		const { type, title, component } = this.props;
 
-		console.log(component);
-
 		return (type) ? ((articleType) => {
 			switch (articleType) {
 				case 'restaurants':

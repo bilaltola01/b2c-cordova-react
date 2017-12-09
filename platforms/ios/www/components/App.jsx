@@ -27,7 +27,7 @@ let createHandlers = (ctx) => {
 
   let onDeviceReady = () => {
     console.log('device is ready!');
-    console.log(window.cordova || cordova);
+    console.log(cordova);
     if (cordova.InAppBrowser) {
       window.open = cordova.InAppBrowser.open;
     }

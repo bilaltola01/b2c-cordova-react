@@ -9,11 +9,7 @@ class SectionMenus extends Component {
 		const { restaurants, currency } = this.props.component;
 
 		const restaurant = (restaurants && restaurants.length > 0) ? restaurants[0] : {};
-
-		console.log(restaurant);
-
-		const languages = (restaurant && restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages : []
-
+		const languages = (restaurant && restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages : [];
 		const articles = (restaurant && restaurant.menus && restaurant.menus.length > 0) ? restaurant.menus.map((menu, index) => {
 			return <ArticleMenu menu={menu} currency={currency} languages={languages} key={index} />;
 		}) : null;
