@@ -632,6 +632,7 @@ main {
 .restaurant--desc a {
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 .restaurant--desc a:hover {
     text-decoration: none;
@@ -829,6 +830,9 @@ main {
 
 .restaurant-details--contacts {
     padding: 15px;
+}
+.restaurant-details--contacts a {
+    cursor: pointer;
 }
 
 .restaurant-details--extra {

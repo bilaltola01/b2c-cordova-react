@@ -16,6 +16,7 @@ import PageRestaurant from './PageRestaurant';
 import PageMenu from './PageMenu';
 
 import Page from './Page';
+import { NavigatorUtils } from '../shared/navigator.utils.js';
 
 let createHandlers = (ctx) => {
   let getGeoLocation = (nav) => {
@@ -57,7 +58,18 @@ class App extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
+    if (NavigatorUtils.isMobile(window.navigator)) {
+      document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
+    } else {
+      
+      this.handlers.getGeoLocation(window.navigator);
+    }
+  }
+
+  componentWillUnmount() {
+    if (NavigatorUtils.isMobile(window.navigator)) {
+      document.removeEventListener('deviceready', this.handlers.onDeviceReady, false);
+    }
   }
 
   render () {
