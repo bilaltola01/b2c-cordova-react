@@ -34,8 +34,9 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--
         <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
-
+        -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 
@@ -52,30 +53,5 @@
         <div id="app-wrapper"></div>
         <script type="text/javascript" src="/cordova.js"></script>
         <script type="text/javascript" src="/main-bundle.js"></script>
-        <!--
-        <script>
-            function getGeo() {
-                var onSuccess = function(position) {
-                    console.log('Latitude: ' + position.coords.latitude + '\n' + 'Longitude: ' + position.coords.longitude+ '\n');
-                };
-
-                var onError = function onError(error) {
-                    console.log('code: '    + error.code    + '\n' +
-                          'message: ' + error.message + '\n');
-                };
-
-                navigator.geolocation.getCurrentPosition(onSuccess, onError);
-            }
-
-            function onDeviceReady() {
-                if (navigator.connection.type == Connection.NONE) {
-                    navigator.notification.alert('An internet connection is required to continue');
-                } else {
-                    getGeo();
-                }
-            }
-            document.addEventListener("deviceready", onDeviceReady, false);
-        </script>
-    -->
     </body>
 </html>
