@@ -58,18 +58,25 @@ class App extends Component {
   }
 
   componentDidMount() {
+    document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
+
+    if (!NavigatorUtils.isMobile(window.navigator)) {
+      this.handlers.getGeoLocation(window.navigator);
+    }
+    /*
     if (NavigatorUtils.isMobile(window.navigator)) {
       document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
     } else {
-      
       this.handlers.getGeoLocation(window.navigator);
-    }
+    }*/
   }
 
   componentWillUnmount() {
+    /*
     if (NavigatorUtils.isMobile(window.navigator)) {
       document.removeEventListener('deviceready', this.handlers.onDeviceReady, false);
     }
+    */
   }
 
   render () {
