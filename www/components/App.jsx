@@ -58,17 +58,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    if (NavigatorUtils.isMobile(window.navigator)) {
-      document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
-    } else {
-      this.handlers.getGeoLocation(window.navigator);
-    }
-  }
-
-  componentWillUnmount() {
-    if (NavigatorUtils.isMobile(window.navigator)) {
-      document.removeEventListener('deviceready', this.handlers.onDeviceReady, false);
-    }
+    document.addEventListener('deviceready', this.handlers.onDeviceReady, false);
+    this.handlers.getGeoLocation(window.navigator);
   }
 
   render () {
