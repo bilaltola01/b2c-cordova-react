@@ -8,16 +8,6 @@ import * as DomUtils from '../shared/dom.utils';
 let createHandlers = (ctx) => {
 	let onItemClick = (item) => {
 		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[item.index] : null;
-		if (item.index === 0 && menuCategory) {
-			window.dataLayer.push({
-		      'event': 'menuFirstCategoryClick',
-		      'menuID': menuCategory.MenuID,
-		      'menuCategoryID': menuCategory.MenuCategoryID,
-		      'categoryStandardID': menuCategory.Category.CategoryStandardID,
-		      'menuCategoryTitle': menuCategory.Category.Title,
-		      'menuCategoryDescription': menuCategory.Category.Description
-		    });
-		}
 
 		window.dataLayer.push({
 	      'event': 'menuCategoryClick',
@@ -41,6 +31,19 @@ let createHandlers = (ctx) => {
 		    pageDots: false,
 		    contain: true
 		});
+
+		const index = ctx.state.currentSubNavItem;
+		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[index] : null;
+		if (index == 0 && menuCategory) {
+			window.dataLayer.push({
+		      'event': 'menuFirstCategoryClick',
+		      'menuID': menuCategory.MenuID,
+		      'menuCategoryID': menuCategory.MenuCategoryID,
+		      'categoryStandardID': menuCategory.Category.CategoryStandardID,
+		      'menuCategoryTitle': menuCategory.Category.Title,
+		      'menuCategoryDescription': menuCategory.Category.Description
+		    });
+		}
 
 		// Handle carousel links
 		ctx.nav.on('staticClick', (e, pointer, el, index) => {
