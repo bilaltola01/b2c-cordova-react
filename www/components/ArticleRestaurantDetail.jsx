@@ -4,7 +4,21 @@ import { Link } from 'react-router-dom';
 const classNames = require('classnames');
 
 let createHandlers = (ctx) => {
-	let onContactButtonToggled = () => {
+	let onContactButtonToggled = (restaurant) => {
+		if (!ctx.state.contactsOpened) {
+			window.dataLayer.push({
+		      'event': 'restaurantDetailShowContacts',
+		      'branchAddress': restaurant.Address,
+		      'branchCity': restaurant.City,
+		      'branchName': restaurant.Name,
+		      'branchCountry': restaurant.Country,
+		      'branchID': restaurant.BranchID,
+		      'companyID': restaurant.CompanyID,
+		      'companyName': restaurant.CompanyName,
+		      'companyWebsite': restaurant.CompanyWebsite
+		    });
+		}
+
 		ctx.setState((prevState) => {
 			return {
 				contactsOpened: !prevState.contactsOpened
@@ -12,13 +26,61 @@ let createHandlers = (ctx) => {
 		});
 	};
 
-	let goToExternalLink = (link) => {
-		window.open(link, '_blank', 'location=no');
+	let goToGoogleMaps = (link) => {
+		window.dataLayer.push({
+	      'event': 'restaurantDetailGoogleMaps',
+	      'googleMapUrl': link
+	    });
+	    window.open(link, '_blank', 'location=no');
 	};
+
+	let goToExternalLink = (contact, link) => {
+	    window.dataLayer.push({
+	      'event': 'restaurantDetailContactWebsite',
+	      'branchContactID': contact.branchContactID,
+	      'branchID': contact.BranchID,
+	      'contactFirstname': contact.Firstname,
+	      'contactLastname': contact.Lastname,
+	      'contactIsAdmin': contact.IsAdmin,
+	      'contactWebsite': link
+	    });
+	    window.open(link, '_blank', 'location=no');
+	};
+
+	let goToEmailLink = (contact, email, body, subject) => {
+	    window.dataLayer.push({
+	      'event': 'restaurantDetailContactEmail',
+	      'branchContactID': contact.branchContactID,
+	      'branchID': contact.BranchID,
+	      'contactFirstname': contact.Firstname,
+	      'contactLastname': contact.Lastname,
+	      'contactIsAdmin': contact.IsAdmin,
+	      'contactEmail': email
+	    });
+	    window.open('mailto:' + email, '_system');
+	};
+
+	let goToTelLink = (contact, tel) => {
+	    window.dataLayer.push({
+	      'event': 'restaurantDetailContactTel',
+	      'branchContactID': contact.branchContactID,
+	      'branchID': contact.BranchID,
+	      'contactFirstname': contact.Firstname,
+	      'contactLastname': contact.Lastname,
+	      'contactIsAdmin': contact.IsAdmin,
+	      'contactTel': tel
+	    });
+	    window.open('tel:' + tel, '_system');
+	};
+
+
 
 	return {
 		onContactButtonToggled,
-		goToExternalLink
+		goToExternalLink,
+	    goToEmailLink,
+	    goToGoogleMaps,
+	    goToTelLink
 	};
 };
 
@@ -93,7 +155,7 @@ class ArticleRestaurantDetail extends Component {
 							<div className="contact-block contact-block--email">
 								<p>
 									Email: <br />
-									<a href={"mailto:" + firstContact.email}><span>{firstContact.email}</span></a>
+									<a id="restaurantDetailEmailClick" onClick={() => {this.handlers.goToEmailLink(firstContact, firstContact.email)}}><span>{firstContact.email}</span></a>
 								</p>
 							</div>
 		                }
@@ -102,7 +164,7 @@ class ArticleRestaurantDetail extends Component {
 							<div className="contact-block contact-block--tel">
 								<p>
 									Tel: <br />
-									<a href={"tel:" + firstContact.tel}><span>{firstContact.tel}</span></a>
+									<a id="restaurantDetailTelClick" onClick={() => {this.handlers.goToTelLink(firstContact, firstContact.tel)}}><span>{firstContact.tel}</span></a>
 								</p>
 							</div>
 		                }
@@ -111,7 +173,7 @@ class ArticleRestaurantDetail extends Component {
 							<div className="contact-block contact-block--website">
 								<p>
 									Website: <br />
-									<a href={firstContact.website} target="_blank"><span>{firstContact.website}</span></a>
+									<a id="restaurantDetailWebsiteClick" onClick={() => {this.handlers.goToExternalLink(firstContact, firstContact.website)}}><span>{firstContact.website}</span></a>
 								</p>
 							</div>
 		                }
@@ -138,7 +200,7 @@ class ArticleRestaurantDetail extends Component {
 
 	    const subTitleComponent = (googleMapsUrl && googleMapsUrl.length > 0) ? (
 	    	<h2 className="main-subtitle">
-		    	<a onClick={() => {this.handlers.goToExternalLink('https://www.google.com/maps/search/'+ googleMapsUrl)}}>
+		    	<a id="restaurantDetailGoogleMapsClick" onClick={() => {this.handlers.goToGoogleMaps('https://www.google.com/maps/search/'+ googleMapsUrl)}}>
 					{restaurant.Address} <br />
 					{restaurant.City}, {restaurant.Country}
 				</a>
@@ -177,7 +239,7 @@ class ArticleRestaurantDetail extends Component {
 
 						{contactComponent}
 
-						<button className="button--contact" onClick={this.handlers.onContactButtonToggled}>{contactButtonText}</button>
+						<button className="button--contact" onClick={() => {this.handlers.onContactButtonToggled(restaurant)}}>{contactButtonText}</button>
 					</div>
 				</section>
 			</article>

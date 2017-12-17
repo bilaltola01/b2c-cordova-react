@@ -3,9 +3,30 @@ import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router-dom';
 import { MAP_CONSTANTS } from  '../shared/mapping.utils';
 
+let createHandlers = (ctx) => {
+  let onMealClick = (meal) => {
+    window.dataLayer.push({
+      'event': 'menuMealClick',
+      'menuID': meal.MenuCategoryID,
+      'mealDetailID': meal.MealDetailID,
+      'mealID': meal.MealID,
+      'mealTitle': meal.Title,
+      'mealPrice': meal.Price,
+      'mealEnableDetails': meal.EnableDetails,
+      'mealDescription': meal.Description
+    });
+  };
+
+  return {
+    onMealClick
+  };
+};
+
 class ArticleMeal extends Component {
  	constructor(props) {
     	super(props);
+
+      this.handlers = createHandlers(this);
   	}
 
   	getTranslatedMeal(lang, translations) {
@@ -42,63 +63,65 @@ class ArticleMeal extends Component {
 		const translatedMeal = this.getTranslatedMeal(currentLanguage, meal.translations);
 
 		const titleComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
-        	<h2>{translatedMeal.title}<br />
-          		<em>({meal.Title})</em>
-        	</h2>
-      	) : (
-        	<h2>{meal.Title}</h2>
-    	);
+    	<h2>{translatedMeal.title}<br />
+      		<em>({meal.Title})</em>
+    	</h2>
+  	) : (
+      <h2>{meal.Title}</h2>
+    );
 
-    	const descriptionComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
-    		<p className="meal--desc">
-    			{translatedMeal.description}
-    		</p>
-    	) : (
-    		<p className="meal--desc">
-    			{meal.Description}
-    		</p>
-    	);
+  	const descriptionComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (
+  		<p className="meal--desc">
+  			{translatedMeal.description}
+  		</p>
+  	) : (
+  		<p className="meal--desc">
+  			{meal.Description}
+  		</p>
+  	);
 
-    	const reviewComponent = (index === 0) ? (
-    		<div className="reviews">
-    			<header>
-    				<h3>How was your meal?</h3>
-    				<p>
-    					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nisl ac justo dapibus molestie at ac nibh.
-    				</p>
-    			</header>
-	    		<ul className="reviews-menu">
-	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
-	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
-	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
-	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
-	    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
-	    		</ul>
-    		</div>
-    	) : null;
+    const reviewComponent = (index === 0) ? (
+  		<div className="reviews">
+  			<header>
+  				<h3>How was your meal?</h3>
+  				<p>
+  					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut nisl ac justo dapibus molestie at ac nibh.
+  				</p>
+  			</header>
+    		<ul className="reviews-menu">
+    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+    			<li><img src="assets/images/icon_drawn_heart.png" alt="" /></li>
+    		</ul>
+  		</div>
+  	) : null;
 
-      	return (
-        	<section className="meal">
-		        <div className="meal--header">
-		            <div className="price">
-		            	{symbol} {meal.Price}
-		            </div>
-		            <header>
-		            	{titleComponent}
-		        	</header>
-		        </div>
-          		<div className="meal--content">
-          			{descriptionComponent}
-          		</div>
+  	return (
+    	<section className="meal">
+        <div className="meal--container" onClick={() => {this.handlers.onMealClick(meal)}}>
+	        <div className="meal--header">
+	            <div className="price">
+	            	{symbol} {meal.Price}
+	            </div>
+	            <header>
+	            	{titleComponent}
+	        	</header>
+	        </div>
+      		<div className="meal--content">
+      			{descriptionComponent}
+      		</div>
 
-              {/*
-            		<div className="meal--review">
-            			{reviewComponent}
-            		</div>
-                */
-              }
-        	</section>
-      	);
+          {/*
+        		<div className="meal--review">
+        			{reviewComponent}
+        		</div>
+            */
+          }
+        </div>
+    	</section>
+  	);
 	}
 };
 

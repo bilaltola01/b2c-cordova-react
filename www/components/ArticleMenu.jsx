@@ -3,7 +3,29 @@ import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router-dom';
 import { MAP_CONSTANTS } from  '../shared/mapping.utils';
 
+let createHandlers = (ctx) => {
+  let onMenuClick = (menu) => {
+    window.dataLayer.push({
+      'event': 'restaurantDetailMenu',
+      'menuID': menu.MenuID,
+      'branchID': menu.BranchID,
+      'menuPrice': menu.Price,
+      'menuTitle': menu.Title,
+      'menuDescription': menu.Description
+    });
+  };
+
+  return {
+    onMenuClick
+  };
+};
+
 class ArticleMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.handlers = createHandlers(this);
+  }
+
   render() {
 		const { menu, currency, languages } = this.props;
 
@@ -31,7 +53,7 @@ class ArticleMenu extends Component {
     const menuComponent = (menu.categories && menu.categories.length > 0) ? (
       <section className="meal">
 
-        <Link to={"/restaurant/" + menu.BranchID + "/menu/" + menu.MenuID} className="menu--link">
+        <Link onClick={() => {this.handlers.onMenuClick(menu)}} to={"/restaurant/" + menu.BranchID + "/menu/" + menu.MenuID} className="menu--link restaurantDetailToMenu meal--container">
           <div className="meal--header">
             <div className="price">
               {symbol} {menu.Price}

@@ -12,21 +12,73 @@ let createHandlers = (ctx) => {
     }
   };
 
-  let goToExternalLink = (link) => {
+  let onMenusClick = (restaurant) => {
+    window.dataLayer.push({
+      'event': 'mapRestaurantMenus',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite
+    });
+
+    onClosePopup();
+  };
+
+  let goToExternalLink = (restaurant, link) => {
+    window.dataLayer.push({
+      'event': 'mapRestaurantContactWebsite',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite
+    });
     window.open(link, '_blank', 'location=no');
   };
 
-  let goToEmailLink = (email, body, subject) => {
+  let goToEmailLink = (restaurant, email, body, subject) => {
+    window.dataLayer.push({
+      'event': 'mapRestaurantContactEmail',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite,
+      'companyEmail': restaurant.CompanyEmail
+    });
     window.open('mailto:' + email, '_system');
   };
 
-  let goToTelLink = (tel) => {
+  let goToTelLink = (restaurant, tel) => {
+    window.dataLayer.push({
+      'event': 'mapRestaurantContactTel',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite,
+      'companyTel': restaurant.CompanyTel
+    });
     window.open('tel:' + tel, '_system');
   };
 
 
   return {
     onClosePopup,
+    onMenusClick,
     goToExternalLink,
     goToEmailLink,
     goToTelLink
@@ -77,14 +129,14 @@ class ArticleRestaurantMapDetail extends Component {
           <div className="restaurant--content">
             <h4>{restaurant.Address}</h4>
             <p className="restaurant--desc">
-              Email: <a onClick={() => {this.handlers.goToEmailLink(contactEmail)}}>{contactEmail}</a><br />
-              Tel: <a onClick={() => {this.handlers.goToTelLink(contactTel)}}>{contactTel}</a><br />
-              Website: <a onClick={() => {this.handlers.goToExternalLink(contactWebsite)}}>{contactWebsite}</a><br />
+              Email: <a id="mapRestaurantEmailClick" onClick={() => {this.handlers.goToEmailLink(restaurant, contactEmail)}}>{contactEmail}</a><br />
+              Tel: <a id="mapRestaurantTelClick" onClick={() => {this.handlers.goToTelLink(restaurant, contactTel)}}>{contactTel}</a><br />
+              Website: <a id="mapRestaurantWebsiteClick" onClick={() => {this.handlers.goToExternalLink(restaurant, contactWebsite)}}>{contactWebsite}</a><br />
             </p>
           </div>
         </article>
         <footer className="popup--footer">
-          <Link to={"/restaurants/" + restaurant.BranchID + "/menus"} onClick={this.handlers.onClosePopup}>Menus</Link>
+          <Link id="mapRestaurantToMenus" to={"/restaurants/" + restaurant.BranchID + "/menus"} onClick={() => {this.handlers.onMenusClick(restaurant)}}>Menus</Link>
         </footer>
       </div>
     )

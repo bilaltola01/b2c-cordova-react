@@ -22,6 +22,17 @@ let createHandlers = (ctx) => {
   };
 
   let onMarkerClick = (marker, restaurant, index) => {
+    window.dataLayer.push({
+      'event': 'mapMarkerClick',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite
+    });
     setOffCanvas({
       isOpened: true,
       type: 'MapDetail',

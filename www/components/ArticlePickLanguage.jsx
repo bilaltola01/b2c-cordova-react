@@ -13,6 +13,16 @@ let createHandlers = (ctx) => {
   };
 
   let onLanguageClick = (e, lang) => {
+    window.dataLayer.push({
+      'event': 'menuChooseLanguageItemClick',
+      'languageID': lang.LanguageID,
+      'branchID': lang.BranchID,
+      'branchLanguageID': lang.BranchLanguageID,
+      'languageCode': lang.Code,
+      'languageCodeFull': lang.CodeFull,
+      'languageTitle': lang.Title,
+      'languageName': lang.Name
+    });
     ctx.props.dispatch(actionCreators.setCurrentLanguage(lang, (res) => {
       onClosePopup();
     }));
@@ -70,7 +80,7 @@ class ArticlePickLanguage extends Component {
     const languagesComponent = (finalLanguages && finalLanguages.length > 0) ? finalLanguages.map((language, index) => {
       let lang = language.Language;
       return <article className="language clearfix" key={index}>
-          <div className="language--item" onClick={(e) => this.handlers.onLanguageClick(e, lang)}>
+          <div className="language--item" id="chooseLanguageItemClick" onClick={(e) => this.handlers.onLanguageClick(e, lang)}>
             {lang && lang.Flag && lang.Flag.Path &&
               <img src={lang.Flag.Path} alt={lang.Flag.AltDescription} />
             }

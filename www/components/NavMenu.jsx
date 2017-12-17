@@ -61,13 +61,13 @@ class NavMenu extends Component {
             */}
 
             <ul className="menu--simple">
-              <li><Link to="/home" onClick={this.handlers.closeMenu}>Restaurants</Link></li>
-              <li><Link to="/map" onClick={this.handlers.closeMenu}>Map</Link></li>
-              <li><Link to="/restaurants/34/menus" onClick={this.handlers.closeMenu}>Menus</Link></li>
+              <li><Link id="navMenuToRestaurants" to="/home" onClick={this.handlers.closeMenu}>Restaurants</Link></li>
+              <li><Link id="navMenuToMap" to="/map" onClick={this.handlers.closeMenu}>Map</Link></li>
+              <li><Link id="navMenuToMenus" to="/restaurants/34/menus" onClick={this.handlers.closeMenu}>Menus</Link></li>
             </ul>
 
             <div className="link--bottom">
-              <a onClick={() => {this.handlers.goToExternalLink('http://one-menu.com/uploads/ONE-MENU_Terms_Of_Use.pdf')}}>Terms of Use</a>
+              <a id="navMenuToTOU" onClick={() => {this.handlers.goToExternalLink('http://one-menu.com/uploads/ONE-MENU_Terms_Of_Use.pdf')}}>Terms of Use</a>
             </div>
           </div>
         </nav>

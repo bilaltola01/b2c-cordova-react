@@ -2,7 +2,33 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
 
+let createHandlers = (ctx) => {
+  let onRestaurantClick = (restaurant) => {
+    window.dataLayer.push({
+      'event': 'homeRestaurantClick',
+      'branchAddress': restaurant.Address,
+      'branchCity': restaurant.City,
+      'branchName': restaurant.Name,
+      'branchCountry': restaurant.Country,
+      'branchID': restaurant.BranchID,
+      'companyID': restaurant.CompanyID,
+      'companyName': restaurant.CompanyName,
+      'companyWebsite': restaurant.CompanyWebsite
+    });
+  };
+
+  return {
+    onRestaurantClick
+  };
+};
+
 class ArticleRestaurant extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handlers = createHandlers(this);
+  }
+
   render() {
 		const { restaurant } = this.props;
 
@@ -16,7 +42,7 @@ class ArticleRestaurant extends Component {
 
 		return (
       <article className="article--restaurant">
-        <Link to={"/restaurants/" + restaurant.BranchID + "/menus"}>
+        <Link className="homeToRestaurant" onClick={() => {this.handlers.onRestaurantClick(restaurant)}} to={"/restaurants/" + restaurant.BranchID + "/menus"}>
           <div className="overlay overlay--black"></div>
           {lastImage}
 
