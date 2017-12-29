@@ -89,27 +89,37 @@ class ArticleMap extends Component {
     });
   }
 
+  bindBoundsChanged(google, map) {
+    this.zoomChangeBoundsListener = google.maps.event.addListener(map, 'bounds_changed', function (event) {
+      if (this.getZoom() > 15 && this.initialZoom == true) {
+        // Change max/min zoom here
+        this.setZoom(15);
+        this.initialZoom = false;
+      }
+      google.maps.event.removeListener(this.zoomChangeBoundsListener);
+    });
+  }
+
   setupMap(map, google, restaurants) {
     if (!restaurants || restaurants.length <= 0) {
       return ;
     }
 
+    let bounds = new google.maps.LatLngBounds();
+
     restaurants.forEach((restaurant, index) => {
       // Extend the bounds to all markers
-      let bounds = new google.maps.LatLngBounds();
-      bounds.extend({
-        lat: restaurant.Latitude,
-        lng: restaurant.Longitude
-      });
+      let location = new google.maps.LatLng(restaurant.Latitude, restaurant.Longitude);
+      bounds.extend(location);
 
       // Create marker
       let marker = this.createMarker(map, google, restaurant);
 
       // Bind marker events
       this.bindMarkerEvents(google, marker, restaurant, index);
-
-      this.googleMap.fitBounds(bounds);
     });
+
+    this.googleMap.fitBounds(bounds);
   }
 
   componentDidMount() {
@@ -121,23 +131,26 @@ class ArticleMap extends Component {
     this.handlers.initGoogleMaps().then(google => {
       this.googleMap = new google.maps.Map(document.getElementById('map-canvas'), {
         mapTypeId: 'roadmap',
-        zoom: 13,
         center: defaultCenterPosition
       });
 
-      let restaurants = this.props.restaurants.map((restaurant, index) => {
-        let obj = restaurant;
-
-        return obj;
+      // Listen for zoom/bounds change and sync the zoom while bounds change
+      google.maps.event.addListener(this.googleMap, 'zoom_changed', () => {
+        this.bindBoundsChanged(google, this.googleMap);
       });
 
+      this.googleMap.initialZoom = true;
+
+      let restaurants = this.props.restaurants;
       this.setupMap(this.googleMap, google, restaurants);
 
-      // Restore the zoom level after the map is done scaling
-      let idleListener = google.maps.event.addListener(this.googleMap, 'idle', () => {
-          this.googleMap.setZoom(13);
-          google.maps.event.removeListener(idleListener);
-      });
+      /*
+        // Restore the zoom level after the map is done scaling
+        let idleListener = google.maps.event.addListener(this.googleMap, 'idle', () => {
+            this.googleMap.setZoom(13);
+            google.maps.event.removeListener(idleListener);
+        });
+      */
     });
   }
 
