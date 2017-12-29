@@ -63,7 +63,7 @@ class NavMenu extends Component {
             <ul className="menu--simple">
               <li><Link id="navMenuToRestaurants" to="/home" onClick={this.handlers.closeMenu}>Restaurants</Link></li>
               <li><Link id="navMenuToMap" to="/map" onClick={this.handlers.closeMenu}>Map</Link></li>
-              <li><Link id="navMenuToMenus" to="/restaurants/34/menus" onClick={this.handlers.closeMenu}>Menus</Link></li>
+              <li><Link id="navMenuToMenus" to="/restaurants/44/menus" onClick={this.handlers.closeMenu}>Menus</Link></li>
             </ul>
 
             <div className="link--bottom">

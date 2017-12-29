@@ -112,7 +112,7 @@ class ArticleRestaurantDetail extends Component {
 	    const firstContact = (restaurant.contacts && restaurant.contacts.length > 0)
 	    	? {
 	    		image: {
-	    			path: restaurant.contacts[0].ImagePath,
+	    			path: restaurant.contacts[0].ImagePath || '../assets/images/icon-person.svg',
 	    			altDesc: restaurant.contacts[0].ImageAltDesc
 	    		},
 	    		name: restaurant.contacts[0].Firstname + ' ' + restaurant.contacts[0].Lastname,
