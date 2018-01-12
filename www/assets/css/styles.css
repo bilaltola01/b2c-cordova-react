@@ -823,7 +823,7 @@ main {
 
 .restaurant-details--image {
     position: relative;
-    max-height: 300px;
+    max-height: 220px;
     overflow: hidden;
     border-bottom: 5px solid #fcd230;
 }

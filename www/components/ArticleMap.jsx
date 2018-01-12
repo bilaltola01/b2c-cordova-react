@@ -74,7 +74,7 @@ class ArticleMap extends Component {
         lat: restaurant.Latitude,
         lng: restaurant.Longitude
       },
-      icon: 'assets/images/map-marker.png',
+      icon: 'assets/images/map-marker-2.png',
       map: map
     });
 

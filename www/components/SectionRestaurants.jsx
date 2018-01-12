@@ -7,7 +7,9 @@ class SectionRestaurants extends Component {
 	render() {
 		const { restaurants } = this.props.component;
 
-		const articles = (restaurants && restaurants.length > 0) ? restaurants.map((restaurant, index) => {
+		const articles = (restaurants && restaurants.length > 0) ? restaurants.sort((a, b) => {
+			return b.BranchID - a.BranchID;
+		}).map((restaurant, index) => {
 			return <ArticleRestaurant restaurant={restaurant} key={index} />;
 		}) : null;
 
