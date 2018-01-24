@@ -445,6 +445,9 @@ main {
     max-height: 260px;
     overflow: hidden;
 }
+.article--restaurant a {
+    display: block;
+}
 .article--restaurant img {
     width: 100%;
     height: auto;
@@ -502,7 +505,8 @@ main {
 .map-canvas {
     width: 100%;
     height: 600px;
-    height: 100vh;
+    height: calc(100vh - 48px);
+    top: 48px;
 }
 
 .popup {
@@ -819,7 +823,7 @@ main {
 
 .restaurant-details--image {
     position: relative;
-    max-height: 300px;
+    max-height: 220px;
     overflow: hidden;
     border-bottom: 5px solid #fcd230;
 }
@@ -992,13 +996,16 @@ main {
 
 
 .meal {
-    padding: 15px;
     border-bottom: 1px solid #eaebec;
 }
 .meal:last-child {
     border-bottom: 0 none;
 }
-
+.meal--container {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+}
 .meal--header h2 {
     margin: 0 55px 0 0;
     padding: 0;

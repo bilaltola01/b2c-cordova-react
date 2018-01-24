@@ -112,7 +112,7 @@
 .main-nav .link--bottom a {
 	color: #fcd230;
     cursor: pointer;
-	font-size: 0.8em;
+	font-size: 1.05em;
 }
 
 .main-nav .link--top {
@@ -177,7 +177,7 @@ Can be wrapped in a media query if needed
 	font-weight: normal;
 	letter-spacing: 0.01em;
 	color: #fcd230;
-    font-size: 0.9em;
+    font-size: 1.05em;
     line-height: 1.8em;
     text-decoration: none;
 }
