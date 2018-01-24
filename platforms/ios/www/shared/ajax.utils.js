@@ -1,7 +1,7 @@
 "use strict";
 
 import 'whatwg-fetch';
-const constants = require('../../constants');
+const constants = require('../constants');
 
 const SERVER_URL = (constants.ENV_MODE === 'DEV') ? 'http://localhost:8080' : 'https://one-menu-b2b.herokuapp.com';
 const BASE_URL = constants.SERVER_URL || SERVER_URL;
