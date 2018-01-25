@@ -13,7 +13,7 @@
     "server": "node server",
     "start": "npm run start:server",
     "start:local": "SERVER_URL=https://one-menu-b2b.herokuapp.com node main.js",
-    "start:server": "serve -p 8081 -s build",
+    "start:server": "serve -s build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "One Menu Development Team",
