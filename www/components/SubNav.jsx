@@ -4,19 +4,25 @@ import { Link } from 'react-router-dom';
 const classNames = require('classnames');
 const Flickity = require('flickity');
 import * as DomUtils from '../shared/dom.utils';
+import pushAnalytics from '../shared/analytics.utils';
 
 let createHandlers = (ctx) => {
 	let onItemClick = (item) => {
 		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[item.index] : null;
 
-		window.dataLayer.push({
+		pushAnalytics.push({
 	      'event': 'menuCategoryClick',
 	      'menuID': menuCategory.MenuID,
 	      'menuCategoryID': menuCategory.MenuCategoryID,
 	      'categoryStandardID': menuCategory.Category.CategoryStandardID,
 	      'menuCategoryTitle': menuCategory.Category.Title,
 	      'menuCategoryDescription': menuCategory.Category.Description
-	    });
+	    }, {
+			event: 'menuCategoryClick',
+			type: 'MenuCategory',
+			id: menuCategory.MenuCategoryID,
+			title: menuCategory.Title,
+		});
 
 		if (ctx.props.onNavItemClick) {
 			ctx.props.onNavItemClick(item);
@@ -35,14 +41,19 @@ let createHandlers = (ctx) => {
 		const index = ctx.state.currentSubNavItem;
 		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[index] : null;
 		if (index == 0 && menuCategory) {
-			window.dataLayer.push({
+			pushAnalytics.push({
 		      'event': 'menuFirstCategoryClick',
 		      'menuID': menuCategory.MenuID,
 		      'menuCategoryID': menuCategory.MenuCategoryID,
 		      'categoryStandardID': menuCategory.Category.CategoryStandardID,
 		      'menuCategoryTitle': menuCategory.Category.Title,
 		      'menuCategoryDescription': menuCategory.Category.Description
-		    });
+		    }, {
+				event: 'menuFirstCategoryClick',
+				type: 'MenuCategory',
+				id: menuCategory.MenuCategoryID,
+				title: menuCategory.Title,
+			});
 		}
 
 		// Handle carousel links

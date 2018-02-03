@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
+import pushAnalytics from '../shared/analytics.utils';
 
 const API_KEY = 'AIzaSyC56hlref5MVvd-CJwEKk6POlwEp9Ed6W8';
 
@@ -22,7 +23,7 @@ let createHandlers = (ctx) => {
   };
 
   let onMarkerClick = (marker, restaurant, index) => {
-    window.dataLayer.push({
+    pushAnalytics({
       'event': 'mapMarkerClick',
       'branchAddress': restaurant.Address,
       'branchCity': restaurant.City,
@@ -32,7 +33,13 @@ let createHandlers = (ctx) => {
       'companyID': restaurant.CompanyID,
       'companyName': restaurant.CompanyName,
       'companyWebsite': restaurant.CompanyWebsite
+    }, {
+      event: 'mapMarkerClick',
+			type: 'Branch',
+			id: restaurant.branchID,
+			title: restaurant.Name,
     });
+    
     setOffCanvas({
       isOpened: true,
       type: 'MapDetail',

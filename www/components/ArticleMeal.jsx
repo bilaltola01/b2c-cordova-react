@@ -2,10 +2,11 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
 import { MAP_CONSTANTS } from  '../shared/mapping.utils';
+import pushAnalytics from '../shared/analytics.utils';
 
 let createHandlers = (ctx) => {
   let onMealClick = (meal) => {
-    window.dataLayer.push({
+		pushAnalytics({
       'event': 'menuMealClick',
       'menuID': meal.MenuCategoryID,
       'mealDetailID': meal.MealDetailID,
@@ -14,7 +15,12 @@ let createHandlers = (ctx) => {
       'mealPrice': meal.Price,
       'mealEnableDetails': meal.EnableDetails,
       'mealDescription': meal.Description
-    });
+		}, {
+			event: 'menuMealClick',
+			type: 'Meal',
+			id: meal.MealID,
+			title: meal.Title,
+		});
   };
 
   return {

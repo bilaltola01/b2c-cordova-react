@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
+import pushAnalytics from '../shared/analytics.utils';
 
 let createHandlers = (ctx) => {
   let onRestaurantClick = (restaurant) => {
-    window.dataLayer.push({
+    pushAnalytics.push({
       'event': 'homeRestaurantClick',
       'branchAddress': restaurant.Address,
       'branchCity': restaurant.City,
@@ -14,6 +15,11 @@ let createHandlers = (ctx) => {
       'companyID': restaurant.CompanyID,
       'companyName': restaurant.CompanyName,
       'companyWebsite': restaurant.CompanyWebsite
+    }, {
+      event: 'homeRestaurantClick',
+			type: 'Branch',
+			id: restaurant.BranchID,
+			title: restaurant.Name,
     });
   };
 

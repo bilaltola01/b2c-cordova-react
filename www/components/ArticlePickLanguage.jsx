@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
+import pushAnalytics from '../shared/analytics.utils';
 
 let createHandlers = (ctx) => {
   let onClosePopup = () => {
@@ -13,7 +14,7 @@ let createHandlers = (ctx) => {
   };
 
   let onLanguageClick = (e, lang) => {
-    window.dataLayer.push({
+    pushAnalytics.push({
       'event': 'menuChooseLanguageItemClick',
       'languageID': lang.LanguageID,
       'branchID': lang.BranchID,
@@ -22,6 +23,11 @@ let createHandlers = (ctx) => {
       'languageCodeFull': lang.CodeFull,
       'languageTitle': lang.Title,
       'languageName': lang.Name
+    }, {
+      event: 'menuChooseLanguageItemClick',
+			type: 'BranchLanguage',
+			id: lang.BranchLanguageID,
+			title: lang.Title,
     });
     ctx.props.dispatch(actionCreators.setCurrentLanguage(lang, (res) => {
       onClosePopup();
