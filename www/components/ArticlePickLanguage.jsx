@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 let createHandlers = (ctx) => {
   let onClosePopup = () => {
@@ -13,21 +13,21 @@ let createHandlers = (ctx) => {
     }
   };
 
-  let onLanguageClick = (e, lang) => {
-    pushAnalytics.push({
+  let onLanguageClick = (e, lang, companyId) => {
+    pushAnalytics({
       'event': 'menuChooseLanguageItemClick',
       'languageID': lang.LanguageID,
       'branchID': lang.BranchID,
-      'branchLanguageID': lang.BranchLanguageID,
       'languageCode': lang.Code,
       'languageCodeFull': lang.CodeFull,
       'languageTitle': lang.Title,
       'languageName': lang.Name
     }, {
       event: 'menuChooseLanguageItemClick',
-			type: 'BranchLanguage',
-			id: lang.BranchLanguageID,
-			title: lang.Title,
+			type: 'Language',
+			id: lang.LanguageID,
+      title: lang.Title,
+      companyId: companyId,
     });
     ctx.props.dispatch(actionCreators.setCurrentLanguage(lang, (res) => {
       onClosePopup();
@@ -48,7 +48,7 @@ class ArticlePickLanguage extends Component {
   }
 
   render() {
-    const { component, onClose } = this.props;
+    const { component, companyId, onClose } = this.props;
 
     //
     // replace concat currentlanguage by english for now ( will be default)
@@ -86,7 +86,7 @@ class ArticlePickLanguage extends Component {
     const languagesComponent = (finalLanguages && finalLanguages.length > 0) ? finalLanguages.map((language, index) => {
       let lang = language.Language;
       return <article className="language clearfix" key={index}>
-          <div className="language--item" id="chooseLanguageItemClick" onClick={(e) => this.handlers.onLanguageClick(e, lang)}>
+          <div className="language--item" id="chooseLanguageItemClick" onClick={(e) => this.handlers.onLanguageClick(e, lang, companyId)}>
             {lang && lang.Flag && lang.Flag.Path &&
               <img src={lang.Flag.Path} alt={lang.Flag.AltDescription} />
             }

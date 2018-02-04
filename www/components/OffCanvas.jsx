@@ -54,7 +54,10 @@ class OffCanvas extends Component {
   }
 
 	render () {
-		const { isOpened, type, transition, component } = this.props;
+    const { isOpened, type, transition, companyId, component } = this.props;
+    
+    console.log('offcanvas');
+    console.log(this.props);
 
     const finalComponent = (type) ? ((t, c) => {
       switch (t) {
@@ -102,7 +105,7 @@ class OffCanvas extends Component {
 				case 'MapDetail':
 					return <ArticleRestaurantMapDetail component={finalComponent} onClose={this.handlers.onCloseOffCanvas} />;
         case 'PickLanguage':
-          return <ArticlePickLanguage component={finalComponent} onClose={this.handlers.onCloseOffCanvas} />;
+          return <ArticlePickLanguage companyId={companyId} component={finalComponent} onClose={this.handlers.onCloseOffCanvas} />;
 			}
 		})(type) : null;
 

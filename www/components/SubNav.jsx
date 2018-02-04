@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const classNames = require('classnames');
 const Flickity = require('flickity');
 import * as DomUtils from '../shared/dom.utils';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 let createHandlers = (ctx) => {
-	let onItemClick = (item) => {
+	let onItemClick = (item, companyId) => {
 		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[item.index] : null;
 
-		pushAnalytics.push({
+		pushAnalytics({
 	      'event': 'menuCategoryClick',
 	      'menuID': menuCategory.MenuID,
 	      'menuCategoryID': menuCategory.MenuCategoryID,
@@ -22,6 +22,7 @@ let createHandlers = (ctx) => {
 			type: 'MenuCategory',
 			id: menuCategory.MenuCategoryID,
 			title: menuCategory.Title,
+			companyId: companyId,
 		});
 
 		if (ctx.props.onNavItemClick) {
@@ -41,7 +42,7 @@ let createHandlers = (ctx) => {
 		const index = ctx.state.currentSubNavItem;
 		const menuCategory = ctx.props.categories && ctx.props.categories.length > 0 ? ctx.props.categories[index] : null;
 		if (index == 0 && menuCategory) {
-			pushAnalytics.push({
+			pushAnalytics({
 		      'event': 'menuFirstCategoryClick',
 		      'menuID': menuCategory.MenuID,
 		      'menuCategoryID': menuCategory.MenuCategoryID,
@@ -53,6 +54,7 @@ let createHandlers = (ctx) => {
 				type: 'MenuCategory',
 				id: menuCategory.MenuCategoryID,
 				title: menuCategory.Title,
+				companyId: ctx.props.companyId,
 			});
 		}
 
@@ -64,7 +66,7 @@ let createHandlers = (ctx) => {
 
 			DomUtils.removeClass(document.querySelector('.subnav--item.active'), 'active');
 			DomUtils.toggleClass(document.querySelectorAll('.subnav--item')[index], 'active');
-			onItemClick({index: index});
+			onItemClick({index: index}, ctx.props.companyId);
 		});
 	};
 
@@ -88,7 +90,7 @@ class SubNav extends Component {
 	}
 
 	render() {
-		const { categories, currentItem, onNavItemClick } = this.props;
+		const { categories, companyId, currentItem, onNavItemClick } = this.props;
 
 		const categoriesComponent = (categories && categories.length > 0) ? categories.map((category, index) => {
 			return (currentItem === index) ? (

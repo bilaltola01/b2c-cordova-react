@@ -15,12 +15,12 @@ class PageContent extends Component {
     }
 
   	render () {
-  		const { sections, navigation, footer, title, offCanvasSettings } = this.props;
+  		const { sections, navigation, footer, title, companyId, offCanvasSettings } = this.props;
 
         const isOpened = (this.props.offCanvas) ? this.props.offCanvas.isOpened : false;
 
     	const offCanvasComponent = (offCanvasSettings && offCanvasSettings.isVisible && this.props.offCanvas) ? (
-            <OffCanvas isOpened={isOpened} type={this.props.offCanvas.type || offCanvasSettings.type} transition={this.props.offCanvas.transition || offCanvasSettings.transition || null} component={this.props.offCanvas.component} />
+            <OffCanvas companyId={companyId} isOpened={isOpened} type={this.props.offCanvas.type || offCanvasSettings.type} transition={this.props.offCanvas.transition || offCanvasSettings.transition || null} component={this.props.offCanvas.component} />
         ) : null;
 
     	const headerComponent = (navigation) ? (

@@ -47,7 +47,6 @@ class PageMenu extends Component {
     navigation.leftButtons[0].action.path += ('/' + id);
 
     const restaurants = this.getRestaurants(this.props.profile);
-
     const restaurant = (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
       return parseInt(r.BranchID, 10) === parseInt(id, 10);
     }) : null;
@@ -58,18 +57,20 @@ class PageMenu extends Component {
       return parseInt(menu.MenuID, 10) === parseInt(menuId, 10);
     }) : null;
 
+    const companyId = restaurant && restaurant[0] ? restaurant[0].CompanyID : null;
     const sections = [{
       type: 'restaurant-menu',
       title: '',
       component: {
         menu,
-        currency
+        currency,
+        companyId: companyId,
       }
     }];
 
     return (
       <div>
-        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
+        <PageContent companyId={companyId} title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
       </div>
     )
   }

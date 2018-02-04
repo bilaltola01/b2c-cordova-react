@@ -1,9 +1,11 @@
-export const pushAnalytics = (obj, dbObj) => {
+import { Ajax } from '../../shared/ajax.utils';
+
+export default function pushAnalytics(obj, dbObj) {
     window.dataLayer.push(obj);
     pushDatabaseAnalytics(dbObj);
 };
 
-export const pushDatabaseAnalytics = (obj) => {
+export function pushDatabaseAnalytics(obj) {
     return Ajax().post('/analytics', {
         body: JSON.stringify(obj),
         headers: {

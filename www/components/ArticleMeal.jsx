@@ -2,10 +2,10 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
 import { MAP_CONSTANTS } from  '../shared/mapping.utils';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 let createHandlers = (ctx) => {
-  let onMealClick = (meal) => {
+  let onMealClick = (meal, companyId) => {
 		pushAnalytics({
       'event': 'menuMealClick',
       'menuID': meal.MenuCategoryID,
@@ -20,6 +20,7 @@ let createHandlers = (ctx) => {
 			type: 'Meal',
 			id: meal.MealID,
 			title: meal.Title,
+			companyId: companyId,
 		});
   };
 
@@ -62,7 +63,7 @@ class ArticleMeal extends Component {
   	}
 
 	render() {
-		const { meal, currency, index, currentLanguage } = this.props;
+		const { meal, currency, index, companyId, currentLanguage } = this.props;
 
 		const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : MAP_CONSTANTS.DEFAULT_LANGUAGE_SYMBOL;
 
@@ -106,7 +107,7 @@ class ArticleMeal extends Component {
 
   	return (
     	<section className="meal">
-        <div className="meal--container" onClick={() => {this.handlers.onMealClick(meal)}}>
+        <div className="meal--container" onClick={() => {this.handlers.onMealClick(meal, companyId)}}>
 	        <div className="meal--header">
 	            <div className="price">
 	            	{symbol} {meal.Price}

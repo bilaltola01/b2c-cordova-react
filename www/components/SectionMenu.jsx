@@ -38,7 +38,7 @@ class SectionMenu extends Component {
 	}
 
 	render() {
-		const { menu, currency } = this.props.component;
+		const { menu, companyId, currency } = this.props.component;
 
 		//
 		// get currentlanguage from store, not like this
@@ -47,13 +47,13 @@ class SectionMenu extends Component {
 		const finalLanguage = this.props.currentLanguage;//|| this.getFirstLanguage(menu.languages);
 
 		const categoriesComponent = (menu && menu.categories && menu.categories.length > 0) ? menu.categories.map((category, index) => {
-			return <ArticleMenuDetail currentItem={currentItem} category={category} currency={currency} language={finalLanguage} key={index} />;
+			return <ArticleMenuDetail companyId={companyId} currentItem={currentItem} category={category} currency={currency} language={finalLanguage} key={index} />;
 		}) : null;
 
 		const currentItem = this.state.currentSubNavItem || 0;
 
 		const subnavComponent = (menu && menu.categories && menu.categories.length > 0) ? (
-			<SubNav categories={menu.categories} currentItem={currentItem} onNavItemClick={this.handlers.onNavItemClick} />
+			<SubNav companyId={companyId} categories={menu.categories} currentItem={currentItem} onNavItemClick={this.handlers.onNavItemClick} />
 		) : null;
 
 		const containerWidth = (menu && menu.categories && menu.categories.length > 0) ? (

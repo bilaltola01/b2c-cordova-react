@@ -11,7 +11,7 @@ class SectionMenus extends Component {
 		const restaurant = (restaurants && restaurants.length > 0) ? restaurants[0] : {};
 		const languages = (restaurant && restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages : [];
 		const articles = (restaurant && restaurant.menus && restaurant.menus.length > 0) ? restaurant.menus.map((menu, index) => {
-			return <ArticleMenu menu={menu} currency={currency} languages={languages} key={index} />;
+			return <ArticleMenu companyId={restaurant.CompanyID} menu={menu} currency={currency} languages={languages} key={index} />;
 		}) : null;
 
 		const restaurantDetail = (restaurant) ?  (

@@ -70,6 +70,7 @@ class PageRestaurant extends Component {
 
     const currency = (restaurant && restaurant[0] && restaurant[0].currency && restaurant[0].currency.length > 0) ? restaurant[0].currency[0] : null;
 
+    const companyId = restaurant && restaurant[0] ? restaurant[0].CompanyID : null;
     const sections = [{
       type: 'restaurant-menus',
       title: '',
@@ -81,7 +82,7 @@ class PageRestaurant extends Component {
 
     return (
       <div>
-        <PageContent title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
+        <PageContent companyId={companyId} title={title} sections={sections} navigation={navigation} footer={footer} offCanvasSettings={offCanvasSettings} />
       </div>
     )
   }

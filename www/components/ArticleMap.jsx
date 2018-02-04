@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 const API_KEY = 'AIzaSyC56hlref5MVvd-CJwEKk6POlwEp9Ed6W8';
 
@@ -36,8 +36,9 @@ let createHandlers = (ctx) => {
     }, {
       event: 'mapMarkerClick',
 			type: 'Branch',
-			id: restaurant.branchID,
-			title: restaurant.Name,
+			id: restaurant.BranchID,
+      title: restaurant.Name,
+      companyId: restaurant.CompanyID,
     });
     
     setOffCanvas({

@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react';
 
 import { Link } from 'react-router-dom';
 import { MAP_CONSTANTS } from  '../shared/mapping.utils';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 let createHandlers = (ctx) => {
-  let onMenuClick = (menu) => {
-    pushAnalytics.push({
+  let onMenuClick = (menu, companyId) => {
+    pushAnalytics({
       'event': 'restaurantDetailMenu',
       'menuID': menu.MenuID,
       'branchID': menu.BranchID,
@@ -17,7 +17,8 @@ let createHandlers = (ctx) => {
       event: 'restaurantDetailMenuClick',
 			type: 'Menu',
 			id: menu.MenuID,
-			title: menu.Title,
+      title: menu.Title,
+      companyId: companyId,
     });
   };
 
@@ -33,7 +34,7 @@ class ArticleMenu extends Component {
   }
 
   render() {
-		const { menu, currency, languages } = this.props;
+		const { menu, companyId, currency, languages } = this.props;
 
     const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : MAP_CONSTANTS.DEFAULT_LANGUAGE_SYMBOL;
 
@@ -59,7 +60,7 @@ class ArticleMenu extends Component {
     const menuComponent = (menu.categories && menu.categories.length > 0) ? (
       <section className="meal">
 
-        <Link onClick={() => {this.handlers.onMenuClick(menu)}} to={"/restaurant/" + menu.BranchID + "/menu/" + menu.MenuID} className="menu--link restaurantDetailToMenu meal--container">
+        <Link onClick={() => {this.handlers.onMenuClick(menu, companyId)}} to={"/restaurant/" + menu.BranchID + "/menu/" + menu.MenuID} className="menu--link restaurantDetailToMenu meal--container">
           <div className="meal--header">
             <div className="price">
               {symbol} {menu.Price}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import * as actionCreators from '../action-creators';
-import pushAnalytics from '../shared/analytics.utils';
+import pushAnalytics from './Analytics/analytics.service';
 
 let createHandlers = (ctx) => {
   let onClosePopup = () => {
@@ -14,7 +14,7 @@ let createHandlers = (ctx) => {
   };
 
   let onMenusClick = (restaurant) => {
-    pushAnalytics.push({
+    pushAnalytics({
       'event': 'mapRestaurantMenus',
       'branchAddress': restaurant.Address,
       'branchCity': restaurant.City,
@@ -29,6 +29,7 @@ let createHandlers = (ctx) => {
 			type: 'Branch',
 			id: restaurant.BranchID,
       title: restaurant.Name,
+      companyId: restaurant.CompanyID,
 		});
 
     onClosePopup();
