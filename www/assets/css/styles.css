@@ -859,6 +859,13 @@ main {
     color: #595b5a;
 }
 
+.restaurant-details--item h3 span.go-to-menu {
+    display: inline-block;
+    border: 1px solid #fcd230;
+    border-radius: 32px;
+    padding: 8px 20px;
+}
+
 .restaurant-details--language {
     display: inline-block;
 }
@@ -1022,10 +1029,6 @@ main {
     font-weight: 300;
 }
 
-
-.reviews {
-
-}
 .reviews header {
     margin: 20px 0 0 0;
     padding: 0 20px;

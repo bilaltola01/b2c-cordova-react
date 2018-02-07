@@ -76,7 +76,7 @@ class ArticleMenu extends Component {
           </div>
           <div className="restaurant-details--item">
             <h3>
-              {languagesComponent}
+              <span className="go-to-menu">Go to Menu</span>
             </h3>
           </div>
         </Link>
