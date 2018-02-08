@@ -33,7 +33,7 @@ class ArticleMeal extends Component {
  	constructor(props) {
     	super(props);
 
-      this.handlers = createHandlers(this);
+      	this.handlers = createHandlers(this);
   	}
 
   	getTranslatedMeal(lang, translations) {
@@ -43,10 +43,10 @@ class ArticleMeal extends Component {
 
     	const langTranslations = translations.filter(t => {
       		return (t.BranchLanguageID === lang.BranchLanguageID) || (t.BranchLanguageName === lang.Title);
-    	});
+		});
 
-    	const title = (langTranslations && langTranslations.length > 0) ? langTranslations.find(lang => lang.PropKey === 'title').Text : null;
-    	const description = (langTranslations && langTranslations.length > 0) ? langTranslations.find(lang => lang.PropKey === 'description').Text : null;
+    	const title = ((langTranslations || []).find(lang => lang.PropKey === 'Title') || {}).Text || null;
+    	const description = ((langTranslations || []).find(lang => lang.PropKey === 'Description') || {}).Text || null;
 
     	if (!title && !description) {
     		return null;
@@ -64,9 +64,7 @@ class ArticleMeal extends Component {
 
 	render() {
 		const { meal, currency, index, companyId, currentLanguage } = this.props;
-
 		const symbol = (currency && currency.Currency) ? currency.Currency.Symbol : MAP_CONSTANTS.DEFAULT_LANGUAGE_SYMBOL;
-
 		const translatedMeal = this.getTranslatedMeal(currentLanguage, meal.translations);
 
 		const titleComponent = (translatedMeal && !this.isCurrentLanguageDefault(currentLanguage)) ? (

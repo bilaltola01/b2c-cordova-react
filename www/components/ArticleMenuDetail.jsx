@@ -9,8 +9,7 @@ class ArticleMenuDetail extends Component {
   }
 
   render() {
-		const { category, currency, companyId, language } = this.props;
-
+    const { category, currency, companyId, language } = this.props;
     const mealsComponent = (category && category.meals && category.meals.length > 0) ? category.meals.map((meal, index) => {
       return <ArticleMeal companyId={companyId} meal={meal} currrency={currency} currentLanguage={language} index={index} key={index} />
     }) : null;

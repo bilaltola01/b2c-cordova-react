@@ -17,23 +17,28 @@ class PageMenu extends Component {
   }
 
   getRestaurants(propsProfile) {
-    const profile = (propsProfile) ? propsProfile : [];
-    return (profile && profile.length > 0) ?
-      profile.reduce((acc, current) => {
-        return acc.concat(current.branches.map(branch => {
-          let obj = branch;
+    return (propsProfile || []).reduce((acc, current) => {
+      return acc.concat((current.branches || []).map(branch => {
+        const finalMenus = current.CompanyID === 2 ? ((current.branches || [])[0] || {}).menus.map(menu => {
+          return {
+            ...menu,
+            MenuID: this.props.match.params.menuId,
+            BranchID: branch.BranchID,
+          }
+        }) : branch.menus;
 
-          obj.CompanyLogoPath = current.LogoPath;
-          obj.CompanyLogoAltDesc = current.LogoAltDesc;
-          obj.CompanyName = current.Name;
-          obj.CompanyWebsite = current.Website;
-          obj.CompanyEmail = current.Email;
-          obj.CompanyTel = current.Tel;
-
-          return obj;
-        }));
-      }, [])
-    : [];
+        return {
+          ...branch,
+          CompanyLogoPath: current.LogoPath,
+          CompanyLogoAltDesc: current.LogoAltDesc,
+          CompanyName: current.Name,
+          CompanyWebsite: current.Website,
+          CompanyEmail: current.Email,
+          CompanyTel: current.Tel,
+          menus: finalMenus,
+        };
+      }));
+    }, []);
   }
 
   render () {
@@ -50,6 +55,9 @@ class PageMenu extends Component {
     const restaurant = (restaurants && restaurants.length > 0) ? restaurants.filter(r => {
       return parseInt(r.BranchID, 10) === parseInt(id, 10);
     }) : null;
+
+    console.log('restaurants');
+    console.log(restaurants);
 
     const currency = (restaurant && restaurant[0] && restaurant[0].currency && restaurant[0].currency.length > 0) ? restaurant[0].currency[0] : null;
 
