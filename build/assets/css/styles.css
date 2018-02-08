@@ -859,6 +859,36 @@ main {
     color: #595b5a;
 }
 
+
+.restaurant-details--item h3 span.go-to-menu {
+    display: inline-block;
+    border: 1px solid #fcd230;
+    border-radius: 32px;
+    padding: 8px 32px 8px 16px;
+    position: relative;
+}
+
+span.go-to-menu:before,
+span.go-to-menu:after {
+    background-color: #595b5a;
+    content: "";
+    height: 2px;
+    margin-top: -2px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 7px;
+}
+
+span.go-to-menu:before {
+    margin-top: 2px;
+    transform: rotate(-45deg);
+}
+
+span.go-to-menu:after {
+    transform: rotate(45deg);
+}
+
 .restaurant-details--language {
     display: inline-block;
 }
