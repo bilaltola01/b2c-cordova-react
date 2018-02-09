@@ -7,7 +7,9 @@ export default function pushAnalytics(obj, dbObj) {
 
 export function pushDatabaseAnalytics(obj) {
     return Ajax().post('/analytics', {
-        body: JSON.stringify(obj),
+        body: JSON.stringify({
+            obj: obj
+        }),
         headers: {
             "content-type": "application/json",
             "cache-control": "no-cache"
