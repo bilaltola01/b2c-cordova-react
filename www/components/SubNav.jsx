@@ -21,7 +21,7 @@ let createHandlers = (ctx) => {
 			event: 'menuCategoryClick',
 			type: 'MenuCategory',
 			id: menuCategory.MenuCategoryID,
-			title: menuCategory.Title,
+			title: menuCategory.Category.Title,
 			companyId: companyId,
 		});
 
@@ -53,7 +53,7 @@ let createHandlers = (ctx) => {
 				event: 'menuFirstCategoryClick',
 				type: 'MenuCategory',
 				id: menuCategory.MenuCategoryID,
-				title: menuCategory.Title,
+				title: menuCategory.Category.Title,
 				companyId: ctx.props.companyId,
 			});
 		}
