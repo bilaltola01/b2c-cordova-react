@@ -228,6 +228,7 @@ class ArticleRestaurantDetail extends Component {
 					</header>
 
 					<div className="">
+						{/*
 						<div className="restaurant-details--extra">
 							<div className="restaurant-details--item">
 								<h3>
@@ -236,6 +237,7 @@ class ArticleRestaurantDetail extends Component {
 								</h3>
 							</div>
 						</div>
+						*/}
 
 						{contactComponent}
 
