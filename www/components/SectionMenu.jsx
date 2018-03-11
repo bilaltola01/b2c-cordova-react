@@ -7,85 +7,113 @@ import * as actionCreators from '../action-creators';
 import ArticleMenuDetail from './ArticleMenuDetail';
 import SubNav from './SubNav';
 
-let createHandlers = (ctx) => {
-	let onNavItemClick = (item) => {
-		ctx.setState({
-			currentSubNavItem: item.index
-		});
-	};
+let createHandlers = ctx => {
+  let onNavItemClick = item => {
+    ctx.setState({
+      currentSubNavItem: item.index,
+    });
+  };
 
-	return {
-		onNavItemClick
-	};
+  return {
+    onNavItemClick,
+  };
 };
 
 class SectionMenu extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			currentSubNavItem: 0
-		};
-		this.handlers = createHandlers(this);
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSubNavItem: 0,
+    };
+    this.handlers = createHandlers(this);
+  }
 
-	getFirstLanguage(languages) {
-		console.log(languages);
-		if (!languages || languages.length <= 0) {
-			return null;
-		}
+  getFirstLanguage(languages) {
+    console.log(languages);
+    if (!languages || languages.length <= 0) {
+      return null;
+    }
 
-		return languages[0];
-	}
+    return languages[0];
+  }
 
-	render() {
-		const { menu, companyId, currency } = this.props.component;
+  render() {
+    const { menu, companyId, currency } = this.props.component;
 
-		//
-		// get currentlanguage from store, not like this
-		//
+    //
+    // get currentlanguage from store, not like this
+    //
 
-		const finalLanguage = this.props.currentLanguage;//|| this.getFirstLanguage(menu.languages);
+    const finalLanguage = this.props.currentLanguage; //|| this.getFirstLanguage(menu.languages);
 
-		const categoriesComponent = (menu && menu.categories && menu.categories.length > 0) ? menu.categories.map((category, index) => {
-			return <ArticleMenuDetail companyId={companyId} currentItem={currentItem} category={category} currency={currency} language={finalLanguage} key={index} />;
-		}) : null;
+    const categoriesComponent =
+      menu && menu.categories && menu.categories.length > 0
+        ? menu.categories
+            .sort((a, b) => a.Category.Order - b.Category.Order)
+            .map((category, index) => {
+              return (
+                <ArticleMenuDetail
+                  companyId={companyId}
+                  currentItem={currentItem}
+                  category={category}
+                  currency={currency}
+                  language={finalLanguage}
+                  key={index}
+                />
+              );
+            })
+        : null;
 
-		const currentItem = this.state.currentSubNavItem || 0;
+    const currentItem = this.state.currentSubNavItem || 0;
 
-		const subnavComponent = (menu && menu.categories && menu.categories.length > 0) ? (
-			<SubNav companyId={companyId} categories={menu.categories} currentItem={currentItem} onNavItemClick={this.handlers.onNavItemClick} />
-		) : null;
+    const subnavComponent =
+      menu && menu.categories && menu.categories.length > 0 ? (
+        <SubNav
+          companyId={companyId}
+          categories={menu.categories}
+          currentItem={currentItem}
+          onNavItemClick={this.handlers.onNavItemClick}
+        />
+      ) : null;
 
-		const containerWidth = (menu && menu.categories && menu.categories.length > 0) ? (
-			(100 * menu.categories.length) + '%'
-		) : '100%';
+    const containerWidth =
+      menu && menu.categories && menu.categories.length > 0
+        ? 100 * menu.categories.length + '%'
+        : '100%';
 
-		const translate = (menu && menu.categories && menu.categories.length > 0) ? (
-			'translateX('+ -((this.state.currentSubNavItem * 100) / menu.categories.length) + '%)'
-		) : '0%';
+    const translate =
+      menu && menu.categories && menu.categories.length > 0
+        ? 'translateX(' +
+          -(this.state.currentSubNavItem * 100 / menu.categories.length) +
+          '%)'
+        : '0%';
 
-		return (
-			<div>
-				{subnavComponent}
+    return (
+      <div>
+        {subnavComponent}
 
-				<div className="menu-categories menu-detail">
-					<div className="categories-container" data-item-active={currentItem} style={{width: containerWidth, transform: translate}}>
-						{categoriesComponent}
-					</div>
-				</div>
-			</div>
-		)
-	}
-};
+        <div className="menu-categories menu-detail">
+          <div
+            className="categories-container"
+            data-item-active={currentItem}
+            style={{ width: containerWidth, transform: translate }}
+          >
+            {categoriesComponent}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 SectionMenu.propTypes = {
-    component: PropTypes.object
+  component: PropTypes.object,
 };
 
-const mapStateToProps = (state) => {
-  	return {
-    	currentLanguage: state._currentLanguage.currentLanguage
-  	};
+const mapStateToProps = state => {
+  return {
+    currentLanguage: state._currentLanguage.currentLanguage,
+  };
 };
 
 export default connect(mapStateToProps)(SectionMenu);
