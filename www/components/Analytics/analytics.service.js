@@ -6,7 +6,6 @@ export default function pushAnalytics(obj, dbObj) {
 }
 
 export function pushDatabaseAnalytics(obj) {
-  console.log(obj);
   return Ajax()
     .post('/analytics', {
       body: JSON.stringify({

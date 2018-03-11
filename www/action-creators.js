@@ -1,4 +1,3 @@
-
 /*
 import * as MenuService from './components/Menu/menu.service';
 import * as LanguageService from './components/Language/language.service';
@@ -134,14 +133,16 @@ export function getCuisines (cb) {
 };
 */
 
-export function getProfile (location, cb) {
+export function getProfile(location, cb) {
   return {
-    types: ['GET_PROFILE_REQUEST', 'GET_PROFILE_SUCCESS', 'GET_PROFILE_FAILURE'],
+    types: [
+      'GET_PROFILE_REQUEST',
+      'GET_PROFILE_SUCCESS',
+      'GET_PROFILE_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
-        ProfileService.getProfile(location).then((res) => {
-          console.log('request succeeded with JSON response', res);
-
+        ProfileService.getProfile(location).then(res => {
           if (res && typeof cb === 'function') {
             cb(res);
           }
@@ -149,18 +150,20 @@ export function getProfile (location, cb) {
           resolve(res);
         });
       });
-    }
-  }
-};
+    },
+  };
+}
 
-export function getGeoLocation (location, cb) {
+export function getGeoLocation(location, cb) {
   return {
-    types: ['GET_GEOLOCATION_REQUEST', 'GET_GEOLOCATION_SUCCESS', 'GET_GEOLOCATION_FAILURE'],
+    types: [
+      'GET_GEOLOCATION_REQUEST',
+      'GET_GEOLOCATION_SUCCESS',
+      'GET_GEOLOCATION_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
-        ProfileService.getGeoLocation(location).then((res) => {
-          console.log('request succeeded with JSON response', res);
-
+        ProfileService.getGeoLocation(location).then(res => {
           if (res && typeof cb === 'function') {
             cb(res);
           }
@@ -168,13 +171,17 @@ export function getGeoLocation (location, cb) {
           resolve(res);
         });
       });
-    }
-  }
-};
+    },
+  };
+}
 
-export function setBranchLanguages (branches, cb) {
+export function setBranchLanguages(branches, cb) {
   return {
-    types: ['SET_BRANCH_LANGUAGES_REQUEST', 'SET_BRANCH_LANGUAGES_SUCCESS', 'SET_BRANCH_LANGUAGES_FAILURE'],
+    types: [
+      'SET_BRANCH_LANGUAGES_REQUEST',
+      'SET_BRANCH_LANGUAGES_SUCCESS',
+      'SET_BRANCH_LANGUAGES_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
         let branch = branches[0];
@@ -183,7 +190,6 @@ export function setBranchLanguages (branches, cb) {
         }
 
         const languages = branch.languages;
-        console.log(languages);
 
         if (typeof cb === 'function') {
           cb(languages);
@@ -191,18 +197,20 @@ export function setBranchLanguages (branches, cb) {
 
         resolve(languages);
       });
-    }
-  }
-};
+    },
+  };
+}
 
-export function getCurrentLanguage (nav, location, cb) {
+export function getCurrentLanguage(nav, location, cb) {
   return {
-    types: ['GET_CURRENT_LANGUAGE_REQUEST', 'GET_CURRENT_LANGUAGE_SUCCESS', 'GET_CURRENT_LANGUAGE_FAILURE'],
+    types: [
+      'GET_CURRENT_LANGUAGE_REQUEST',
+      'GET_CURRENT_LANGUAGE_SUCCESS',
+      'GET_CURRENT_LANGUAGE_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
-        LanguageService.getCurrentLanguage(nav, location).then((res) => {
-          console.log('Language successfully retrieved', res);
-
+        LanguageService.getCurrentLanguage(nav, location).then(res => {
           if (res && typeof cb === 'function') {
             cb(res);
           }
@@ -210,41 +218,44 @@ export function getCurrentLanguage (nav, location, cb) {
           resolve(res);
         });
       });
-    }
-  }
-};
+    },
+  };
+}
 
-export function setCurrentLanguage (lang, cb) {
+export function setCurrentLanguage(lang, cb) {
   return {
-    types: ['SET_CURRENT_LANGUAGE_REQUEST', 'SET_CURRENT_LANGUAGE_SUCCESS', 'SET_CURRENT_LANGUAGE_FAILURE'],
+    types: [
+      'SET_CURRENT_LANGUAGE_REQUEST',
+      'SET_CURRENT_LANGUAGE_SUCCESS',
+      'SET_CURRENT_LANGUAGE_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
-        console.log(lang);
-
         if (typeof cb === 'function') {
           cb(lang);
         }
 
         resolve(lang);
       });
-    }
-  }
-};
+    },
+  };
+}
 
-export function setOffCanvas (data, cb) {
+export function setOffCanvas(data, cb) {
   return {
-    types: ['SET_OFFCANVAS_REQUEST', 'SET_OFFCANVAS_SUCCESS', 'SET_OFFCANVAS_FAILURE'],
+    types: [
+      'SET_OFFCANVAS_REQUEST',
+      'SET_OFFCANVAS_SUCCESS',
+      'SET_OFFCANVAS_FAILURE',
+    ],
     promise: () => {
       return new Promise((resolve, reject) => {
-        console.log(data);
-
         if (typeof cb === 'function') {
           cb(data);
         }
 
         resolve(data);
       });
-    }
-  }
-};
-
+    },
+  };
+}
