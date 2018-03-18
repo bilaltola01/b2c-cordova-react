@@ -10,22 +10,37 @@ class ArticleMenuDetail extends Component {
 
   render() {
     const { category, currency, companyId, language } = this.props;
-    const mealsComponent = (category && category.meals && category.meals.length > 0) ? category.meals.map((meal, index) => {
-      return <ArticleMeal companyId={companyId} meal={meal} currrency={currency} currentLanguage={language} index={index} key={index} />
-    }) : null;
+    const meals = category.meals.sort((a, b) => {
+      if (a.Order && b.Order) {
+        return a.Order - b.Order;
+      }
 
-		return (
-      <article className="menu--category">
-        {mealsComponent}
-      </article>
-    )
-	}
-};
+      return a.MealID - b.MealID;
+    });
+    const mealsComponent =
+      category && meals && meals.length > 0
+        ? meals.map((meal, index) => {
+            return (
+              <ArticleMeal
+                companyId={companyId}
+                meal={meal}
+                currrency={currency}
+                currentLanguage={language}
+                index={index}
+                key={index}
+              />
+            );
+          })
+        : null;
+
+    return <article className="menu--category">{mealsComponent}</article>;
+  }
+}
 
 ArticleMenuDetail.propTypes = {
-	category: PropTypes.object,
+  category: PropTypes.object,
   currency: PropTypes.object,
-  language: PropTypes.object
+  language: PropTypes.object,
 };
 
 export default ArticleMenuDetail;
