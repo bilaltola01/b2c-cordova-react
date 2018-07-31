@@ -1079,7 +1079,16 @@ main {
 }
 
 
-
+.choose-lang:after {
+    content: "▾";
+    color: white;
+    display: inline;
+    line-height: 0.5em;
+    font-size: 1.3em;
+    margin-left: 6px;
+    position: relative;
+    top: 1px;
+}
 .language {
     padding: 15px;
     border-bottom: 1px solid #eaebec;
@@ -1096,7 +1105,7 @@ main {
     color: #595b5a;
     font-size: 0.9em;
     font-weight: 300;
-    line-height: 2;
+    line-height: 2.2;
 }
 .language a {
     text-decoration: none;
