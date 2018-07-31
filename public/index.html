@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,71 +29,75 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     -->
 
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <!--
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!--
         <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
         -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/keyframes.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/transitions.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/burger.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/keyframes.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/transitions.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/burger.css">
+    <title>ONE MENU - The world on your plate</title>
 
-        <title>ONE MENU - The world on your plate</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PH4FFFW');</script>
+    <!-- End Google Tag Manager -->
+</head>
 
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PH4FFFW');</script>
-        <!-- End Google Tag Manager -->
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4FFFW"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div id="app-wrapper"></div>
-        <script>
-            function getMobileOperatingSystem() {
-                var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH4FFFW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="app-wrapper"></div>
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-                // Windows Phone must come first because its UA also contains "Android"
-                if (/windows phone/i.test(userAgent)) {
-                    return 'Windows Phone';
-                }
-
-                if (/android/i.test(userAgent)) {
-                    return 'Android';
-                }
-
-                // iOS detection from: http://stackoverflow.com/a/9039885/177710
-                if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                    return 'iOS';
-                }
-
-                return "unknown";
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                return 'Windows Phone';
             }
 
-            if (getMobileOperatingSystem() === 'iOS') {
-                var head = document.getElementsByTagName('head')[0];
-                var script = document.createElement('script');
-                script.src = '/cordova.js';
-                script.type = 'text/javascript';
-
-                head.appendChild(script);
+            if (/android/i.test(userAgent)) {
+                return 'Android';
             }
-        </script>
-        <script type="text/javascript" src="/main-bundle.js"></script>
-    </body>
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return 'iOS';
+            }
+
+            return "unknown";
+        }
+
+        if (getMobileOperatingSystem() === 'iOS') {
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.src = '/cordova.js';
+            script.type = 'text/javascript';
+
+            head.appendChild(script);
+        }
+    </script>
+    <script type="text/javascript" src="/main-bundle.js"></script>
+</body>
+
 </html>

@@ -79,7 +79,7 @@ html, body {
     background-color: #fff;
 }
 body {
-    font-family: "Montserrat", Helvetica, sans-serif;
+    font-family: 'Avenir Medium', Helvetica, Arial, sans-serif;
 	text-align: left;
 	background: #fff;
 	color: #000;
@@ -112,18 +112,16 @@ body {
 .main-title {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", Helvetica, sans-serif;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.2em;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03rem;
     color: #000;
 }
 .main-subtitle {
     margin: 6px 0 0 0;
     padding: 0;
-    font-family: "Montserrat", Helvetica, sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 0.9em;
@@ -453,8 +451,8 @@ main {
     height: auto;
 }
 .article--restaurant h3 {
-    font-size: 1.1em;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     line-height: 1.3;
@@ -482,6 +480,10 @@ main {
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%);
+}
+
+.restaurant--footer .distance {
+    line-height: 1.7rem;
 }
 
 .restaurant--footer .push-right {
@@ -583,6 +585,7 @@ main {
     font-weight: 600;
     color: #585959;
     color: #000;
+    letter-spacing: 0.03rem;
 }
 .restaurant--detail h3 {
     margin: 2px 0 0 0;
@@ -595,7 +598,7 @@ main {
     margin: 0 0 0;
     padding: 0;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: 400;
     color: #777677;
     color: #000;
 }
@@ -614,13 +617,13 @@ main {
     text-decoration: none;
     background-color: #fcd230;
     color: #fff;
-    color: #000;
+    color: #222;
     text-transform: uppercase;
 
     margin: 0 auto;
     font-size: 1.3em;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03rem;
 
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -630,13 +633,15 @@ main {
 .restaurant--desc {
     font-weight: 300;
     font-size: 0.9em;
-    color: #222;
+    color: #777677;
+    
 }
 
 .restaurant--desc a {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    color: #222;
 }
 .restaurant--desc a:hover {
     text-decoration: none;
@@ -859,35 +864,11 @@ main {
     color: #595b5a;
 }
 
-
 .restaurant-details--item h3 span.go-to-menu {
     display: inline-block;
     border: 1px solid #fcd230;
     border-radius: 32px;
-    font-size: 0.9em;
-    padding: 10px 32px 10px 16px;
-    position: relative;
-}
-
-span.go-to-menu:before,
-span.go-to-menu:after {
-    background-color: #595b5a;
-    content: "";
-    height: 2px;
-    margin-top: -3px;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    width: 7px;
-}
-
-span.go-to-menu:before {
-    margin-top: 1px;
-    transform: rotate(-45deg);
-}
-
-span.go-to-menu:after {
-    transform: rotate(45deg);
+    padding: 8px 20px;
 }
 
 .restaurant-details--language {
@@ -989,7 +970,7 @@ span.go-to-menu:after {
 
 }
 .contact-block {
-    
+    padding-bottom: 10px;
 }
 .contact-block p {
     margin: 0;
@@ -1011,9 +992,9 @@ span.go-to-menu:after {
     display: block;
     text-align: center;
     margin: 20px auto 10px auto;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: 1px solid #d1d1d1;
-    border: 1px solid #fcd230;
+    border: 2px solid #fcd230;
     background-color: #eaebec;
     background-color: transparent;
     border-radius: 3px;
@@ -1021,7 +1002,7 @@ span.go-to-menu:after {
     font-weight: 500;
     color: #000;
     color: #fcd230;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 
@@ -1040,10 +1021,11 @@ span.go-to-menu:after {
 .meal--header h2 {
     margin: 0 55px 0 0;
     padding: 0;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.1em;
     line-height: 1.2;
-    color: #595b5a;
+    color: #222;
+    text-transform: none;
 }
 
 .meal--desc {
@@ -1053,10 +1035,6 @@ span.go-to-menu:after {
     font-weight: 300;
 }
 
-
-.reviews {
-
-}
 .reviews header {
     margin: 20px 0 0 0;
     padding: 0 20px;
@@ -1101,16 +1079,7 @@ span.go-to-menu:after {
 }
 
 
-.choose-lang:after {
-    content: "▾";
-    color: white;
-    display: inline;
-    line-height: 0.5em;
-    font-size: 1.3em;
-    margin-left: 6px;
-    position: relative;
-    top: 1px;
-}
+
 .language {
     padding: 15px;
     border-bottom: 1px solid #eaebec;
@@ -1120,18 +1089,14 @@ span.go-to-menu:after {
     width: 32px;
     margin-right: 20px;
     height: auto;
-    border: 4px solid #000;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
 }
 .language p {
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #595b5a;
     font-size: 0.9em;
     font-weight: 300;
-    line-height: 38px;
+    line-height: 2;
 }
 .language a {
     text-decoration: none;
