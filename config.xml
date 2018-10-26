@@ -7,7 +7,7 @@
     <author email="dev@one-menu.com" href="http://one-menu.com">
         One Menu Development team
     </author>
-    <content src="https://app.one-menu.com" />
+    <content src="https://one-menu-b2c.herokuapp.com" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -99,4 +99,5 @@
     <plugin name="cordova-plugin-splashscreen" spec="4.1.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="1.7.2" />
     <engine name="ios" spec="4.5.3" />
+    <engine name="android" spec="^6.3.0" />
 </widget>

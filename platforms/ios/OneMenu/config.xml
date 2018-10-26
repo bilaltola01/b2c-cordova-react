@@ -46,7 +46,7 @@
     <author email="dev@one-menu.com" href="http://one-menu.com">
         One Menu Development team
     </author>
-    <content src="https://app.one-menu.com" />
+    <content src="https://one-menu-b2c.herokuapp.com" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />

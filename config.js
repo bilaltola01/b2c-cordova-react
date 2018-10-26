@@ -4,7 +4,7 @@ const replace = require('replace');
 
 const ENV = require('./env');
 //const src = (ENV === 'development' ? 'http://localhost:8081/' : '') + 'index.html';
-const src = 'https://app.one-menu.com';
+const src = 'https://one-menu-b2c.herokuapp.com';
 const config = path.resolve('./config.xml');
 
 try {
