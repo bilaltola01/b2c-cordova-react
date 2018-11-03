@@ -9,7 +9,6 @@ const BASE_URL = constants.SERVER_URL || SERVER_URL;
 
 export let Ajax = url => {
   let baseUrl = url || BASE_URL + '/api';
-
   //
   /** Generic method for AJAX calls */
   //

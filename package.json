@@ -11,7 +11,7 @@
     "prepare": "node config && webpack && cordova prepare",
     "compile": "node config && webpack && cordova build",
     "server": "node server",
-    "start": "npm run start:server",
+    "start": "webpack && npm run start:server",
     "start:local": "node scripts/start.js",
     "start:server": "serve -s build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,7 +32,7 @@
     "classnames": "^2.2.3",
     "cookie-parser": "1.4.3",
     "cordova": "7.1.0",
-    "cordova-android": "^6.3.0",
+    "cordova-android": "^7.1.1",
     "cordova-ios": "4.5.3",
     "cordova-plugin-dialogs": "1.3.4",
     "cordova-plugin-geolocation": "3.0.0",

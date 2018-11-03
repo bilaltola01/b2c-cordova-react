@@ -17,11 +17,13 @@ export function pushDatabaseAnalytics(obj) {
       },
     })
     .then(res => {
+      console.log(res)
       if (!res || !res.success) {
         return Promise.reject(res);
       }
     })
     .catch(err => {
+      console.log(err);
       console.error(err);
     });
 }
