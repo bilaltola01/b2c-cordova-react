@@ -2,993 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7ecadbe-0ef7-442d-881c-e8dfaaaca126" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/../../build/asset-manifest.json" afterPath="$PROJECT_DIR$/../../build/asset-manifest.json" />
-      <change beforePath="$PROJECT_DIR$/../../build/index.html" afterPath="$PROJECT_DIR$/../../build/index.html" />
-      <change beforePath="$PROJECT_DIR$/../../build/service-worker.js" afterPath="$PROJECT_DIR$/../../build/service-worker.js" />
-      <change beforePath="$PROJECT_DIR$/../../config.xml" afterPath="$PROJECT_DIR$/../../config.xml" />
-      <change beforePath="$PROJECT_DIR$/../../npm-debug.log" afterPath="$PROJECT_DIR$/../../npm-debug.log" />
-      <change beforePath="$PROJECT_DIR$/../../package-lock.json" afterPath="$PROJECT_DIR$/../../package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/../../package.json" afterPath="$PROJECT_DIR$/../../package.json" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_CordovaLib_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/file-changes/last-build.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/annotation-processors.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/classAnalysis.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/jarAnalysis.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/javaCompile.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskHistory.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskJars.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/jvmClassSignatures.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/built.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/AndroidManifest.xml" afterPath="$PROJECT_DIR$/CordovaLib/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" afterPath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build.gradle" afterPath="$PROJECT_DIR$/CordovaLib/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/AuthenticationToken.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/AuthenticationToken.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildConfig.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildConfig.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildHelper.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildHelper.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackContext.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackContext.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackMap.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackMap.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Config.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Config.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ConfigXmlParser.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ConfigXmlParser.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$3.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$3.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaArgs.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaArgs.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaClientCertRequest.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaClientCertRequest.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$3.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$3.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$4.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$4.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$5.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$5.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$6.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$6.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$7.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$7.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$8.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$8.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$9.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$9.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$Result.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$Result.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaHttpAuthHandler.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaHttpAuthHandler.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterface.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterface.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl$ActivityResultHolder.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl$ActivityResultHolder.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPreferences.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPreferences.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$Client.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$Client.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$EngineView.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$EngineView.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$3.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$3.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$3.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$3.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$4.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$4.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$5.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$5.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ExposedJsApi.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ExposedJsApi.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaClientCertRequest.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaClientCertRequest.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaCookieManager.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaCookieManager.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaHttpAuthHandler.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaHttpAuthHandler.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/LOG.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/LOG.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$EvalBridgeMode.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$NoOpBridgeMode.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$NoOpBridgeMode.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PermissionHelper.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PermissionHelper.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginEntry.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginEntry.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginManager.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginManager.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult$Status.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult$Status.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ResumeCallback.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ResumeCallback.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemCookieManager.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemCookieManager.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemExposedJsApi.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemExposedJsApi.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$3.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$3.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$4.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$4.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$5.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$5.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebView.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebView.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewClient.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewClient.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$1.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$1.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$2.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$2.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine.class" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine.class" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental-safeguard/debug/tag.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/CordovaLib/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="$PROJECT_DIR$/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/cordova.gradle" afterPath="$PROJECT_DIR$/CordovaLib/cordova.gradle" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/project.properties" afterPath="$PROJECT_DIR$/CordovaLib/project.properties" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaActivity.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaActivity.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaBridge.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaBridge.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaInterface.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaInterface.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaWebView.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java" />
-      <change beforePath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" afterPath="$PROJECT_DIR$/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java" />
-      <change beforePath="$PROJECT_DIR$/android.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/action-creators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-114x114.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-120x120.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-144x144.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-152x152.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-57x57.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-60x60.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-72x72.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/apple-touch-icon-76x76.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/burger.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/keyframes.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/normalize.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/css/transitions.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/04801919-17ee-4c6b-8b17-eb1965cb3ed6.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/212ab03d-5db2-4d6a-b94c-171cc702aa51.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/294099f3-8d00-4676-afc5-5e9d8d43ad69.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/2cac77ec-9bc0-4ee7-87e4-27650190744f.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/3669151e-79cb-4a14-9eea-eca7524f7959.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/38a556e4-b6e5-48c6-aece-b1d470af124e.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/65cde95a-ac33-4c65-8198-e37857968d1a.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/7147ec3a-8ff8-4ec9-8c5c-bd1571dc6ae6.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/731dd4d3-64da-427d-ba61-01575b3cf3f7.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/81069a6b-4123-496c-9bfb-b20f55eebab8.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/ade10695-55bf-4dc8-8b4d-8c9f7714ffb6.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/bc38eb2f-bce2-44fc-adac-ea1e43c3dd4d.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/cebcf56a-ea7e-4f5c-8110-a7ee367c1f91.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/cee053ec-4b41-4506-a1fe-796261690610.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/d1dc54b2-878d-4693-8d6e-b442e99fef68.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/deb5e718-7abb-4df3-9365-edfa95317090.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/e4d36745-a861-4a49-aa17-6510e67429d3.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/fonts/f61bf0f6-c193-4100-b940-12a1a01dcee5.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/avatar-admin@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/baker_island.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/diagonal-line.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/flag-es.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/flag-fr.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/flag-uk.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon-cross.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon-person.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon_drawn_heart.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon_drawn_heart_yellow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon_star.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/icon_star_yellow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/img-cafe-med-6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-cafe-med-white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-cafe-med.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-one-menu-white.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-one-menu-yellow.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-s1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo-s1.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/map-marker-2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/map-marker.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/start.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/step-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/step-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/step-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/step-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/assets/images/step-5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Analytics/analytics.service.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/App.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleMap.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleMeal.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleMenu.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleMenuDetail.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticlePickLanguage.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleRestaurant.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleRestaurantDetail.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/ArticleRestaurantMapDetail.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Language/language.service.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/NavButton.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/NavMenu.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/OffCanvas.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Page.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageContent.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageFooter.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageHeader.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageMap.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageMenu.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageRestaurant.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageRestaurants.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/PageSection.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Pages.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Profile/profile.service.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/SectionMap.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/SectionMenu.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/SectionMenus.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/SectionRestaurants.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/Splashscreen.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/components/SubNav.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/constants.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/android/nativeapiprovider.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/android/promptbasednativeapi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/exec.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/platform.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/plugin/android/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/plugin/ios/console.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova-js-src/plugin/ios/logger.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/cordova_plugins.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/create-store.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon-128.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon-16x16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon-196x196.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon-32x32.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon-96x96.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/main.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/middlewares/promise.middleware.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/mstile-144x144.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/mstile-150x150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/mstile-310x150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/mstile-310x310.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/mstile-70x70.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-dialogs/www/android/notification.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-dialogs/www/notification.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-geolocation/www/Coordinates.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-geolocation/www/Position.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-geolocation/www/PositionError.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-geolocation/www/android/geolocation.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-geolocation/www/geolocation.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-network-information/www/Connection.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-network-information/www/network.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/plugins/cordova-plugin-statusbar/www/statusbar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/branch-languages.reducer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/current-language.reducer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/geolocation.reducer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/offcanvas.reducer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/profile.reducer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/reducers/reducers.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/.pgbomit" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/android/icon-36-ldpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/android/icon-48-mdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/android/icon-72-hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/android/icon-96-xhdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/bada-wac/icon-48-type5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/bada-wac/icon-50-type3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/bada-wac/icon-80-type4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/bada/icon-128.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/blackberry/icon-80.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/ios/icon-57-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/ios/icon-57.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/ios/icon-72-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/ios/icon-72.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/tizen/icon-128.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/webos/icon-64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/windows-phone/icon-173-tile.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/windows-phone/icon-48.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/icon/windows-phone/icon-62-tile.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-hdpi-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-hdpi-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-ldpi-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-ldpi-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-mdpi-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-mdpi-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-xhdpi-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/android/screen-xhdpi-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/bada-wac/screen-type3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/bada-wac/screen-type4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/bada-wac/screen-type5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/bada/screen-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/blackberry/screen-225.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-ipad-landscape-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-ipad-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-ipad-portrait-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-ipad-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-iphone-landscape-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-iphone-landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-iphone-portrait-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-iphone-portrait-568h-2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/ios/screen-iphone-portrait.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/tizen/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/webos/screen-64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/res/screen/windows-phone/screen-portrait.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/ajax.utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/dom.utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/geo-utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/mapping.utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/navigator.utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/www/shared/storage.utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/cordova/Api.js" afterPath="$PROJECT_DIR$/cordova/Api.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/AndroidStudio.js" afterPath="$PROJECT_DIR$/cordova/lib/AndroidStudio.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/android_sdk.js" afterPath="$PROJECT_DIR$/cordova/lib/android_sdk.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/build.js" afterPath="$PROJECT_DIR$/cordova/lib/build.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/builders/AntBuilder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/builders/GenericBuilder.js" afterPath="$PROJECT_DIR$/cordova/lib/builders/GenericBuilder.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/builders/GradleBuilder.js" afterPath="$PROJECT_DIR$/cordova/lib/builders/GradleBuilder.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/builders/builders.js" afterPath="$PROJECT_DIR$/cordova/lib/builders/builders.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/check_reqs.js" afterPath="$PROJECT_DIR$/cordova/lib/check_reqs.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/device.js" afterPath="$PROJECT_DIR$/cordova/lib/device.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/emulator.js" afterPath="$PROJECT_DIR$/cordova/lib/emulator.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/plugin-build.gradle" afterPath="$PROJECT_DIR$/cordova/lib/plugin-build.gradle" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/pluginHandlers.js" afterPath="$PROJECT_DIR$/cordova/lib/pluginHandlers.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/prepare.js" afterPath="$PROJECT_DIR$/cordova/lib/prepare.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/lib/run.js" afterPath="$PROJECT_DIR$/cordova/lib/run.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/abbrev/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/abbrev/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/abbrev/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/abbrev/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/ansi/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/ansi/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/balanced-match/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/balanced-match/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/LICENSE.MIT" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/base64-js/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/bench/bench.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/lib/b64.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/base64-js/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/test/convert.js" afterPath="$PROJECT_DIR$/cordova/node_modules/base64-js/test/convert.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/base64-js/test/url-safe.js" afterPath="$PROJECT_DIR$/cordova/node_modules/base64-js/test/url-safe.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.d.ts" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.d.ts" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.js" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.min.js" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/BigInteger.min.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/bower.json" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/bower.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/big-integer/tsconfig.json" afterPath="$PROJECT_DIR$/cordova/node_modules/big-integer/tsconfig.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/bplist-parser/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/bplist-parser/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/brace-expansion/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/brace-expansion/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/brace-expansion/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/brace-expansion/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/concat-map/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/concat-map/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/.eslintrc.yml" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/.eslintrc.yml" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/.jscs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/.travis.yml" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/RELEASENOTES.md" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/RELEASENOTES.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/appveyor.yml" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/appveyor.yml" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigChanges.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigChanges.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigFile.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigFile.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigParser/ConfigParser.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigParser/ConfigParser.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/ConfigParser/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/CordovaLogger.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/CordovaLogger.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/FileUpdater.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/FileUpdater.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfo.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfo.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/PluginManager.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/PluginManager.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/util/xml-helpers.js" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-common/src/util/xml-helpers.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/cordova-registry-mapper/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/cordova-registry-mapper/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/elementtree/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/elementtree/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/glob/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/inflight/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/inflight/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/inherits/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/chunk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/compact.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/difference.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/drop.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/dropRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/dropRightWhile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/dropWhile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/fill.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/findIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/findLastIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/first.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/flatten.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/flattenDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/head.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/indexOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/initial.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/intersection.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/last.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/lastIndexOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/object.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/pull.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/pullAt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/remove.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/rest.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/slice.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/sortedIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/sortedLastIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/tail.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/take.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/takeRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/takeRightWhile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/takeWhile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/union.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/uniq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/unique.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/unzip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/unzipWith.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/without.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/xor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/zip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/zipObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/array/zipWith.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/chain.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/commit.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/concat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/lodash.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/plant.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/reverse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/run.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/tap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/thru.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/toJSON.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/toString.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/value.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/valueOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperChain.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperCommit.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperConcat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperPlant.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperReverse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperToString.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/chain/wrapperValue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/all.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/any.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/at.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/collect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/contains.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/countBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/detect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/each.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/eachRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/every.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/filter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/find.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/findLast.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/findWhere.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/foldl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/foldr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/forEach.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/forEachRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/groupBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/include.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/includes.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/indexBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/inject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/invoke.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/map.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/max.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/partition.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/pluck.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/reduce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/reduceRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/reject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/sample.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/select.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/shuffle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/size.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/some.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/sortBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/sortByAll.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/sortByOrder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/sum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/collection/where.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/date.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/date/now.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/after.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/ary.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/backflow.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/before.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/bind.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/bindAll.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/bindKey.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/compose.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/curry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/curryRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/debounce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/defer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/delay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/flow.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/flowRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/memoize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/modArgs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/negate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/once.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/partial.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/partialRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/rearg.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/restParam.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/spread.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/throttle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/function/wrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/LazyWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/LodashWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/MapCache.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/SetCache.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayConcat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayCopy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayEach.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayEachRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayEvery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayExtremum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayFilter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayMap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayPush.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayReduce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arrayReduceRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arraySome.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/arraySum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/assignDefaults.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/assignOwnDefaults.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/assignWith.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseAssign.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseAt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseCallback.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseClone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseCompareAscending.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseCopy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseCreate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseDelay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseDifference.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseEach.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseEachRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseEvery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseExtremum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFill.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFilter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFind.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFindIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFlatten.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseForIn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseForOwn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseForOwnRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseForRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseFunctions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseGet.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseIndexOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseIsEqual.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseIsEqualDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseIsFunction.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseIsMatch.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseLodash.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseMap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseMatches.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseMatchesProperty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseMerge.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseMergeDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseProperty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/basePropertyDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/basePullAt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseRandom.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseReduce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSetData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSlice.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSome.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSortBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSortByOrder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseSum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseToString.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseUniq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseValues.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseWhile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/baseWrapperValue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/binaryIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/binaryIndexBy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/bindCallback.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/bufferClone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/cacheIndexOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/cachePush.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/charsLeftIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/charsRightIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/compareAscending.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/compareMultiple.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/composeArgs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/composeArgsRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createAggregator.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createAssigner.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createBaseEach.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createBaseFor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createBindWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createCache.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createCompounder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createCtorWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createCurry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createDefaults.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createExtremum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createFind.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createFindIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createFindKey.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createFlow.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createForEach.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createForIn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createForOwn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createHybridWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createObjectMapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createPadDir.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createPadding.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createPartial.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createPartialWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createReduce.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createRound.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createSortedIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/createWrapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/deburrLetter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/equalArrays.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/equalByTag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/equalObjects.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/escapeHtmlChar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/escapeRegExpChar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/escapeStringChar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getFuncName.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getLength.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getMatchData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getNative.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/getView.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/indexOfNaN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/initCloneArray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/initCloneByTag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/initCloneObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/invokePath.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isArrayLike.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isIterateeCall.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isKey.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isLaziable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isLength.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isObjectLike.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isSpace.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/isStrictComparable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/lazyClone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/lazyReverse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/lazyValue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mapDelete.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mapGet.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mapHas.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mapSet.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mergeData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/mergeDefaults.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/metaMap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/pickByArray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/pickByCallback.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/reEscape.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/reEvaluate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/reInterpolate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/realNames.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/reorder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/replaceHolders.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/setData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/shimKeys.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/sortedUniq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/toIterable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/toObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/toPath.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/trimmedLeftIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/trimmedRightIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/unescapeHtmlChar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/internal/wrapperClone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/clone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/cloneDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/eq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/gt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/gte.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isArguments.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isArray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isBoolean.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isDate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isElement.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isEmpty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isEqual.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isError.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isFinite.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isFunction.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isMatch.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isNaN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isNative.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isNull.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isNumber.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isPlainObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isRegExp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isString.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isTypedArray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/isUndefined.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/lt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/lte.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/toArray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/lang/toPlainObject.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/add.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/ceil.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/floor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/max.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/round.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/math/sum.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/number.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/number/inRange.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/number/random.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/assign.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/create.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/defaults.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/defaultsDeep.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/extend.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/findKey.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/findLastKey.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/forIn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/forInRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/forOwn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/forOwnRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/functions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/get.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/has.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/invert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/keys.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/keysIn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/mapKeys.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/mapValues.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/merge.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/methods.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/omit.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/pairs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/pick.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/result.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/set.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/transform.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/values.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/object/valuesIn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/camelCase.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/capitalize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/deburr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/endsWith.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/escape.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/escapeRegExp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/kebabCase.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/pad.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/padLeft.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/padRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/parseInt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/repeat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/snakeCase.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/startCase.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/startsWith.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/template.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/templateSettings.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/trim.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/trimLeft.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/trimRight.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/trunc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/unescape.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/string/words.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/support.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/attempt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/callback.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/constant.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/identity.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/iteratee.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/matches.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/matchesProperty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/method.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/methodOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/mixin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/noop.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/property.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/propertyOf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/range.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/times.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/lodash/utility/uniqueId.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/minimatch/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/nopt/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/nopt/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/lib/nopt.js" afterPath="$PROJECT_DIR$/cordova/node_modules/nopt/lib/nopt.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/nopt/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/nopt/test/basic.js" afterPath="$PROJECT_DIR$/cordova/node_modules/nopt/test/basic.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/once/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/once/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-homedir/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-homedir/license" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-homedir/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-homedir/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-tmpdir/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-tmpdir/license" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-tmpdir/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/os-tmpdir/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/.npmignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/osenv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/test/unix.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/test/windows.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/osenv/x.tap" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/path-is-absolute/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/path-is-absolute/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/.travis.yml" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/.travis.yml" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/History.md" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/History.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/dist/plist-parse.js" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/dist/plist-parse.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/dist/plist.js" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/dist/plist.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/lib/build.js" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/lib/build.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/lib/node.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/lib/parse.js" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/lib/parse.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/lib/plist.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/plist/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/plist/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/properties-parser/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/test/ReadProperties.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/test/ReadProperties.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/test/test-cases-copy.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/test/test-cases.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/properties-parser/test/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/q/CHANGES.md" afterPath="$PROJECT_DIR$/cordova/node_modules/q/CHANGES.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/q/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/q/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/q/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/q/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/q/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/q/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/q/q.js" afterPath="$PROJECT_DIR$/cordova/node_modules/q/q.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/sax/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/sax/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/semver/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/semver/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/cordova/node_modules/semver/bin/semver" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/semver/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/semver/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/semver/range.bnf" afterPath="$PROJECT_DIR$/cordova/node_modules/semver/range.bnf" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/semver/semver.js" afterPath="$PROJECT_DIR$/cordova/node_modules/semver/semver.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/shelljs/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/shelljs/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/LICENSE" afterPath="$PROJECT_DIR$/cordova/node_modules/underscore/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/underscore/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/underscore/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/underscore-min.js" afterPath="$PROJECT_DIR$/cordova/node_modules/underscore/underscore-min.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/underscore-min.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/underscore/underscore.js" afterPath="$PROJECT_DIR$/cordova/node_modules/underscore/underscore.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/unorm/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/unorm/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/History.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/browser.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/node.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/util-deprecate/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/wrappy/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/wrappy/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/README.md" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/README.md" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLAttribute.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLAttribute.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLBuilder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLCData.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLCData.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLComment.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLComment.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDAttList.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDAttList.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDElement.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDElement.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDEntity.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDEntity.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDNotation.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDTDNotation.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDeclaration.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDeclaration.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDocType.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLDocType.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLElement.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLElement.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLNode.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLNode.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLRaw.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLRaw.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLStringifier.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLStringifier.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLText.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/XMLText.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/index.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/lib/index.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/xmlbuilder/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmldom/__package__.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmldom/__package__.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmldom/dom-parser.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmldom/dom-parser.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmldom/package.json" afterPath="$PROJECT_DIR$/cordova/node_modules/xmldom/package.json" />
-      <change beforePath="$PROJECT_DIR$/cordova/node_modules/xmldom/sax.js" afterPath="$PROJECT_DIR$/cordova/node_modules/xmldom/sax.js" />
-      <change beforePath="$PROJECT_DIR$/cordova/version" afterPath="$PROJECT_DIR$/cordova/version" />
-      <change beforePath="$PROJECT_DIR$/platform_www/cordova.js" afterPath="$PROJECT_DIR$/platform_www/cordova.js" />
-      <change beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_next_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_previous_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_action_remove.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-hdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-ldpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-mdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-xhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-xxhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-land-xxxhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_next_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_previous_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_remove.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-hdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-ldpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-mdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-xhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-xxhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-port-xxxhdpi/screen.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_next_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_previous_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_action_remove.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_next_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_previous_item.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/drawable-xxhdpi/ic_action_remove.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-hdpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-ldpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-mdpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-xhdpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-xxhdpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/mipmap-xxxhdpi/icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/res/xml/config.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change beforePath="$PROJECT_DIR$/src/com/partnersuperconnect5media/onemenu/MainActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/dialogs/Notification.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/geolocation/Geolocation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppBrowser.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppBrowserDialog.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/inappbrowser/InAppChromeClient.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/networkinformation/NetworkManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/splashscreen/SplashScreen.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/statusbar/StatusBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/org/apache/cordova/whitelist/WhitelistPlugin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../ios/OneMenu.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../ios/OneMenu.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/../ios/OneMenu/Images.xcassets/LaunchStoryboard.imageset/Contents.json" afterPath="$PROJECT_DIR$/../ios/OneMenu/Images.xcassets/LaunchStoryboard.imageset/Contents.json" />
-      <change beforePath="$PROJECT_DIR$/../ios/OneMenu/OneMenu-Info.plist" afterPath="$PROJECT_DIR$/../ios/OneMenu/OneMenu-Info.plist" />
-      <change beforePath="$PROJECT_DIR$/../ios/OneMenu/config.xml" afterPath="$PROJECT_DIR$/../ios/OneMenu/config.xml" />
-      <change beforePath="$PROJECT_DIR$/../ios/ios.json" afterPath="$PROJECT_DIR$/../ios/ios.json" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/assets/css/styles.css" afterPath="$PROJECT_DIR$/../ios/www/assets/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/components/Analytics/analytics.service.js" afterPath="$PROJECT_DIR$/../ios/www/components/Analytics/analytics.service.js" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/components/PageMenu.jsx" afterPath="$PROJECT_DIR$/../ios/www/components/PageMenu.jsx" />
-      <change beforePath="$PROJECT_DIR$/../ios/www/shared/ajax.utils.js" afterPath="$PROJECT_DIR$/../ios/www/shared/ajax.utils.js" />
-      <change beforePath="$PROJECT_DIR$/../../www/components/Analytics/analytics.service.js" afterPath="$PROJECT_DIR$/../../www/components/Analytics/analytics.service.js" />
-      <change beforePath="$PROJECT_DIR$/../../www/components/PageMenu.jsx" afterPath="$PROJECT_DIR$/../../www/components/PageMenu.jsx" />
-      <change beforePath="$PROJECT_DIR$/../../www/shared/ajax.utils.js" afterPath="$PROJECT_DIR$/../../www/shared/ajax.utils.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1010,7 +24,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/config.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -1034,7 +48,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="255">
               <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding>
                 <element signature="e#0#858#0" expanded="true" />
@@ -1046,7 +60,7 @@
       <file leaf-file-name="prepare.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cordova/lib/prepare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="3332">
               <caret line="196" column="77" lean-forward="false" selection-start-line="196" selection-start-column="64" selection-end-line="196" selection-end-column="77" />
               <folding />
             </state>
@@ -4069,149 +3083,138 @@
               <option name="name" value="android" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/antlr" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-cache" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-cache-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-init" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/build-option" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/composite-builds" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/core-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/dependency-management" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ear" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ide-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/installation-beacon" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-android-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/jvm-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-java" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/language-scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/launcher" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/logging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/model-core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/model-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/osgi" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/persistent-cache" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/platform-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugin-development" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugin-use" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/process-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-gcs" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-s3" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/resources-sftp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/test-kit" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/testing-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/tooling-api-builders" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/version-control" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/workers" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/ant-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/ant-launcher-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-base-services-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-base-services-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-build-cache-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-build-option-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-cli-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-core-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-core-api-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-docs-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-installation-beacon-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-jvm-services-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-0.13.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-tooling-builders-0.13.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-kotlin-dsl-tooling-models-0.13.1.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-launcher-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-logging-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-messaging-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-model-core-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-model-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-native-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-persistent-cache-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-process-services-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-resources-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-runtime-api-info-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-tooling-api-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/gradle-wrapper-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/groovy-all-2.4.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-announce-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-antlr-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-cache-http-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-comparison-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-build-init-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-code-quality-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-composite-builds-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-dependency-management-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-diagnostics-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ear-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-native-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ide-play-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-ivy-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-jacoco-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-javascript-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-groovy-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-java-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-jvm-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-native-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-language-scala-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-maven-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-osgi-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-base-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-jvm-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-native-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-platform-play-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugin-development-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugin-use-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-plugins-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-publish-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-reporting-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-gcs-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-http-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-s3-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-resources-sftp-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-scala-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-signing-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-test-kit-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-base-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-jvm-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-testing-native-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-tooling-api-builders-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-version-control-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/gradle-workers-4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.4-all/9br9xq1tocpiv8o6njlyu5op1/gradle-4.4/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-base-services-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-base-services-groovy-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-cli-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-core-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-docs-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-installation-beacon-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-jvm-services-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-kotlin-dsl-0.10.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-kotlin-dsl-compiler-plugin-0.10.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-kotlin-dsl-tooling-builders-0.10.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-kotlin-dsl-tooling-models-0.10.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-launcher-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-logging-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-messaging-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-model-core-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-model-groovy-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-native-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-process-services-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-resources-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-runtime-api-info-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-tooling-api-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/gradle-wrapper-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/groovy-all-2.4.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-announce-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-antlr-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-build-cache-http-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-build-comparison-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-build-init-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-code-quality-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-composite-builds-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-dependency-management-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-diagnostics-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-ear-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-ide-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-ide-native-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-ide-play-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-ivy-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-jacoco-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-javascript-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-language-groovy-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-language-java-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-language-jvm-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-language-native-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-language-scala-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-maven-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-osgi-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-platform-base-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-platform-jvm-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-platform-native-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-platform-play-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-plugin-development-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-plugin-use-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-plugins-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-publish-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-reporting-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-resources-http-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-resources-s3-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-resources-sftp-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-scala-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-signing-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-test-kit-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-testing-base-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-testing-jvm-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-testing-native-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-tooling-api-builders-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/gradle-workers-4.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.1-all/bzyivzo6n839fup2jbap0tjew/gradle-4.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -4260,6 +3263,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -4271,15 +3276,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Nir Projects/Zen-mobileWallet/final/zen-mobilewallet/android" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -4449,35 +3453,35 @@
     <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5030257" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -4488,9 +3492,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="69" lean-forward="false" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="544">
           <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="e#0#858#0" expanded="true" />
@@ -4500,7 +3520,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cordova/lib/prepare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="3332">
+          <caret line="196" column="77" lean-forward="false" selection-start-line="196" selection-start-column="64" selection-end-line="196" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cordova/lib/prepare.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
           <caret line="196" column="77" lean-forward="false" selection-start-line="196" selection-start-column="64" selection-end-line="196" selection-end-column="77" />
           <folding />
         </state>

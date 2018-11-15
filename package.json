@@ -11,7 +11,8 @@
     "prepare": "node config && webpack && cordova prepare",
     "compile": "node config && webpack && cordova build",
     "server": "node server",
-    "start": "webpack && npm run start:server",
+    "web:build": "webpack && npm run start:server",
+    "start": "npm run start:server",
     "start:local": "node scripts/start.js",
     "start:server": "serve -s build",
     "test": "echo \"Error: no test specified\" && exit 1"
