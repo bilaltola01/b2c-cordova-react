@@ -1,0 +1,189 @@
+
+.burger-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: 5px;
+    background-color: #fff;
+
+   	transition: all 0.30s ease 0s;
+   	-webkit-transition: all 0.30s ease 0s;
+   	-moz-transition: all 0.30s ease 0s;
+}
+
+.burger-menu:before,
+.burger-menu:after {
+	content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+	transition: all 0.30s ease 0s;
+	-webkit-transition: all 0.30s ease 0s;
+	-moz-transition: all 0.30s ease 0s;
+}
+
+.burger-menu:before {
+    top: -4px;
+    border-top: 2px solid #fff;
+}
+
+.burger-menu:after {
+    top: 4px;
+    border-bottom: 2px solid #fff;
+}
+
+.menu-btn {
+	display: none;
+    position: fixed;
+    width: 30px;
+    height: 28px;
+    top: 11px;
+    left: 10px;
+    padding: 8px;
+    background-color: transparent;
+    z-index: 200;
+
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.menu-btn .menu-text {
+    position: absolute;
+    display: block;
+    right: 75px;
+}
+
+.menu-btn.active .burger-menu {
+	background-color: transparent;
+}
+
+.menu-btn.active .burger-menu:before {
+	top: -6px;
+    left: -2px;
+
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+
+    transform-origin: top right;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+}
+
+.menu-btn.active .burger-menu:after {
+	top: 4px;
+    left: -2px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+
+    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+}
+
+.menu-btn.active + .main-nav {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+}
+
+.main-nav--container {
+	width: 75%;
+	height: 100%;
+	background-color: #333;
+}
+
+.main-nav .link--bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px 20px;
+}
+
+.main-nav .link--bottom a {
+	color: #fcd230;
+    cursor: pointer;
+	font-size: 1.05em;
+}
+
+.main-nav .link--top {
+	margin-bottom: 0;
+	padding: 18px 15px;
+}
+
+.main-nav .link--top img {
+	width: 48px;
+	height: auto;
+	opacity: 0.4;
+
+	/* optical correction */
+	margin-left: 2px;
+}
+
+/*
+//////////
+Can be wrapped in a media query if needed
+//////////
+*/
+
+.menu-btn {
+	display: block;
+}
+
+.main-nav {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 48px);
+    float: none;
+    z-index: 99;
+    background-color: transparent;
+
+    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+
+    transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: transform 0.40s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.main-nav .menu--simple {
+	text-align: left;
+}
+
+.main-nav .menu--simple li {
+	display: block;
+    border-bottom: 1px solid #565656;
+}
+
+.main-nav .menu--simple li:last-child {
+	margin-bottom: 0;
+}
+
+.main-nav .menu--simple a {
+	display: block;
+	padding: 12px 20px;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	color: #fcd230;
+    font-size: 1.05em;
+    line-height: 1.8em;
+    text-decoration: none;
+}
+
+.main-nav .menu--simple a:hover,
+.main-nav .menu--simple a:active {
+	text-decoration: none;
+	color: #fcd230;
+}

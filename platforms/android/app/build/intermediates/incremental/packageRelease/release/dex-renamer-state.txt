@@ -1,0 +1,4 @@
+#Thu Mar 14 16:12:59 UYT 2019
+base.0=/Volumes/work/Work_temp/kathleen_work_temp/one-menu-b2c/platforms/android/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

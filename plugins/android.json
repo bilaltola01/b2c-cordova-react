@@ -8,25 +8,25 @@
   },
   "installed_plugins": {
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.partnersuperconnect5media.onemenu"
+      "PACKAGE_NAME": "com.om.onemenu"
     }
   },
   "dependent_plugins": {}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.partnersuperconnect5media.onemenu"
+    package="com.om.onemenu"
     android:hardwareAccelerated="true"
-    android:versionCode="10127"
-    android:versionName="1.1.27" >
+    android:versionCode="10001"
+    android:versionName="1.0.1" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -32,7 +32,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true" >
         <activity
-            android:name="com.partnersuperconnect5media.onemenu.MainActivity"
+            android:name="com.om.onemenu.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:label="@string/activity_name"
             android:launchMode="singleTop"

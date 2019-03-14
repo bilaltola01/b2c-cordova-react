@@ -21,8 +21,9 @@ class PageMenu extends Component {
       return acc.concat(
         (current.branches || []).map(branch => {
           const finalMenus =
-            current.CompanyID === 2
+            current.CompanyID === 2 && !branch.menus
               ? ((current.branches || [])[0] || {}).menus.map(menu => {
+                  console.log(menu)
                   return {
                     ...menu,
                     MenuID: this.props.match.params.menuId,
@@ -30,7 +31,6 @@ class PageMenu extends Component {
                   };
                 })
               : branch.menus;
-
           return {
             ...branch,
             CompanyLogoPath: current.LogoPath,
@@ -55,7 +55,6 @@ class PageMenu extends Component {
 
     let navigation = Pages.getPageAttribute('Menu', 'navigation');
     navigation.leftButtons[0].action.path += '/' + id;
-
     const restaurants = this.getRestaurants(this.props.profile);
     const restaurant =
       restaurants && restaurants.length > 0

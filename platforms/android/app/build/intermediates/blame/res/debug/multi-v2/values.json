@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects\\Live Projects\\matthieu Projects\\heroku\\final\\one-menu-b2c\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/Volumes/work/Work_temp/kathleen_work_temp/one-menu-b2c/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "D:\\Projects\\Live Projects\\matthieu Projects\\heroku\\final\\one-menu-b2c\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/Volumes/work/Work_temp/kathleen_work_temp/one-menu-b2c/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
