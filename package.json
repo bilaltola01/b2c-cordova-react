@@ -8,7 +8,7 @@
     "android": "cordova run android",
     "build": "webpack",
     "ios": "cordova run ios",
-    "prepare": "node config && webpack && cordova prepare",
+    "prepare": "node config && NODE_ENV=production webpack && cordova prepare",
     "compile": "node config && webpack && cordova build",
     "server": "node server",
     "web:build": "webpack && npm run start:server",

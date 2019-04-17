@@ -921,9 +921,8 @@ span.go-to-menu:after {
 }
 
 .restaurant-details--logo img {
-    width: auto;
+    width: 72px;
     height: 72px;
-    margin-left: -30px;
     clip-path: circle(36px at center);
     -webkit-clip-path: circle(36px at center);
 
