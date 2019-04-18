@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "android": "cordova run android",
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack",
     "ios": "cordova run ios",
     "prepare": "node config && NODE_ENV=production webpack && cordova prepare",
     "compile": "node config && webpack && cordova build",
