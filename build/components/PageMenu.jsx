@@ -64,13 +64,7 @@ class PageMenu extends Component {
           })
         : null;
 
-    const currency =
-      restaurant &&
-      restaurant[0] &&
-      restaurant[0].currency &&
-      restaurant[0].currency.length > 0
-        ? restaurant[0].currency[0]
-        : null;
+    const currency = (restaurant && restaurant[0] && restaurant[0].currencies && restaurant[0].currencies.length > 0) ? restaurant[0].currencies[0] : null;
 
     const menu =
       restaurant && restaurant[0].menus && restaurant[0].menus.length > 0

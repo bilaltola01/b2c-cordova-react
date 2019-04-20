@@ -6,10 +6,9 @@ import ArticleRestaurantDetail from './ArticleRestaurantDetail';
 
 class SectionMenus extends Component {
 	render() {
-		const { restaurants } = this.props.component;
+		const { restaurants, currency } = this.props.component;
 
 		const restaurant = (restaurants && restaurants.length > 0) ? restaurants[0] : null;
-		const currency = (restaurant && restaurant.currencies.length > 0) ? restaurant.currencies[0] : null;
 		const languages = (restaurant && restaurant.languages && restaurant.languages.length > 0) ? restaurant.languages : [];
 		const articles = (restaurant && restaurant.menus && restaurant.menus.length > 0) ? restaurant.menus.map((menu, index) => {
 			return <ArticleMenu companyId={restaurant.CompanyID} menu={menu} currency={currency} languages={languages} key={index} />;
