@@ -83,7 +83,8 @@ class PageMenu extends Component {
     const { id, menuId } = this.props.match.params;
 
     let navigation = Pages.getPageAttribute('Menu', 'navigation');
-    navigation.leftButtons[0].action.path += '/' + id;
+    const pageType = 'menu-page'
+    navigation.leftButtons[0].action.path = '/restaurants/' + id + '/menus';
     const restaurants = this.getRestaurants(this.props.profile);
     const restaurant =
       restaurants && restaurants.length > 0
@@ -123,6 +124,7 @@ class PageMenu extends Component {
           navigation={navigation}
           footer={footer}
           offCanvasSettings={offCanvasSettings}
+          pageType={pageType}
         />
       </div>
     );

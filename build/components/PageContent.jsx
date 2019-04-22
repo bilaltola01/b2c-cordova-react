@@ -15,7 +15,7 @@ class PageContent extends Component {
     }
 
   	render () {
-  		const { sections, navigation, footer, title, companyId, offCanvasSettings } = this.props;
+  		const { sections, navigation, footer, title, companyId, offCanvasSettings, pageType } = this.props;
 
         const isOpened = (this.props.offCanvas) ? this.props.offCanvas.isOpened : false;
 
@@ -24,7 +24,7 @@ class PageContent extends Component {
         ) : null;
 
     	const headerComponent = (navigation) ? (
-    		<PageHeader title={title} leftButtons={navigation.leftButtons} rightButtons={navigation.rightButtons} />
+    		<PageHeader title={title} leftButtons={navigation.leftButtons} rightButtons={navigation.rightButtons} pageType={pageType} />
 	    ) : null;
 
 	    const footerComponent = (footer) ? (
@@ -56,7 +56,8 @@ PageContent.propTypes = {
     navigation: PropTypes.object,
     footer: PropTypes.object,
     title: PropTypes.string,
-    offCanvasSettings: PropTypes.object
+    offCanvasSettings: PropTypes.object,
+	pageType: PropTypes.string,
 };
 
 const mapStateToProps = (state) => {
