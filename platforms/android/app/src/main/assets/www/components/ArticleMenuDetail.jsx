@@ -24,7 +24,7 @@ class ArticleMenuDetail extends Component {
               <ArticleMeal
                 companyId={companyId}
                 meal={meal}
-                currrency={currency}
+                currency={currency}
                 currentLanguage={language}
                 index={index}
                 key={index}

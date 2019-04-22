@@ -68,7 +68,7 @@ class PageRestaurant extends Component {
     const restaurants = this.getRestaurants(this.props.profile);
     const restaurant = this.getCurrentRestaurant(restaurants, parseInt(id, 10));
 
-    const currency = (restaurant && restaurant[0] && restaurant[0].currency && restaurant[0].currency.length > 0) ? restaurant[0].currency[0] : null;
+    const currency = (restaurant && restaurant[0] && restaurant[0].currencies && restaurant[0].currencies.length > 0) ? restaurant[0].currencies[0] : null;
 
     const companyId = restaurant && restaurant[0] ? restaurant[0].CompanyID : null;
     const sections = [{

@@ -63,7 +63,7 @@ class OffCanvas extends Component {
       switch (t) {
         case 'PickLanguage':
           // Retrieve dynamically component from store
-          let languages = (this.props.branchLanguages && this.props.branchLanguages.length > 0) ? this.props.branchLanguages : null;
+          let languages = (this.props.menuLanguages && this.props.menuLanguages.length > 0) ? this.props.menuLanguages : null;
           return {
             languages
           };
@@ -132,7 +132,8 @@ OffCanvas.propTypes = {
 const mapStateToProps = (state) => {
     return {
         offCanvas: state._offCanvas.offCanvas,
-        branchLanguages: state._branchLanguages.branchLanguages
+        branchLanguages: state._branchLanguages.branchLanguages,
+        menuLanguages: state._menuLanguages.menuLanguages,
     };
 };
 

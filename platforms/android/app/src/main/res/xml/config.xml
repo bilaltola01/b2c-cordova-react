@@ -24,7 +24,7 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>OneMenu</name>
+    <name>One Menu</name>
     <description>
         One Menu - The world on your plate
     </description>

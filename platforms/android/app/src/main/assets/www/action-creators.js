@@ -201,6 +201,31 @@ export function setBranchLanguages(branches, cb) {
   };
 }
 
+export function setMenuLanguages(menu, cb) {
+  return {
+    types: [
+      'SET_MENU_LANGUAGES_REQUEST',
+      'SET_MENU_LANGUAGES_SUCCESS',
+      'SET_MENU_LANGUAGES_FAILURE',
+    ],
+    promise: () => {
+      return new Promise((resolve, reject) => {
+        if (!menu || !menu.languages || menu.languages.length <= 0) {
+          reject('Menu or menu languages while setting menu languages!');
+        }
+
+        const languages = menu.languages;
+
+        if (typeof cb === 'function') {
+          cb(languages);
+        }
+
+        resolve(languages);
+      });
+    },
+  };
+}
+
 export function getCurrentLanguage(nav, location, cb) {
   return {
     types: [

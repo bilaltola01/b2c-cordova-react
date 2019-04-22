@@ -70,7 +70,7 @@ class ArticleRestaurant extends Component {
           <footer className="restaurant--footer grid">
             <div className="col-2-3">
               <h3>{restaurant.CompanyName}</h3>
-              <h4 className="small-text">{restaurant.City}</h4>
+              <h4 className="small-text">{restaurant.Address + ', ' + restaurant.City}</h4>
             </div>
             <div className="col-1-3 push-right distance">
               <p className="small-text">{restaurant.Distance} km</p>

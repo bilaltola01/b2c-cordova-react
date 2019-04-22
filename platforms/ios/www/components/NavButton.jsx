@@ -39,7 +39,7 @@ class NavButton extends Component {
 	}
 
 	render() {
-		const { title, position, action } = this.props;
+		const { title, position, action, pageType } = this.props;
 
 		const classes = classNames(
 			'button',
@@ -67,7 +67,11 @@ class NavButton extends Component {
 				case 'link':
 					return <Link to={a.path}>{title}</Link>
 				case 'menu':
-					return menuComponent
+					if (pageType === 'menu-page') {
+						return <Link to={a.path}>{title}</Link>
+					} else {
+						return menuComponent
+					}
 				case 'click':
 					return <span onClick={a.component.fn}>{title}</span>
 				case 'pick-language':
@@ -87,7 +91,8 @@ class NavButton extends Component {
 NavButton.propTypes = {
 	title: PropTypes.string,
 	position: PropTypes.string,
-	action: PropTypes.object
+	action: PropTypes.object,
+	pageType: PropTypes.string,
 };
 
 
