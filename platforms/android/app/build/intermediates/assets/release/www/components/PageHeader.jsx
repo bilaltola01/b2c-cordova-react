@@ -4,10 +4,10 @@ import NavButton from './NavButton';
 
 class PageHeader extends Component {
   	render() {
-  		const { title, leftButtons, rightButtons } = this.props;
+  		const { title, leftButtons, rightButtons, pageType } = this.props;
 
   		const leftButtonsComponent = (leftButtons && leftButtons.length > 0) ? leftButtons.map((button, index) => {
-  			return <NavButton position={button.position} action={button.action} title={button.title} key={index} />;
+  			return <NavButton position={button.position} action={button.action} title={button.title} key={index} pageType={pageType} />;
   		}) : null;
 
   		const rightButtonsComponent = (rightButtons && rightButtons.length > 0) ? rightButtons.map((button, index) => {
@@ -32,7 +32,8 @@ class PageHeader extends Component {
 PageHeader.propTypes = {
 	title: PropTypes.string,
 	leftButtons: PropTypes.array,
-	rightButtons: PropTypes.array
+	rightButtons: PropTypes.array,
+	pageType: PropTypes.string,
 };
 
 export default PageHeader;

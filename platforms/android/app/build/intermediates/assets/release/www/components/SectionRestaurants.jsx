@@ -9,7 +9,11 @@ class SectionRestaurants extends Component {
 
 		const articles = (restaurants && restaurants.length > 0) ? restaurants.sort((a, b) => {
 			return b.BranchID - a.BranchID;
-		}).map((restaurant, index) => {
+		})
+		.filter((restaurant) => {
+			return restaurant.IsEnabled;
+		})
+		.map((restaurant, index) => {
 			return <ArticleRestaurant restaurant={restaurant} key={index} />;
 		}) : null;
 

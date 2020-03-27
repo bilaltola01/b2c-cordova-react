@@ -62,7 +62,7 @@ export let Pages = {
       navigation: {
         leftButtons: [
           {
-            title: 'Back to Restaurant',
+            title: 'Back',
             position: 'left',
             action: {
               type: 'menu',

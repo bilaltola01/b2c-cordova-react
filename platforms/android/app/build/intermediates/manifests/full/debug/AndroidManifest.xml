@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.om.onemenu"
     android:hardwareAccelerated="true"
-    android:versionCode="10001"
-    android:versionName="1.0.1" >
+    android:versionCode="10002"
+    android:versionName="1.0.2" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -30,7 +30,8 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="com.om.onemenu.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"

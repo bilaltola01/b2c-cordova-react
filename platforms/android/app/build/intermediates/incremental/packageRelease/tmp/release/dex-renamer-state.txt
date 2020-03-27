@@ -1,0 +1,4 @@
+#Mon Apr 22 22:22:35 VET 2019
+base.0=/Volumes/work/Work_temp/kathleen_work_temp/one-menu-b2c/platforms/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
